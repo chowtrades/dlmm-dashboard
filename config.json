@@ -1,7 +1,7 @@
 {
   "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-  "rpc": "https://solana-rpc.publicnode.com",
-  "discoveryRpc": "https://public.rpc.solanavibestation.com",
+  "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
+  "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "refreshSeconds": 60,
   "positions": [
     {
