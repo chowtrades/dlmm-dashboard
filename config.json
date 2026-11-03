@@ -1,0 +1,19 @@
+{
+  "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+  "rpc": "https://solana-rpc.publicnode.com",
+  "discoveryRpc": "https://public.rpc.solanavibestation.com",
+  "refreshSeconds": 60,
+  "positions": [
+    {
+      "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
+      "pool": "GfxLazsYEmc6VSepjLiYZywhcntjBvpjSRfzvzZr1nJc",
+      "pair": "MAMESUKE-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-537..-469",
+      "deposited_sol": 0.4,
+      "opened": "2026-11-03T23:03:00+07:00",
+      "open_tx": "3f1zWe8ShjwSVQy39wizwQfgC4HbqZT1iGqatxG5pepWSn3KfujuqtjD9VZ3ywdVMNJfDpQ53XKibmcaxj4uFKvv"
+    }
+  ]
+}

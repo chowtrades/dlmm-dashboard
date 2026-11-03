@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DLMM Dashboard (read-only)</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Meteora DLMM · <span class="muted">read-only</span></h1>
+  <form id="walletForm" class="row">
+    <input id="wallet" spellcheck="false" autocomplete="off" placeholder="Wallet address" aria-label="Wallet address">
+    <button type="submit">Load</button>
+    <button type="button" id="refreshNow" title="Refresh now">↻</button>
+  </form>
+  <div class="sub"><span id="walletLink"></span></div>
+  <div class="sub"><span id="status" class="status">Loading…</span> · <span id="countdown"></span></div>
+</header>
+<main>
+  <div id="notes"></div>
+  <section class="card"><div id="summary" class="grid"></div></section>
+  <div id="positions"></div>
+  <details class="card">
+    <summary>Settings (RPC)</summary>
+    <p class="muted">Saved in this browser only (localStorage). Leave empty for defaults. A custom RPC (e.g. Helius/QuickNode/Triton with browser origin allowed) is used for all calls, including position discovery.</p>
+    <label>RPC URL <input id="rpc" spellcheck="false" autocomplete="off"></label>
+    <label>Discovery RPC (getProgramAccounts, used only when no custom RPC) <input id="disc" spellcheck="false" autocomplete="off"></label>
+    <div class="row"><button type="button" id="saveRpc">Save</button><button type="button" id="resetRpc">Reset to defaults</button></div>
+  </details>
+  <p class="muted foot">No keys, no signing, no backend. Data: Solana RPC, Meteora data API, Jupiter price API. Edit <code>config.json</code> to record deposits for PnL. Tip: <code>?wallet=&lt;address&gt;</code>.</p>
+</main>
+<script src="dist/app.js"></script>
+</body>
+</html>

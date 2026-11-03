@@ -1,0 +1,23 @@
+{
+  "name": "dlmm-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "./build.sh",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.32.1",
+    "@meteora-ag/dlmm": "^1.9.14",
+    "@solana/web3.js": "^1.99.0",
+    "buffer": "^6.0.3",
+    "esbuild": "^0.28.2",
+    "process": "^0.11.10",
+    "util": "^0.12.5"
+  },
+  "private": true
+}
