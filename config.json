@@ -3,19 +3,7 @@
   "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "position": "F1qihGh1KjdgT6T4SYehjg5wVRt3Z8GunDF4mhq7tGAb",
-      "pool": "3uijTWAzhQKnqZ59Wwgay7sccFWAk5reEibKg2ZRAGZ9",
-      "pair": "AMD-SOL",
-      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-      "strategy": "bid-ask",
-      "bins": "-486..-417",
-      "deposited_sol": 0.39,
-      "opened": "2026-11-04T21:15:00+07:00",
-      "open_tx": "fG6RUJAAByJWvW2u7CA5uZjb2Jk1GahhJQ56pcY4C9vXqRhHoZo3buuCxFiNGfseYN4wmHtp3Lp8ARFgKJ4LNnV"
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
@@ -58,6 +46,22 @@
       "swap_tx": "26zziWD8qiKTYu75KviLtniABp8b4YuVSyoXBZC3jxc9ZzYWvQ8Y7s1V5fJrN3HPdyW7wFnNneMQc4zg68KXUA66",
       "pnl_sol": 0.003398,
       "close_reason": "[h1_dump] token priceChange.h1 -25.3% <= -25%"
+    },
+    {
+      "position": "F1qihGh1KjdgT6T4SYehjg5wVRt3Z8GunDF4mhq7tGAb",
+      "pool": "3uijTWAzhQKnqZ59Wwgay7sccFWAk5reEibKg2ZRAGZ9",
+      "pair": "AMD-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-486..-417",
+      "deposited_sol": 0.39,
+      "opened": "2026-11-04T21:15:00+07:00",
+      "open_tx": "fG6RUJAAByJWvW2u7CA5uZjb2Jk1GahhJQ56pcY4C9vXqRhHoZo3buuCxFiNGfseYN4wmHtp3Lp8ARFgKJ4LNnV",
+      "closed": "2026-11-05T00:32:25+07:00",
+      "close_tx": "2b3DXf6YmqMfWzhmrHcwagv8R5fJRk7yBnzsjBYcfQwEDtLFVV1V2KWNaYTJM2DVw9UtcDsBUX5wz87Yukccnr6f",
+      "swap_tx": "2KBfyCEggzydcEGTjAgqHRRm31m5fgamDvuNdjwEizM3PRtdUWYLas5LfBthpazpHLPonK5tLFhZRVEFzsy5R9yu",
+      "pnl_sol": 0.029653,
+      "close_reason": "[liquidity_drop] pool liquidity $59189 down 30.4% vs entry $85088"
     }
   ]
 }
