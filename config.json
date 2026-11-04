@@ -1,35 +1,47 @@
 {
-  "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-  "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
-  "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
-  "refreshSeconds": 60,
-  "positions": [],
-  "closed_positions": [
-    {
-      "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
-      "pool": "GfxLazsYEmc6VSepjLiYZywhcntjBvpjSRfzvzZr1nJc",
-      "pair": "MAMESUKE-SOL",
-      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-      "strategy": "bid-ask",
-      "bins": "-537..-469",
-      "deposited_sol": 0.4,
-      "opened": "2026-11-03T23:03:00+07:00",
-      "open_tx": "3f1zWe8ShjwSVQy39wizwQfgC4HbqZT1iGqatxG5pepWSn3KfujuqtjD9VZ3ywdVMNJfDpQ53XKibmcaxj4uFKvv",
-      "closed": "2026-11-04T06:15:00+07:00",
-      "close_tx": "56xttRHaGbEWY3TYLoziDXKy8FGipGxPUvmaCKiZzqNuTqAa4vVJvLotCMpaReCpJh5Uu2eLaPp6u1xhcMQ9j9Xo"
-    },
-    {
-      "position": "ExVxyYFPVzTwmEZ3wzCi9NqhUzkuhhknu9oTCuZKhsdj",
-      "pool": "GuPbekwP9MqB23CghhiMQZTaigPdUJooovo1neCErhM8",
-      "pair": "ZCAT-SOL",
-      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-      "strategy": "bid-ask",
-      "bins": "-1076..-1016",
-      "deposited_sol": 0.38,
-      "opened": "2026-11-04T06:20:00+07:00",
-      "open_tx": "2d1g39EPLoYRzRuB1Fzn5HXon277tpTYvfMswBjofyRAiJxrnpFK7c7rFu7AdwNazbNmV2dZLnko6PhJiS6J1Nvd",
-      "closed": "2026-11-04T09:03:00+07:00",
-      "close_tx": "36w1sn8HnZytEb72pwqpqo2ap1dkLUkXMobaq15vQVRaNG2QLYks9LroB8m27TWyZxu4AATHgqcwuwirRQuv9MiT"
-    }
-  ]
+ "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+ "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
+ "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
+ "refreshSeconds": 60,
+ "positions": [
+  {
+   "position": "3exNtqfx9KwEXWB7DpWBvCXLRSzuJ3ggR3DPbmAeo4oy",
+   "pool": "3uijTWAzhQKnqZ59Wwgay7sccFWAk5reEibKg2ZRAGZ9",
+   "pair": "AMD-SOL",
+   "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+   "strategy": "bid-ask",
+   "bins": "-464..-404",
+   "deposited_sol": 0.385,
+   "opened": "2026-11-04T10:05:00+07:00",
+   "open_tx": "25j55v35yDKewhx2h1pN291bcxbmcsaX92v12SirA4mzLr7Fn8D9VoST2ZFCHuDWYPT5H1HmQZyVCSzSeeNHmqVh"
+  }
+ ],
+ "closed_positions": [
+  {
+   "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
+   "pool": "GfxLazsYEmc6VSepjLiYZywhcntjBvpjSRfzvzZr1nJc",
+   "pair": "MAMESUKE-SOL",
+   "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+   "strategy": "bid-ask",
+   "bins": "-537..-469",
+   "deposited_sol": 0.4,
+   "opened": "2026-11-03T23:03:00+07:00",
+   "open_tx": "3f1zWe8ShjwSVQy39wizwQfgC4HbqZT1iGqatxG5pepWSn3KfujuqtjD9VZ3ywdVMNJfDpQ53XKibmcaxj4uFKvv",
+   "closed": "2026-11-04T06:15:00+07:00",
+   "close_tx": "56xttRHaGbEWY3TYLoziDXKy8FGipGxPUvmaCKiZzqNuTqAa4vVJvLotCMpaReCpJh5Uu2eLaPp6u1xhcMQ9j9Xo"
+  },
+  {
+   "position": "ExVxyYFPVzTwmEZ3wzCi9NqhUzkuhhknu9oTCuZKhsdj",
+   "pool": "GuPbekwP9MqB23CghhiMQZTaigPdUJooovo1neCErhM8",
+   "pair": "ZCAT-SOL",
+   "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+   "strategy": "bid-ask",
+   "bins": "-1076..-1016",
+   "deposited_sol": 0.38,
+   "opened": "2026-11-04T06:20:00+07:00",
+   "open_tx": "2d1g39EPLoYRzRuB1Fzn5HXon277tpTYvfMswBjofyRAiJxrnpFK7c7rFu7AdwNazbNmV2dZLnko6PhJiS6J1Nvd",
+   "closed": "2026-11-04T09:03:00+07:00",
+   "close_tx": "36w1sn8HnZytEb72pwqpqo2ap1dkLUkXMobaq15vQVRaNG2QLYks9LroB8m27TWyZxu4AATHgqcwuwirRQuv9MiT"
+  }
+ ]
 }
