@@ -3,7 +3,19 @@
   "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "refreshSeconds": 60,
-  "positions": [],
+  "positions": [
+    {
+      "position": "F1qihGh1KjdgT6T4SYehjg5wVRt3Z8GunDF4mhq7tGAb",
+      "pool": "3uijTWAzhQKnqZ59Wwgay7sccFWAk5reEibKg2ZRAGZ9",
+      "pair": "AMD-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-486..-417",
+      "deposited_sol": 0.39,
+      "opened": "2026-11-04T21:15:00+07:00",
+      "open_tx": "fG6RUJAAByJWvW2u7CA5uZjb2Jk1GahhJQ56pcY4C9vXqRhHoZo3buuCxFiNGfseYN4wmHtp3Lp8ARFgKJ4LNnV"
+    }
+  ],
   "closed_positions": [
     {
       "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
