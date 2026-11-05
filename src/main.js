@@ -178,19 +178,32 @@ function buildPosition(entry, posData, pool, prices, cfg) {
 // ---------- render ----------
 const sgn = (n, d = 4) => (n == null || !isFinite(n) ? '—' : (n >= 0 ? '+' : '−') + Math.abs(n).toFixed(d));
 const cls = (n) => (n == null || !isFinite(n) ? '' : n >= 0 ? 'pos' : 'neg');
-function renderHistory(h, live) {
+function renderHistory(h, live, solUsd) {
   const el = $('#history');
   if (!h) { el.innerHTML = '<p class="muted">Position history unavailable.</p>'; return; }
   const meteora = (pool) => `<a href="https://app.meteora.ag/dlmm/${esc(pool)}" target="_blank" rel="noopener">${esc(short(pool))}</a>`;
   const tl = (t) => (t ? link(t, 'tx', short(t)) : '—');
   const t = (d) => (d ? esc(ict(d).replace(' ICT', '')) : '—');
-  const row = (r, exit, pnl, pp, status) => `<tr><td><b>${esc(r.pair)}</b> <span class="badge ${status === 'open' ? 'in' : 'cl'}">${status}</span><small>${link(r.position, 'account')}</small></td><td>${meteora(r.pool)}</td><td>${t(r.opened)}</td><td>${r.closed ? t(r.closed) : '—'}</td><td>${fmt(r.entry_sol, 4)}</td><td>${exit != null ? fmt(exit, 4) : '—'}</td><td class="${cls(pnl)}">${sgn(pnl)}<small class="${cls(pnl)}">${pp != null ? pct(pp) : ''}</small></td><td class="reason">${esc(r.reason || (status === 'open' ? 'live' : ''))}</td><td>${tl(r.open_tx)} / ${tl(r.close_tx)}</td></tr>`;
-  const openRows = (h.open || []).map((r) => { const p = live.find((x) => x.position === r.position); const v = p?.pnl?.total ?? (p ? (p.valueSol || 0) + (p.feesSol || 0) : null); const d = v != null ? v - r.entry_sol : null; return row(r, v, d, d != null ? (d / r.entry_sol) * 100 : null, 'open'); });
+  const row = (r, exit, pnl, pp, status) => `<tr><td><b>${esc(r.pair)}</b> <span class="badge ${status === 'open' ? 'in' : 'cl'}">${status}</span><small>${link(r.position, 'account')}</small></td><td class="pnlcol ${cls(pnl)}"><b>${sgn(pnl)}</b><small class="${cls(pnl)}">${pp != null ? pct(pp) : ''}</small></td><td>${meteora(r.pool)}</td><td>${t(r.opened)}</td><td>${r.closed ? t(r.closed) : '—'}</td><td>${fmt(r.entry_sol, 4)}</td><td>${exit != null ? fmt(exit, 4) : '—'}</td><td class="reason">${esc(r.reason || (status === 'open' ? 'live' : ''))}</td><td>${tl(r.open_tx)} / ${tl(r.close_tx)}</td></tr>`;
+  let unr = 0, unrEntry = 0, unrOk = true;
+  const openRows = (h.open || []).map((r) => { const p = live.find((x) => x.position === r.position); const v = p?.pnl?.total ?? (p ? (p.valueSol || 0) + (p.feesSol || 0) : null); const d = v != null ? v - r.entry_sol : null; if (d == null) unrOk = false; else { unr += d; unrEntry += r.entry_sol; } return row(r, v, d, d != null ? (d / r.entry_sol) * 100 : null, 'open'); });
   const closed = h.closed || [];
   const tot = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
-  el.innerHTML = `<div class="tablewrap"><table class="hist"><thead><tr><th>Pair</th><th>Pool</th><th>Opened (ICT)</th><th>Closed (ICT)</th><th>Entry SOL</th><th>Exit SOL</th><th>PnL SOL / %</th><th>Close reason</th><th>Open / close tx</th></tr></thead><tbody>
+  el.innerHTML = `<div class="tablewrap"><table class="hist"><thead><tr><th>Pair</th><th>PnL SOL / %</th><th>Pool</th><th>Opened (ICT)</th><th>Closed (ICT)</th><th>Entry SOL</th><th>Exit SOL</th><th>Close reason</th><th>Open / close tx</th></tr></thead><tbody>
     ${openRows.join('')}${closed.map((r) => row(r, r.exit_sol, r.pnl_sol, r.pnl_pct, 'closed')).join('')}</tbody>
-    <tfoot><tr><td colspan="6"><b>Realized total (${closed.length} closed)</b></td><td class="${cls(tot)}"><b>${sgn(tot)}</b></td><td colspan="2" class="muted">Exit/PnL from autopilot logs; MAMESUKE uses wallet delta (incl. swap). Open row is live (incl. fees).</td></tr></tfoot></table></div>`;
+    <tfoot><tr><td><b>Realized total (${closed.length} closed)</b></td><td class="${cls(tot)}"><b>${sgn(tot)}</b></td><td colspan="7" class="muted">Exit/PnL from autopilot logs; MAMESUKE uses wallet delta (incl. swap). Open row is live (incl. fees).</td></tr></tfoot></table></div>${pnlSummary(closed, unrOk ? unr : null, unrEntry, (h.open || []).length, solUsd)}`;
+}
+function pnlSummary(closed, unr, unrEntry, nOpen, solUsd) {
+  const init = Number(config.initial_balance_sol ?? 0.5);
+  const real = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
+  const wins = closed.filter((r) => (r.pnl_sol || 0) > 0).length, losses = closed.filter((r) => (r.pnl_sol || 0) < 0).length;
+  const comb = unr != null ? real + unr : null;
+  const u = (n) => (solUsd && n != null ? usd(n * solUsd) : '—');
+  return `<h3>PnL summary</h3><div class="grid">
+    <div class="stat big"><label>Realized PnL</label><b class="${cls(real)}">${sgn(real)} SOL <span>${pct((real / init) * 100)}</span></b><small>${u(real)} · ${closed.length} closed · ${wins}W / ${losses}L · win rate ${closed.length ? ((wins / closed.length) * 100).toFixed(0) : '—'}%</small></div>
+    <div class="stat big"><label>Unrealized PnL</label><b class="${cls(unr)}">${sgn(unr)} SOL <span>${unr != null && unrEntry ? pct((unr / unrEntry) * 100) : '—'}</span></b><small>${u(unr)} · ${nOpen} open (live, incl. fees) · % vs ${fmt(unrEntry, 4)} SOL deposited</small></div>
+    <div class="stat big"><label>Combined PnL</label><b class="${cls(comb)}">${sgn(comb)} SOL <span>${comb != null ? pct((comb / init) * 100) : '—'}</span></b><small>${u(comb)} · realized + unrealized · % vs ${fmt(init, 4)} SOL start</small></div>
+  </div><p class="muted" style="font-size:11px;margin:6px 0 0">Realized/combined % are vs the ${fmt(init, 4)} SOL initial balance. Excludes position rent (see Total PnL at top for full wallet value).</p>`;
 }
 function renderPnl(cur, rent, hist, solUsd) {
   const init = Number(config.initial_balance_sol ?? 0.5);
@@ -295,7 +308,7 @@ async function refresh() {
     const totPos = positions.reduce((s, p) => s + (p.valueSol || 0) + (p.feesSol || 0), 0);
     const hist = await getJSON('value_history.json?t=' + Date.now()).catch(() => null);
     renderPnl(sol + totPos + rent, rent, hist, solUsd);
-    renderHistory(await getJSON('position_history.json?t=' + Date.now()).catch(() => null), positions);
+    renderHistory(await getJSON('position_history.json?t=' + Date.now()).catch(() => null), positions, solUsd);
     $('#summary').innerHTML = `
       <div class="stat"><label>Wallet SOL</label><b>${fmt(sol, 4)} SOL</b><small>${usd(solUsd ? sol * solUsd : null)}</small></div>
       <div class="stat"><label>DLMM positions</label><b>${positions.length}</b><small>${fmt(totPos, 6)} SOL incl. fees · ${usd(solUsd ? totPos * solUsd : null)}</small></div>
