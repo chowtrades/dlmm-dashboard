@@ -3,7 +3,19 @@
   "initial_balance_sol": 0.5,
   "start_date": "2026-11-03T23:00:00+07:00",
   "refreshSeconds": 60,
-  "positions": [],
+  "positions": [
+    {
+      "position": "2mnyYnzRA4KXAJqd59Ly8qGsVuVs3dUg4cyw3XK5CUGD",
+      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+      "pair": "HIGH-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-450..-381",
+      "deposited_sol": 0.45,
+      "opened": "2026-11-06T03:46:00+07:00",
+      "open_tx": "37bE2p6YmS9AoBgkC29qFpMrxyznTXLhmbs6m7Su2VxZ17xTVjFE1X2wJnNs9CPR9HbwaJtoMc7HmvybyKbA2Rd3"
+    }
+  ],
   "closed_positions": [
     {
       "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
