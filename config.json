@@ -7,15 +7,15 @@
   "refreshSeconds": 60,
   "positions": [
     {
-      "position": "FJtSrR9MErJhBif5GwUBqa24Awpq7GoeMWKV1UhmRog",
+      "position": "BdJRtir9aPFJDp5F37tToW1Lurz2G4CgAiWcydoV9iHK",
       "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
       "pair": "HIGH-SOL",
       "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
       "strategy": "bid-ask",
-      "bins": "-421..-352",
-      "deposited_sol": 0.38,
-      "opened": "2026-11-05T14:37:00+07:00",
-      "open_tx": "5K9oJsdCWqbKNFUzHVCHRs5mWyhjQ2zYuy58ceXwdfJxBA7jVwC4Sp6RS6RQJypw5vmijBakQqGCn1SPhMkHYzru"
+      "bins": "-419..-350",
+      "deposited_sol": 0.4,
+      "opened": "2026-11-05T17:08:00+07:00",
+      "open_tx": "5BygU6B7FwcJynxueo56GWwbV47iokhM8MdExDrYcChEXJLHt1W2M4GggTZaeahgbpRkZnVTrkgL39Abqj8mcAWM"
     }
   ],
   "closed_positions": [
@@ -134,6 +134,21 @@
       "close_reason": "pool liquidity -30% vs entry",
       "close_tx": "2iUVXxAACeoGCwkhMoMEft2t5EdLj1n8MbnaUs7GkkEo8P4qcfcUs1b5WY5rnkB8cqFpNcLYQr2ppHvza5e9cJYD",
       "pnl_sol": 0.005103
+    },
+    {
+      "position": "FJtSrR9MErJhBif5GwUBqa24Awpq7GoeMWKV1UhmRog",
+      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+      "pair": "HIGH-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-421..-352",
+      "deposited_sol": 0.38,
+      "opened": "2026-11-05T14:37:00+07:00",
+      "open_tx": "5K9oJsdCWqbKNFUzHVCHRs5mWyhjQ2zYuy58ceXwdfJxBA7jVwC4Sp6RS6RQJypw5vmijBakQqGCn1SPhMkHYzru",
+      "closed": "2026-11-05T17:06:00+07:00",
+      "close_reason": "price above range for 3 consecutive checks",
+      "close_tx": "24HHAjSsk9ywCt8g9UbD46jf3yGsodemGHMi3JBgMHcZxHj24XUZruV4baRZ5nxwtMxeHoc9bufgJX4z1QB3z8cT",
+      "pnl_sol": 0.00329
     }
   ]
 }
