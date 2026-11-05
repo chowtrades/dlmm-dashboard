@@ -5,19 +5,7 @@
   "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "position": "8MdgHZ8XVTevp7iq5nbXHLDUZReLkf8avMJhWkBR7PED",
-      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
-      "pair": "HIGH-SOL",
-      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-      "strategy": "bid-ask",
-      "bins": "-459..-390",
-      "deposited_sol": 0.4,
-      "opened": "2026-11-05T09:26:00+07:00",
-      "open_tx": "5v2ZE77WrYimMzfESc3AyqJWH3SrgPXXrH9pMJcMmSHfT19fxfZZJsbBbgbhKLtGUwWBG6Jk9qPsbfBQRQ5VijHN"
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
@@ -119,6 +107,21 @@
       "close_reason": "price above range 3 checks",
       "close_tx": "39Ee189DdT8MC9sCzGPv2FLY48V3b5YL1KBuaR6soB6LsvfZmYYtza4RGCvGE9FgwNSpQHsTcojXPvsEXTAovTTt",
       "pnl_sol": 0.0
+    },
+    {
+      "position": "8MdgHZ8XVTevp7iq5nbXHLDUZReLkf8avMJhWkBR7PED",
+      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+      "pair": "HIGH-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-459..-390",
+      "deposited_sol": 0.4,
+      "opened": "2026-11-05T09:26:00+07:00",
+      "open_tx": "5v2ZE77WrYimMzfESc3AyqJWH3SrgPXXrH9pMJcMmSHfT19fxfZZJsbBbgbhKLtGUwWBG6Jk9qPsbfBQRQ5VijHN",
+      "closed": "2026-11-05T12:39:00+07:00",
+      "close_reason": "pool liquidity -30% vs entry",
+      "close_tx": "2iUVXxAACeoGCwkhMoMEft2t5EdLj1n8MbnaUs7GkkEo8P4qcfcUs1b5WY5rnkB8cqFpNcLYQr2ppHvza5e9cJYD",
+      "pnl_sol": 0.005103
     }
   ]
 }

@@ -1,17 +1,24 @@
 {
- "updated": "2026-11-05T02:26:07.760Z",
- "open": [
+ "updated": "2026-11-05T05:42:13.759Z",
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "HIGH-SOL",
    "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
    "position": "8MdgHZ8XVTevp7iq5nbXHLDUZReLkf8avMJhWkBR7PED",
    "opened": "2026-11-05T02:26:00.000Z",
+   "closed": "2026-11-05T05:39:00.000Z",
    "entry_sol": 0.4,
-   "open_tx": "5v2ZE77WrYimMzfESc3AyqJWH3SrgPXXrH9pMJcMmSHfT19fxfZZJsbBbgbhKLtGUwWBG6Jk9qPsbfBQRQ5VijHN"
-  }
- ],
- "closed": [
+   "exit_sol": 0.4068,
+   "pnl_sol": 0.005103,
+   "pnl_pct": 1.28,
+   "pnl_basis": "logged",
+   "reason": "pool liquidity down 30.5% vs entry ($79.6k vs $114.5k)",
+   "open_tx": "5v2ZE77WrYimMzfESc3AyqJWH3SrgPXXrH9pMJcMmSHfT19fxfZZJsbBbgbhKLtGUwWBG6Jk9qPsbfBQRQ5VijHN",
+   "close_tx": "2iUVXxAACeoGCwkhMoMEft2t5EdLj1n8MbnaUs7GkkEo8P4qcfcUs1b5WY5rnkB8cqFpNcLYQr2ppHvza5e9cJYD",
+   "swap_tx": "38peUDaZ822vSP11PYj7onNU8G1rfXUtmpRktbz36B2s5kA1U5c6PdMV7Ez42AcLeQa71yg3AUYHuPFMQpavY52u"
+  },
   {
    "status": "closed",
    "pair": "HIGH-SOL",
@@ -132,5 +139,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": 0.005561
+ "realized_total_sol": 0.010664
 }
