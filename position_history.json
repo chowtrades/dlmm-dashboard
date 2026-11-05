@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-05T12:58:59.584Z",
+ "updated": "2026-11-05T12:59:36.334Z",
  "open": [
   {
    "status": "open",
    "pair": "HIGH-SOL",
    "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
    "position": "2ndLBDMA1g5HdHBEDMGqm6Mh7jmbUHXBiaKHj1QsTwSN",
-   "opened": "2026-11-05T13:00:00.000Z",
+   "opened": "2026-11-05T12:58:00.000Z",
    "entry_sol": 0.41,
    "open_tx": "H1Zr1Mir3tpL7WmTUWqDwu1qE7QYB2kfgzbUoxPT7S5xww6yiQkBbFhSAFdL5ZrJ57xGwoVjyyvfaxoqq4mY2sQ"
   }
@@ -18,7 +18,7 @@
    "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
    "position": "5wLkTxN2FpSzSeYJLmUCm6LvEfJ6D28zGPMp9bJLgTtH",
    "opened": "2026-11-05T10:54:00.000Z",
-   "closed": "2026-11-05T12:58:00.000Z",
+   "closed": "2026-11-05T12:56:00.000Z",
    "entry_sol": 0.4,
    "exit_sol": 0.403643,
    "pnl_sol": 0.003575,

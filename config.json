@@ -14,7 +14,7 @@
       "strategy": "bid-ask",
       "bins": "-390..-321",
       "deposited_sol": 0.41,
-      "opened": "2026-11-05T20:00:00+07:00",
+      "opened": "2026-11-05T19:58:00+07:00",
       "open_tx": "H1Zr1Mir3tpL7WmTUWqDwu1qE7QYB2kfgzbUoxPT7S5xww6yiQkBbFhSAFdL5ZrJ57xGwoVjyyvfaxoqq4mY2sQ"
     }
   ],
@@ -175,7 +175,7 @@
       "deposited_sol": 0.4,
       "opened": "2026-11-05T17:54:00+07:00",
       "open_tx": "3cSXNTLHa7XQsdbUJD9x38Sz5nMvT33tYxRmCGfidosyPS9GxFSn5bxqUUWggQR88BdJiHVGvrPibJCuAZMTrEqE",
-      "closed": "2026-11-05T19:58:00+07:00",
+      "closed": "2026-11-05T19:56:00+07:00",
       "close_reason": "price above range for 3 consecutive checks",
       "close_tx": "25F1zUsnMbuV9d5E8Nz3MByjSPfaEivavWTwuP9iwHY4w1Gu213DVexpgwcfUuuwkA3gS4zWNnyfsXVYQfUTupyW",
       "pnl_sol": 0.003575
