@@ -176,6 +176,43 @@ function buildPosition(entry, posData, pool, prices, cfg) {
 }
 
 // ---------- render ----------
+const sgn = (n, d = 4) => (n == null || !isFinite(n) ? '—' : (n >= 0 ? '+' : '−') + Math.abs(n).toFixed(d));
+const cls = (n) => (n == null || !isFinite(n) ? '' : n >= 0 ? 'pos' : 'neg');
+function renderHistory(h, live) {
+  const el = $('#history');
+  if (!h) { el.innerHTML = '<p class="muted">Position history unavailable.</p>'; return; }
+  const meteora = (pool) => `<a href="https://app.meteora.ag/dlmm/${esc(pool)}" target="_blank" rel="noopener">${esc(short(pool))}</a>`;
+  const tl = (t) => (t ? link(t, 'tx', short(t)) : '—');
+  const t = (d) => (d ? esc(ict(d).replace(' ICT', '')) : '—');
+  const row = (r, exit, pnl, pp, status) => `<tr><td><b>${esc(r.pair)}</b> <span class="badge ${status === 'open' ? 'in' : 'cl'}">${status}</span><small>${link(r.position, 'account')}</small></td><td>${meteora(r.pool)}</td><td>${t(r.opened)}</td><td>${r.closed ? t(r.closed) : '—'}</td><td>${fmt(r.entry_sol, 4)}</td><td>${exit != null ? fmt(exit, 4) : '—'}</td><td class="${cls(pnl)}">${sgn(pnl)}<small class="${cls(pnl)}">${pp != null ? pct(pp) : ''}</small></td><td class="reason">${esc(r.reason || (status === 'open' ? 'live' : ''))}</td><td>${tl(r.open_tx)} / ${tl(r.close_tx)}</td></tr>`;
+  const openRows = (h.open || []).map((r) => { const p = live.find((x) => x.position === r.position); const v = p?.pnl?.total ?? (p ? (p.valueSol || 0) + (p.feesSol || 0) : null); const d = v != null ? v - r.entry_sol : null; return row(r, v, d, d != null ? (d / r.entry_sol) * 100 : null, 'open'); });
+  const closed = h.closed || [];
+  const tot = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
+  el.innerHTML = `<div class="tablewrap"><table class="hist"><thead><tr><th>Pair</th><th>Pool</th><th>Opened (ICT)</th><th>Closed (ICT)</th><th>Entry SOL</th><th>Exit SOL</th><th>PnL SOL / %</th><th>Close reason</th><th>Open / close tx</th></tr></thead><tbody>
+    ${openRows.join('')}${closed.map((r) => row(r, r.exit_sol, r.pnl_sol, r.pnl_pct, 'closed')).join('')}</tbody>
+    <tfoot><tr><td colspan="6"><b>Realized total (${closed.length} closed)</b></td><td class="${cls(tot)}"><b>${sgn(tot)}</b></td><td colspan="2" class="muted">Exit/PnL from autopilot logs; MAMESUKE uses wallet delta (incl. swap). Open row is live (incl. fees).</td></tr></tfoot></table></div>`;
+}
+function renderPnl(cur, rent, hist, solUsd) {
+  const init = Number(config.initial_balance_sol ?? 0.5);
+  const tot = cur - init;
+  const pts = (hist?.points || []).map((p) => ({ t: Date.parse(p.ts), v: Number(p.value_sol) })).filter((p) => isFinite(p.t) && isFinite(p.v)).sort((a, b) => a.t - b.t);
+  const target = Date.now() - 864e5;
+  let ref = null, label = '';
+  if (pts.length) {
+    const old = pts.filter((p) => p.t <= target);
+    ref = old.length ? old.reduce((b, p) => (Math.abs(p.t - target) < Math.abs(b.t - target) ? p : b)) : pts[0];
+    const hrs = (Date.now() - ref.t) / 36e5;
+    label = `vs ${fmt(ref.v, 4)} SOL at ${ict(ref.t)}${old.length ? '' : ` (oldest point, only ${hrs.toFixed(1)}h)`}`;
+  }
+  const d24 = ref ? cur - ref.v : null;
+  const realized = (config.closed_positions || []).filter((c) => c.closed && Date.parse(c.closed) >= target && c.pnl_sol != null);
+  const rsum = realized.reduce((s, c) => s + c.pnl_sol, 0);
+  const u = (n) => (solUsd && n != null ? ' · ' + usd(n * solUsd) : '');
+  $('#pnl').innerHTML = `
+    <div class="stat big"><label>24h PnL</label><b class="${cls(d24)}">${sgn(d24)} SOL <span>${ref ? pct((d24 / ref.v) * 100) : '—'}</span></b><small>${ref ? esc(label) : 'No value history yet'}${u(d24)}</small>${realized.length ? `<small>Realized (closed last 24h, logged): <span class="${cls(rsum)}">${sgn(rsum)} SOL</span> · ${realized.length} close(s)</small>` : ''}</div>
+    <div class="stat big"><label>Total PnL vs ${fmt(init, 4)} SOL start</label><b class="${cls(tot)}">${sgn(tot)} SOL <span>${pct((tot / init) * 100)}</span></b><small>Now ${fmt(cur, 6)} SOL (free SOL + positions + fees + ${fmt(rent, 4)} rent)${u(tot)} · since ${esc(config.start_date ? ict(config.start_date) : '—')}</small></div>`;
+  window.__pnl = { cur, tot, d24, ref };
+}
 function binChart(p) {
   const bins = [...p.bins].sort((a, b) => a.id - b.id);
   if (!bins.length) return '';
@@ -253,7 +290,12 @@ async function refresh() {
       }
     });
     const sol = lamports / LAMPORTS_PER_SOL;
+    let rent = 0;
+    try { const accs = await conn.getMultipleAccountsInfo(positions.map((p) => new PublicKey(p.position))); rent = accs.reduce((s, a) => s + (a?.lamports || 0), 0) / LAMPORTS_PER_SOL; } catch (e) { notes.push('Position rent lookup failed; total excludes rent.'); }
     const totPos = positions.reduce((s, p) => s + (p.valueSol || 0) + (p.feesSol || 0), 0);
+    const hist = await getJSON('value_history.json?t=' + Date.now()).catch(() => null);
+    renderPnl(sol + totPos + rent, rent, hist, solUsd);
+    renderHistory(await getJSON('position_history.json?t=' + Date.now()).catch(() => null), positions);
     $('#summary').innerHTML = `
       <div class="stat"><label>Wallet SOL</label><b>${fmt(sol, 4)} SOL</b><small>${usd(solUsd ? sol * solUsd : null)}</small></div>
       <div class="stat"><label>DLMM positions</label><b>${positions.length}</b><small>${fmt(totPos, 6)} SOL incl. fees · ${usd(solUsd ? totPos * solUsd : null)}</small></div>

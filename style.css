@@ -29,3 +29,5 @@ summary{cursor:pointer;font-weight:600}
 .foot{font-size:12px;text-align:center}
 code{background:#0f1522;padding:1px 5px;border-radius:4px}
 @media (max-width:520px){.grid{grid-template-columns:1fr 1fr}.stat b{font-size:14px}h2{font-size:15px}}
+.stat.big b{font-size:24px}.stat.big b span{font-size:15px;margin-left:6px}
+.tablewrap{overflow-x:auto}.hist{width:100%;border-collapse:collapse;font-size:12px}.hist th,.hist td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;white-space:nowrap}.hist th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}.hist td.reason{white-space:normal;min-width:180px;color:var(--muted)}.hist tfoot td{border-bottom:0}.badge.cl{background:#1f2937;color:#9ca3af}

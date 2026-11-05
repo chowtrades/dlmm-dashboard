@@ -1,0 +1,48 @@
+{
+ "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+ "points": [
+  {
+   "ts": "2026-11-03T16:00:00.000Z",
+   "value_sol": 0.5,
+   "note": "initial balance (backfill)"
+  },
+  {
+   "ts": "2026-11-03T23:16:00.000Z",
+   "value_sol": 0.455535,
+   "note": "after MAMESUKE close+swap (trade_log)"
+  },
+  {
+   "ts": "2026-11-04T02:04:00.000Z",
+   "value_sol": 0.450965,
+   "note": "after ZCAT close+swap (trade_log)"
+  },
+  {
+   "ts": "2026-11-04T03:25:00.000Z",
+   "value_sol": 0.45284,
+   "note": "after AMD close+swap (trade_log)"
+  },
+  {
+   "ts": "2026-11-04T14:00:00.000Z",
+   "value_sol": 0.45284,
+   "note": "idle, 21:00 ICT (backfill)"
+  },
+  {
+   "ts": "2026-11-04T17:32:00.000Z",
+   "value_sol": 0.482481,
+   "note": "after AMD close+swap (trade_log)"
+  },
+  {
+   "ts": "2026-11-04T18:03:00.000Z",
+   "value_sol": 0.48099,
+   "note": "after FLOAT close+swap (trade_log)"
+  },
+  {
+   "ts": "2026-11-05T01:20:07.234Z",
+   "value_sol": 0.499642,
+   "sol": 0.03908,
+   "positions_sol": 0.460561,
+   "positions": 1
+  }
+ ],
+ "updated": "2026-11-05T01:20:07.234Z"
+}

@@ -1,0 +1,102 @@
+{
+ "updated": "2026-11-05T01:21:23.329Z",
+ "open": [
+  {
+   "status": "open",
+   "pair": "FLOAT-SOL",
+   "pool": "5D6YvjigZaStjPhvehtXj7Xx8DNRGtJAuwgMv1br8k7M",
+   "position": "8hv4pfx6TXYXLigh51JfMDGzPLmmrjEdQHfgAatCZaYJ",
+   "opened": "2026-11-04T18:04:00.000Z",
+   "entry_sol": 0.4,
+   "open_tx": "2KaNAAxErbrrcC9NtnjmDUff1Lshs34at8AZLXmSna1n3ishZg4miN7wXXPtkaYACv4LRAeBrP6kU52KM7TcBDXK"
+  }
+ ],
+ "closed": [
+  {
+   "status": "closed",
+   "pair": "FLOAT-SOL",
+   "pool": "5D6YvjigZaStjPhvehtXj7Xx8DNRGtJAuwgMv1br8k7M",
+   "position": "WmEB4ebTiXxg5awDpyG7PjrcTeviUtd14zRA8z4EXYf",
+   "opened": "2026-11-04T17:47:00.000Z",
+   "closed": "2026-11-04T18:03:00.000Z",
+   "entry_sol": 0.399996,
+   "exit_sol": 0.400017,
+   "pnl_sol": -0.001491,
+   "pnl_pct": -0.37,
+   "pnl_basis": "logged",
+   "reason": "price above range for 3 consecutive checks (FLOAT +75% h1; position never filled, all SOL)",
+   "open_tx": "4sQ36F7ExaJ7aCEmybAk1LRNjNP1osW8oqZBcC2bnDWm9Xom1QtyDrsM58uPJFPtDyH9oX4gkDmG4NgKxJ6pMr6S",
+   "close_tx": "3geAWj38WieFcb2872MyjxizutvNe43yckiwdnTYP4891BbqJF8ACP2GyVebLsVMCfXAyyYH81SyCrRyeHcLPj1U",
+   "swap_tx": "3ivesj3e8TYvURnboy3ozGXaeVW6rb6jreeiLR9C9iNDRrwKPCLzTBMpFj9CMpSic7QfkjeaorzCrzR6ev9YdGGq"
+  },
+  {
+   "status": "closed",
+   "pair": "AMD-SOL",
+   "pool": "3uijTWAzhQKnqZ59Wwgay7sccFWAk5reEibKg2ZRAGZ9",
+   "position": "F1qihGh1KjdgT6T4SYehjg5wVRt3Z8GunDF4mhq7tGAb",
+   "opened": "2026-11-04T14:15:00.000Z",
+   "closed": "2026-11-04T17:32:00.000Z",
+   "entry_sol": 0.389999,
+   "exit_sol": 0.419652,
+   "pnl_sol": 0.029653,
+   "pnl_pct": 7.6,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [liquidity_drop] pool liquidity $59189 down 30.4% vs entry $85088",
+   "open_tx": "fG6RUJAAByJWvW2u7CA5uZjb2Jk1GahhJQ56pcY4C9vXqRhHoZo3buuCxFiNGfseYN4wmHtp3Lp8ARFgKJ4LNnV",
+   "close_tx": "2b3DXf6YmqMfWzhmrHcwagv8R5fJRk7yBnzsjBYcfQwEDtLFVV1V2KWNaYTJM2DVw9UtcDsBUX5wz87Yukccnr6f",
+   "swap_tx": "2KBfyCEggzydcEGTjAgqHRRm31m5fgamDvuNdjwEizM3PRtdUWYLas5LfBthpazpHLPonK5tLFhZRVEFzsy5R9yu"
+  },
+  {
+   "status": "closed",
+   "pair": "AMD-SOL",
+   "pool": "3uijTWAzhQKnqZ59Wwgay7sccFWAk5reEibKg2ZRAGZ9",
+   "position": "3exNtqfx9KwEXWB7DpWBvCXLRSzuJ3ggR3DPbmAeo4oy",
+   "opened": "2026-11-04T03:05:00.000Z",
+   "closed": "2026-11-04T03:25:00.000Z",
+   "entry_sol": 0.385,
+   "exit_sol": 0.388398,
+   "pnl_sol": 0.003398,
+   "pnl_pct": 0.88,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [h1_dump] token priceChange.h1 -25.3% <= -25%",
+   "open_tx": "25j55v35yDKewhx2h1pN291bcxbmcsaX92v12SirA4mzLr7Fn8D9VoST2ZFCHuDWYPT5H1HmQZyVCSzSeeNHmqVh",
+   "close_tx": "4aWbsnGvAZGyPAGZ5SvAunbjLTFSSSsLgNTiqJTL6CWAvTqKtHzRADKkWX5sog4sTFgDetopwNKRpTh5Z4bUrAib",
+   "swap_tx": "26zziWD8qiKTYu75KviLtniABp8b4YuVSyoXBZC3jxc9ZzYWvQ8Y7s1V5fJrN3HPdyW7wFnNneMQc4zg68KXUA66"
+  },
+  {
+   "status": "closed",
+   "pair": "ZCAT-SOL",
+   "pool": "GuPbekwP9MqB23CghhiMQZTaigPdUJooovo1neCErhM8",
+   "position": "ExVxyYFPVzTwmEZ3wzCi9NqhUzkuhhknu9oTCuZKhsdj",
+   "opened": "2026-11-03T23:20:00.000Z",
+   "closed": "2026-11-04T02:03:00.000Z",
+   "entry_sol": 0.38,
+   "exit_sol": 0.37543,
+   "pnl_sol": -0.00457,
+   "pnl_pct": -1.2,
+   "pnl_basis": "logged",
+   "reason": "rotation to higher fee/TVL pool (AMD-SOL)",
+   "open_tx": "2d1g39EPLoYRzRuB1Fzn5HXon277tpTYvfMswBjofyRAiJxrnpFK7c7rFu7AdwNazbNmV2dZLnko6PhJiS6J1Nvd",
+   "close_tx": "36w1sn8HnZytEb72pwqpqo2ap1dkLUkXMobaq15vQVRaNG2QLYks9LroB8m27TWyZxu4AATHgqcwuwirRQuv9MiT",
+   "swap_tx": null
+  },
+  {
+   "status": "closed",
+   "pair": "MAMESUKE-SOL",
+   "pool": "GfxLazsYEmc6VSepjLiYZywhcntjBvpjSRfzvzZr1nJc",
+   "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
+   "opened": "2026-11-03T16:03:00.000Z",
+   "closed": "2026-11-03T23:15:00.000Z",
+   "entry_sol": 0.4,
+   "exit_sol": 0.355535,
+   "pnl_sol": -0.044465,
+   "pnl_pct": -11.12,
+   "pnl_basis": "wallet delta",
+   "reason": "price below range",
+   "open_tx": "3f1zWe8ShjwSVQy39wizwQfgC4HbqZT1iGqatxG5pepWSn3KfujuqtjD9VZ3ywdVMNJfDpQ53XKibmcaxj4uFKvv",
+   "close_tx": "56xttRHaGbEWY3TYLoziDXKy8FGipGxPUvmaCKiZzqNuTqAa4vVJvLotCMpaReCpJh5Uu2eLaPp6u1xhcMQ9j9Xo",
+   "swap_tx": null
+  }
+ ],
+ "realized_total_sol": -0.017475
+}
