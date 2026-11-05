@@ -2,8 +2,6 @@
   "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
   "initial_balance_sol": 0.5,
   "start_date": "2026-11-03T23:00:00+07:00",
-  "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
-  "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "refreshSeconds": 60,
   "positions": [
     {
@@ -30,7 +28,8 @@
       "opened": "2026-11-03T23:03:00+07:00",
       "open_tx": "3f1zWe8ShjwSVQy39wizwQfgC4HbqZT1iGqatxG5pepWSn3KfujuqtjD9VZ3ywdVMNJfDpQ53XKibmcaxj4uFKvv",
       "closed": "2026-11-04T06:15:00+07:00",
-      "close_tx": "56xttRHaGbEWY3TYLoziDXKy8FGipGxPUvmaCKiZzqNuTqAa4vVJvLotCMpaReCpJh5Uu2eLaPp6u1xhcMQ9j9Xo"
+      "close_tx": "56xttRHaGbEWY3TYLoziDXKy8FGipGxPUvmaCKiZzqNuTqAa4vVJvLotCMpaReCpJh5Uu2eLaPp6u1xhcMQ9j9Xo",
+      "pnl_sol": -0.044465
     },
     {
       "position": "ExVxyYFPVzTwmEZ3wzCi9NqhUzkuhhknu9oTCuZKhsdj",
@@ -43,7 +42,8 @@
       "opened": "2026-11-04T06:20:00+07:00",
       "open_tx": "2d1g39EPLoYRzRuB1Fzn5HXon277tpTYvfMswBjofyRAiJxrnpFK7c7rFu7AdwNazbNmV2dZLnko6PhJiS6J1Nvd",
       "closed": "2026-11-04T09:03:00+07:00",
-      "close_tx": "36w1sn8HnZytEb72pwqpqo2ap1dkLUkXMobaq15vQVRaNG2QLYks9LroB8m27TWyZxu4AATHgqcwuwirRQuv9MiT"
+      "close_tx": "36w1sn8HnZytEb72pwqpqo2ap1dkLUkXMobaq15vQVRaNG2QLYks9LroB8m27TWyZxu4AATHgqcwuwirRQuv9MiT",
+      "pnl_sol": -0.00457
     },
     {
       "position": "3exNtqfx9KwEXWB7DpWBvCXLRSzuJ3ggR3DPbmAeo4oy",
@@ -89,7 +89,8 @@
       "open_tx": "4sQ36F7ExaJ7aCEmybAk1LRNjNP1osW8oqZBcC2bnDWm9Xom1QtyDrsM58uPJFPtDyH9oX4gkDmG4NgKxJ6pMr6S",
       "closed": "2026-11-05T01:03:00+07:00",
       "close_reason": "price above range 3 checks",
-      "close_tx": "3geAWj38WieFcb2872MyjxizutvNe43yckiwdnTYP4891BbqJF8ACP2GyVebLsVMCfXAyyYH81SyCrRyeHcLPj1U"
+      "close_tx": "3geAWj38WieFcb2872MyjxizutvNe43yckiwdnTYP4891BbqJF8ACP2GyVebLsVMCfXAyyYH81SyCrRyeHcLPj1U",
+      "pnl_sol": -0.001491
     },
     {
       "position": "8hv4pfx6TXYXLigh51JfMDGzPLmmrjEdQHfgAatCZaYJ",
@@ -103,7 +104,8 @@
       "open_tx": "2KaNAAxErbrrcC9NtnjmDUff1Lshs34at8AZLXmSna1n3ishZg4miN7wXXPtkaYACv4LRAeBrP6kU52KM7TcBDXK",
       "closed": "2026-11-05T09:04:00+07:00",
       "close_reason": "price above range 3 checks",
-      "close_tx": "3sEZFaxfEbKEJQT9r5oqTW8odJH5NvM5XhqDj6YMXaeXqs8uDZhBb9j1ozAWLtCZxvkrwqZ1S1MWrYVLAmScRW9K"
+      "close_tx": "3sEZFaxfEbKEJQT9r5oqTW8odJH5NvM5XhqDj6YMXaeXqs8uDZhBb9j1ozAWLtCZxvkrwqZ1S1MWrYVLAmScRW9K",
+      "pnl_sol": 0.023036
     },
     {
       "position": "5DZUBj6fNP9jmvcp4X5Rk3EZRkivmqyvhPsF3uTxcKCe",
