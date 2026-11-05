@@ -84,7 +84,9 @@ async function loadPositions(conn, owner) {
     // remember discovered positions so a later gPA failure can still load them
     const found = [...map.values()].flatMap((e) => e.lbPairPositionsData.map((p) => ({ position: p.publicKey.toBase58(), pool: e.publicKey.toBase58(), owner: owner.toBase58() })));
     try { localStorage.setItem('dlmmdash.known.' + owner.toBase58(), JSON.stringify(found)); } catch {}
-    return { map, via: 'getProgramAccounts', notes };
+    const cfgOpen = config.positions.filter((p) => !p.owner || p.owner === owner.toBase58());
+    if (found.length || !cfgOpen.length) return { map, via: 'getProgramAccounts', notes };
+    notes.push('Position discovery returned no positions but config.json lists open ones — loading those directly.');
   } catch (e) {
     notes.push('Position discovery (getProgramAccounts) failed: ' + (e.message || e) + ' — falling back to positions in config.json / previously seen in this browser.');
   }
