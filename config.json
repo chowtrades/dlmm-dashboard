@@ -5,7 +5,19 @@
   "rpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "discoveryRpc": "https://mainnet.helius-rpc.com/?api-key=00eae089-961b-487f-b7d5-43a500076007",
   "refreshSeconds": 60,
-  "positions": [],
+  "positions": [
+    {
+      "position": "FJtSrR9MErJhBif5GwUBqa24Awpq7GoeMWKV1UhmRog",
+      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+      "pair": "HIGH-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-421..-352",
+      "deposited_sol": 0.38,
+      "opened": "2026-11-05T14:37:00+07:00",
+      "open_tx": "5K9oJsdCWqbKNFUzHVCHRs5mWyhjQ2zYuy58ceXwdfJxBA7jVwC4Sp6RS6RQJypw5vmijBakQqGCn1SPhMkHYzru"
+    }
+  ],
   "closed_positions": [
     {
       "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",

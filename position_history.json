@@ -1,6 +1,16 @@
 {
- "updated": "2026-11-05T05:42:13.759Z",
- "open": [],
+ "updated": "2026-11-05T07:35:27.977Z",
+ "open": [
+  {
+   "status": "open",
+   "pair": "HIGH-SOL",
+   "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+   "position": "FJtSrR9MErJhBif5GwUBqa24Awpq7GoeMWKV1UhmRog",
+   "opened": "2026-11-05T07:37:00.000Z",
+   "entry_sol": 0.38,
+   "open_tx": "5K9oJsdCWqbKNFUzHVCHRs5mWyhjQ2zYuy58ceXwdfJxBA7jVwC4Sp6RS6RQJypw5vmijBakQqGCn1SPhMkHYzru"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
