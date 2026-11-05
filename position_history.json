@@ -1,17 +1,34 @@
 {
- "updated": "2026-11-05T10:17:13.364Z",
+ "updated": "2026-11-05T10:57:09.850Z",
  "open": [
   {
    "status": "open",
    "pair": "HIGH-SOL",
    "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
-   "position": "BdJRtir9aPFJDp5F37tToW1Lurz2G4CgAiWcydoV9iHK",
-   "opened": "2026-11-05T10:08:00.000Z",
+   "position": "5wLkTxN2FpSzSeYJLmUCm6LvEfJ6D28zGPMp9bJLgTtH",
+   "opened": "2026-11-05T10:54:00.000Z",
    "entry_sol": 0.4,
-   "open_tx": "5BygU6B7FwcJynxueo56GWwbV47iokhM8MdExDrYcChEXJLHt1W2M4GggTZaeahgbpRkZnVTrkgL39Abqj8mcAWM"
+   "open_tx": "3cSXNTLHa7XQsdbUJD9x38Sz5nMvT33tYxRmCGfidosyPS9GxFSn5bxqUUWggQR88BdJiHVGvrPibJCuAZMTrEqE"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "HIGH-SOL",
+   "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+   "position": "BdJRtir9aPFJDp5F37tToW1Lurz2G4CgAiWcydoV9iHK",
+   "opened": "2026-11-05T10:08:00.000Z",
+   "closed": "2026-11-05T10:49:00.000Z",
+   "entry_sol": 0.4,
+   "exit_sol": 0.400003,
+   "pnl_sol": 0.000003,
+   "pnl_pct": 0,
+   "pnl_basis": "logged",
+   "reason": "price above range for 3 consecutive checks (active -320 vs top -350; HIGH +19-29% h1, liq $143k; tiny fees swapped)",
+   "open_tx": "5BygU6B7FwcJynxueo56GWwbV47iokhM8MdExDrYcChEXJLHt1W2M4GggTZaeahgbpRkZnVTrkgL39Abqj8mcAWM",
+   "close_tx": "2aXLUeKnfXGYwsqEnmfQPTVSaySV2hyj9yseYLiqqMLNYAYSAPdaADpKJX3qfbQ8GjDo7sFVv3gQSEezqCjyHHfg",
+   "swap_tx": "3C1hdboX3YmSLcaDvfhHvcUWXPRFS6tSW6ab1xYrpAs59k1BNm8hY1bYSRqNPLLAVAzfZAQS1eYkrjWrguQccuKR"
+  },
   {
    "status": "closed",
    "pair": "HIGH-SOL",
@@ -166,5 +183,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": 0.013954
+ "realized_total_sol": 0.013957
 }
