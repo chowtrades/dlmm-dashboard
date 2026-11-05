@@ -5,15 +5,15 @@
   "refreshSeconds": 60,
   "positions": [
     {
-      "position": "8siDVxhuLcETjex1kwdrtiLYTPjqfv82E8MzERZXSFbu",
+      "position": "Hufu5EivjezVxaVhjogLNMJsvhg14HCsTgivDGydR7xa",
       "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
       "pair": "HIGH-SOL",
       "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
       "strategy": "bid-ask",
-      "bins": "-444..-375",
+      "bins": "-440..-371",
       "deposited_sol": 0.45,
-      "opened": "2026-11-06T05:01:00+07:00",
-      "open_tx": "2VcUf7CSrQkvTdBgdEtYfFycdrvtrh6Nn6DjG1R6wV85mfFYPQurewEJLyDYKJCzVFm83MvwXpv527rmtEUZPFXq"
+      "opened": "2026-11-06T05:27:00+07:00",
+      "open_tx": "2pnJAqMhpDeUTfGBZ2oBJevEtzm1rwMMFVohSUL8TgzzN7qK1BjL5fsS1SjD9AJLLtBQL33ZTWReRk2hWVvnBGJC"
     }
   ],
   "closed_positions": [
@@ -211,6 +211,21 @@
       "close_reason": "price above range for 3 consecutive checks",
       "close_tx": "33fB5HMd6VWThWMiYhPVkpLW9h8qNXYz14JKFqq6yarUg1myX6scYPbDeBzkBtVnjVwRuXxBcSm8wbrM9wHS5YqZ",
       "pnl_sol": 0.000707
+    },
+    {
+      "position": "8siDVxhuLcETjex1kwdrtiLYTPjqfv82E8MzERZXSFbu",
+      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+      "pair": "HIGH-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-444..-375",
+      "deposited_sol": 0.45,
+      "opened": "2026-11-06T05:01:00+07:00",
+      "open_tx": "2VcUf7CSrQkvTdBgdEtYfFycdrvtrh6Nn6DjG1R6wV85mfFYPQurewEJLyDYKJCzVFm83MvwXpv527rmtEUZPFXq",
+      "closed": "2026-11-06T05:27:00+07:00",
+      "close_reason": "price above range for 3 consecutive checks (active -370 vs top -375; never filled, all SOL + tiny fees)",
+      "close_tx": "t2wCW76fWynb8aiAn2ChfTE5Ugyn1ZVW2mCgCmYU4bHBs9PZVFLmjWqYFRpgjhetHWPYeNTQYFKKr61tDfK4JST",
+      "pnl_sol": 7.3e-05
     }
   ]
 }
