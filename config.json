@@ -3,19 +3,7 @@
   "initial_balance_sol": 0.5,
   "start_date": "2026-11-03T23:00:00+07:00",
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "position": "2ndLBDMA1g5HdHBEDMGqm6Mh7jmbUHXBiaKHj1QsTwSN",
-      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
-      "pair": "HIGH-SOL",
-      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-      "strategy": "bid-ask",
-      "bins": "-390..-321",
-      "deposited_sol": 0.41,
-      "opened": "2026-11-05T19:58:00+07:00",
-      "open_tx": "H1Zr1Mir3tpL7WmTUWqDwu1qE7QYB2kfgzbUoxPT7S5xww6yiQkBbFhSAFdL5ZrJ57xGwoVjyyvfaxoqq4mY2sQ"
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
@@ -181,6 +169,21 @@
       "close_reason": "price above range for 3 consecutive checks",
       "close_tx": "25F1zUsnMbuV9d5E8Nz3MByjSPfaEivavWTwuP9iwHY4w1Gu213DVexpgwcfUuuwkA3gS4zWNnyfsXVYQfUTupyW",
       "pnl_sol": 0.003575
+    },
+    {
+      "position": "2ndLBDMA1g5HdHBEDMGqm6Mh7jmbUHXBiaKHj1QsTwSN",
+      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+      "pair": "HIGH-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-390..-321",
+      "deposited_sol": 0.41,
+      "opened": "2026-11-05T19:58:00+07:00",
+      "open_tx": "H1Zr1Mir3tpL7WmTUWqDwu1qE7QYB2kfgzbUoxPT7S5xww6yiQkBbFhSAFdL5ZrJ57xGwoVjyyvfaxoqq4mY2sQ",
+      "closed": "2026-11-06T03:30:00+07:00",
+      "close_reason": "Chow asked to lock in profit (volume drying up)",
+      "close_tx": "3uAdURE8NZcRzaNTu9257K4Y5fvmuhkbr8FCAQAr5ov2CV5KhrSg64fop1wPvr1XBzHy5rg8znnYJoY2e6YC8Yk5",
+      "pnl_sol": 0.047177
     }
   ]
 }

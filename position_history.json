@@ -1,17 +1,24 @@
 {
- "updated": "2026-11-05T12:59:36.334Z",
- "open": [
+ "updated": "2026-11-05T20:29:57.870Z",
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "HIGH-SOL",
    "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
    "position": "2ndLBDMA1g5HdHBEDMGqm6Mh7jmbUHXBiaKHj1QsTwSN",
    "opened": "2026-11-05T12:58:00.000Z",
+   "closed": "2026-11-05T20:31:00.000Z",
    "entry_sol": 0.41,
-   "open_tx": "H1Zr1Mir3tpL7WmTUWqDwu1qE7QYB2kfgzbUoxPT7S5xww6yiQkBbFhSAFdL5ZrJ57xGwoVjyyvfaxoqq4mY2sQ"
-  }
- ],
- "closed": [
+   "exit_sol": 0.457177,
+   "pnl_sol": 0.047177,
+   "pnl_pct": 11.51,
+   "pnl_basis": "logged",
+   "reason": "Chow asked to lock in profit (volume drying up)",
+   "open_tx": "H1Zr1Mir3tpL7WmTUWqDwu1qE7QYB2kfgzbUoxPT7S5xww6yiQkBbFhSAFdL5ZrJ57xGwoVjyyvfaxoqq4mY2sQ",
+   "close_tx": "3uAdURE8NZcRzaNTu9257K4Y5fvmuhkbr8FCAQAr5ov2CV5KhrSg64fop1wPvr1XBzHy5rg8znnYJoY2e6YC8Yk5",
+   "swap_tx": "5itpAxRy3UAncQgohkJWVBmV11NDVwy8pyxKkLCR194F5Sr833nMWijG9sh8a2sTkqmZnigBkqvojhSGm72C2HDN"
+  },
   {
    "status": "closed",
    "pair": "HIGH-SOL",
@@ -200,5 +207,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": 0.017532
+ "realized_total_sol": 0.064709
 }
