@@ -5,15 +5,15 @@
   "refreshSeconds": 60,
   "positions": [
     {
-      "position": "2mnyYnzRA4KXAJqd59Ly8qGsVuVs3dUg4cyw3XK5CUGD",
+      "position": "8siDVxhuLcETjex1kwdrtiLYTPjqfv82E8MzERZXSFbu",
       "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
       "pair": "HIGH-SOL",
       "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
       "strategy": "bid-ask",
-      "bins": "-450..-381",
+      "bins": "-444..-375",
       "deposited_sol": 0.45,
-      "opened": "2026-11-06T03:46:00+07:00",
-      "open_tx": "37bE2p6YmS9AoBgkC29qFpMrxyznTXLhmbs6m7Su2VxZ17xTVjFE1X2wJnNs9CPR9HbwaJtoMc7HmvybyKbA2Rd3"
+      "opened": "2026-11-06T05:01:00+07:00",
+      "open_tx": "2VcUf7CSrQkvTdBgdEtYfFycdrvtrh6Nn6DjG1R6wV85mfFYPQurewEJLyDYKJCzVFm83MvwXpv527rmtEUZPFXq"
     }
   ],
   "closed_positions": [
@@ -196,6 +196,21 @@
       "close_reason": "Chow asked to lock in profit (volume drying up)",
       "close_tx": "3uAdURE8NZcRzaNTu9257K4Y5fvmuhkbr8FCAQAr5ov2CV5KhrSg64fop1wPvr1XBzHy5rg8znnYJoY2e6YC8Yk5",
       "pnl_sol": 0.047177
+    },
+    {
+      "position": "2mnyYnzRA4KXAJqd59Ly8qGsVuVs3dUg4cyw3XK5CUGD",
+      "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+      "pair": "HIGH-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "bins": "-450..-381",
+      "deposited_sol": 0.45,
+      "opened": "2026-11-06T03:46:00+07:00",
+      "open_tx": "37bE2p6YmS9AoBgkC29qFpMrxyznTXLhmbs6m7Su2VxZ17xTVjFE1X2wJnNs9CPR9HbwaJtoMc7HmvybyKbA2Rd3",
+      "closed": "2026-11-06T05:00:00+07:00",
+      "close_reason": "price above range for 3 consecutive checks",
+      "close_tx": "33fB5HMd6VWThWMiYhPVkpLW9h8qNXYz14JKFqq6yarUg1myX6scYPbDeBzkBtVnjVwRuXxBcSm8wbrM9wHS5YqZ",
+      "pnl_sol": 0.000707
     }
   ]
 }

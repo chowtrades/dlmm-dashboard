@@ -1,17 +1,34 @@
 {
- "updated": "2026-11-05T20:46:44.178Z",
+ "updated": "2026-11-05T22:00:57.221Z",
  "open": [
   {
    "status": "open",
    "pair": "HIGH-SOL",
    "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
-   "position": "2mnyYnzRA4KXAJqd59Ly8qGsVuVs3dUg4cyw3XK5CUGD",
-   "opened": "2026-11-05T20:46:00.000Z",
+   "position": "8siDVxhuLcETjex1kwdrtiLYTPjqfv82E8MzERZXSFbu",
+   "opened": "2026-11-05T22:01:00.000Z",
    "entry_sol": 0.45,
-   "open_tx": "37bE2p6YmS9AoBgkC29qFpMrxyznTXLhmbs6m7Su2VxZ17xTVjFE1X2wJnNs9CPR9HbwaJtoMc7HmvybyKbA2Rd3"
+   "open_tx": "2VcUf7CSrQkvTdBgdEtYfFycdrvtrh6Nn6DjG1R6wV85mfFYPQurewEJLyDYKJCzVFm83MvwXpv527rmtEUZPFXq"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "HIGH-SOL",
+   "pool": "6QUbeGxKEDLBbQmokUHpgRcoaQM6auNor8XHtHWsEpV6",
+   "position": "2mnyYnzRA4KXAJqd59Ly8qGsVuVs3dUg4cyw3XK5CUGD",
+   "opened": "2026-11-05T20:46:00.000Z",
+   "closed": "2026-11-05T22:00:00.000Z",
+   "entry_sol": 0.45,
+   "exit_sol": 0.450707,
+   "pnl_sol": 0.000707,
+   "pnl_pct": 0.16,
+   "pnl_basis": "logged",
+   "reason": "price above range for 3 consecutive checks (active -375 vs top -381; never filled, all SOL + fees)",
+   "open_tx": "37bE2p6YmS9AoBgkC29qFpMrxyznTXLhmbs6m7Su2VxZ17xTVjFE1X2wJnNs9CPR9HbwaJtoMc7HmvybyKbA2Rd3",
+   "close_tx": "33fB5HMd6VWThWMiYhPVkpLW9h8qNXYz14JKFqq6yarUg1myX6scYPbDeBzkBtVnjVwRuXxBcSm8wbrM9wHS5YqZ",
+   "swap_tx": "2ueFPVefKBvhh8JdPka734bRttRwJuxCSjRG89PLPKk6hNBGbXy3weveRPXZM61C1CbrqZzVbJLkJH9E8AS53oMN"
+  },
   {
    "status": "closed",
    "pair": "HIGH-SOL",
@@ -217,5 +234,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": 0.064709
+ "realized_total_sol": 0.065416
 }
