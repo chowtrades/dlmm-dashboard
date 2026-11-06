@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T17:10:00.283Z",
+ "updated": "2026-11-06T18:03:08.987Z",
  "open": [
   {
    "status": "open",
@@ -7,6 +7,7 @@
    "pool": "4iFBMBo9LxUZXRXQK2kpiQ5EMwyf5omRyz2seXLRFQ52",
    "position": "7tasnrpdCxqoA3ZXmXCaYp2aum1SRXHyQA5TssVhiSqG",
    "opened": "2026-11-06T17:09:00.000Z",
+   "entry_sol": 0.45,
    "open_tx": "2LZcR7CTsoaJYq1Wa2HwX4d6LbRptPJG51m3nyQf3tUfbQkR3rkPHeRb53cmtF6VP3vfLjjNUjYK2UjZz6LHj8Dc"
   }
  ],

@@ -165,9 +165,12 @@ function buildPosition(entry, posData, pool, prices, cfg) {
   });
 
   let pnl = null;
-  if (cfg?.deposited_sol != null && valueSol != null) {
-    const total = valueSol + (feesSol || 0) + (claimedSol || 0);
-    pnl = { dep: cfg.deposited_sol, total, abs: total - cfg.deposited_sol, pct: ((total - cfg.deposited_sol) / cfg.deposited_sol) * 100, usd: solUsd ? (total - cfg.deposited_sol) * solUsd : null };
+  // Accept deposited_sol (canonical) or entry_sol (autopilot alias) so a mis-keyed config still shows PnL.
+  const dep = cfg?.deposited_sol ?? cfg?.entry_sol;
+  if (dep != null && valueSol != null) {
+    // Current position value = holdings + unclaimed fees. Claimed fees already left the position.
+    const total = valueSol + (feesSol || 0);
+    pnl = { dep, total, abs: total - dep, pct: ((total - dep) / dep) * 100, usd: solUsd ? (total - dep) * solUsd : null };
   }
   return {
     pool: entry.publicKey.toBase58(), position: posData.publicKey.toBase58(), name: pool?.name || `${symX}-${symY}`,
@@ -188,7 +191,7 @@ function renderHistory(h, live, solUsd) {
   const t = (d) => (d ? esc(ict(d).replace(' ICT', '')) : '—');
   const row = (r, exit, pnl, pp, status) => `<tr><td><b>${esc(r.pair)}</b> <span class="badge ${status === 'open' ? 'in' : 'cl'}">${status}</span><small>${link(r.position, 'account')}</small></td><td class="pnlcol ${cls(pnl)}"><b>${sgn(pnl)}</b><small class="${cls(pnl)}">${pp != null ? pct(pp) : ''}</small></td><td>${meteora(r.pool)}</td><td>${t(r.opened)}</td><td>${r.closed ? t(r.closed) : '—'}</td><td>${fmt(r.entry_sol, 4)}</td><td>${exit != null ? fmt(exit, 4) : '—'}</td><td class="reason">${esc(r.reason || (status === 'open' ? 'live' : ''))}</td><td>${tl(r.open_tx)} / ${tl(r.close_tx)}</td></tr>`;
   let unr = 0, unrEntry = 0, unrOk = true;
-  const openRows = (h.open || []).map((r) => { const p = live.find((x) => x.position === r.position); const v = p?.pnl?.total ?? (p ? (p.valueSol || 0) + (p.feesSol || 0) : null); const d = v != null ? v - r.entry_sol : null; if (d == null) unrOk = false; else { unr += d; unrEntry += r.entry_sol; } return row(r, v, d, d != null ? (d / r.entry_sol) * 100 : null, 'open'); });
+  const openRows = (h.open || []).map((r) => { const p = live.find((x) => x.position === r.position); const entry = r.entry_sol ?? p?.pnl?.dep; const v = p?.pnl?.total ?? (p ? (p.valueSol || 0) + (p.feesSol || 0) : null); const d = v != null && entry != null ? v - entry : null; if (d == null || !isFinite(d)) unrOk = false; else { unr += d; unrEntry += entry; } return row({ ...r, entry_sol: entry }, v, d, d != null && entry ? (d / entry) * 100 : null, 'open'); });
   const closed = h.closed || [];
   const tot = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
   el.innerHTML = `<div class="tablewrap"><table class="hist"><thead><tr><th>Pair</th><th>PnL SOL / %</th><th>Pool</th><th>Opened (ICT)</th><th>Closed (ICT)</th><th>Entry SOL</th><th>Exit SOL</th><th>Close reason</th><th>Open / close tx</th></tr></thead><tbody>

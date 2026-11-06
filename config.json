@@ -13,10 +13,10 @@
         -486,
         -417
       ],
-      "entry_sol": 0.45,
       "opened": "2026-11-07T00:09+07:00",
       "open_tx": "2LZcR7CTsoaJYq1Wa2HwX4d6LbRptPJG51m3nyQf3tUfbQkR3rkPHeRb53cmtF6VP3vfLjjNUjYK2UjZz6LHj8Dc",
-      "mint_x": "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump"
+      "mint_x": "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump",
+      "deposited_sol": 0.45
     }
   ],
   "closed_positions": [
