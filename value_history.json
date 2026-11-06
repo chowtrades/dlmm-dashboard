@@ -630,7 +630,14 @@
    "sol": 0.574127,
    "positions_sol": 0,
    "positions": 0
+  },
+  {
+   "ts": "2026-11-06T12:00:17.410Z",
+   "value_sol": 0.574127,
+   "sol": 0.574127,
+   "positions_sol": 0,
+   "positions": 0
   }
  ],
- "updated": "2026-11-06T11:37:48.419Z"
+ "updated": "2026-11-06T12:00:17.410Z"
 }
