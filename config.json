@@ -3,7 +3,22 @@
   "initial_balance_sol": 0.5,
   "start_date": "2026-11-03T23:00:00+07:00",
   "refreshSeconds": 60,
-  "positions": [],
+  "positions": [
+    {
+      "pair": "Diamond-SOL",
+      "pool": "4iFBMBo9LxUZXRXQK2kpiQ5EMwyf5omRyz2seXLRFQ52",
+      "position": "7tasnrpdCxqoA3ZXmXCaYp2aum1SRXHyQA5TssVhiSqG",
+      "strategy": "bid-ask",
+      "range": [
+        -486,
+        -417
+      ],
+      "entry_sol": 0.45,
+      "opened": "2026-11-07T00:09+07:00",
+      "open_tx": "2LZcR7CTsoaJYq1Wa2HwX4d6LbRptPJG51m3nyQf3tUfbQkR3rkPHeRb53cmtF6VP3vfLjjNUjYK2UjZz6LHj8Dc",
+      "mint_x": "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump"
+    }
+  ],
   "closed_positions": [
     {
       "position": "GbRJ1xfxgrFXJSSqnpZnk8Ad2GRgWFoBkUSwN25wj5mb",
@@ -153,7 +168,7 @@
       "closed": "2026-11-05T17:49:00+07:00",
       "close_reason": "price above range for 3 consecutive checks",
       "close_tx": "2aXLUeKnfXGYwsqEnmfQPTVSaySV2hyj9yseYLiqqMLNYAYSAPdaADpKJX3qfbQ8GjDo7sFVv3gQSEezqCjyHHfg",
-      "pnl_sol": 0.000003
+      "pnl_sol": 3e-06
     },
     {
       "position": "5wLkTxN2FpSzSeYJLmUCm6LvEfJ6D28zGPMp9bJLgTtH",
@@ -213,7 +228,7 @@
       "closed": "2026-11-06T05:27:00+07:00",
       "close_reason": "price above range for 3 consecutive checks (active -370 vs top -375; never filled, all SOL + tiny fees)",
       "close_tx": "t2wCW76fWynb8aiAn2ChfTE5Ugyn1ZVW2mCgCmYU4bHBs9PZVFLmjWqYFRpgjhetHWPYeNTQYFKKr61tDfK4JST",
-      "pnl_sol": 0.000073
+      "pnl_sol": 7.3e-05
     },
     {
       "position": "Hufu5EivjezVxaVhjogLNMJsvhg14HCsTgivDGydR7xa",

@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-06T11:37:48.453Z",
- "open": [],
+ "updated": "2026-11-06T17:10:00.283Z",
+ "open": [
+  {
+   "status": "open",
+   "pair": "Diamond-SOL",
+   "pool": "4iFBMBo9LxUZXRXQK2kpiQ5EMwyf5omRyz2seXLRFQ52",
+   "position": "7tasnrpdCxqoA3ZXmXCaYp2aum1SRXHyQA5TssVhiSqG",
+   "opened": "2026-11-06T17:09:00.000Z",
+   "open_tx": "2LZcR7CTsoaJYq1Wa2HwX4d6LbRptPJG51m3nyQf3tUfbQkR3rkPHeRb53cmtF6VP3vfLjjNUjYK2UjZz6LHj8Dc"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
