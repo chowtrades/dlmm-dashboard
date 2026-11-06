@@ -210,9 +210,43 @@ function pnlSummary(closed, unr, unrEntry, nOpen, solUsd) {
     <div class="stat big"><label>Combined PnL</label><b class="${cls(comb)}">${sgn(comb)} SOL <span>${comb != null ? pct((comb / init) * 100) : '—'}</span></b><small>${u(comb)} · realized + unrealized · % vs ${fmt(init, 4)} SOL start</small></div>
   </div><p class="muted" style="font-size:11px;margin:6px 0 0">Realized/combined % are vs the ${fmt(init, 4)} SOL initial balance. Excludes position rent (see Total PnL at top for full wallet value).</p>`;
 }
+function ictYmd(d) {
+  return new Date(d).toLocaleDateString('en-CA', { timeZone: 'Asia/Saigon' }); // YYYY-MM-DD in ICT
+}
+function dailyRealizedRows() {
+  const by = new Map();
+  for (const c of config.closed_positions || []) {
+    if (c.pnl_sol == null || !c.closed || !isFinite(Date.parse(c.closed))) continue;
+    const k = ictYmd(c.closed);
+    const cur = by.get(k) || { pnl: 0, n: 0 };
+    cur.pnl += c.pnl_sol;
+    cur.n += 1;
+    by.set(k, cur);
+  }
+  return [...by.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([day, v]) => ({ day, ...v }));
+}
+function dailyRealizedHtml(rows, solUsd) {
+  if (!rows.length) return '';
+  const max = Math.max(...rows.map((r) => Math.abs(r.pnl)), 1e-9);
+  const bar = (n) => {
+    const w = Math.max(2, (Math.abs(n) / max) * 100);
+    return `<span class="dbar"><i class="${n >= 0 ? 'pos' : 'neg'}" style="width:${w.toFixed(1)}%"></i></span>`;
+  };
+  const tr = rows.map((r) => {
+    const label = new Date(r.day + 'T12:00:00+07:00').toLocaleDateString('en-GB', { timeZone: 'Asia/Saigon', day: 'numeric', month: 'short' });
+    return `<tr><td>${esc(label)}</td><td class="pnlcol ${cls(r.pnl)}"><b>${sgn(r.pnl)}</b></td><td class="muted">${r.n} close${r.n === 1 ? '' : 's'}</td><td>${bar(r.pnl)}</td><td class="muted">${solUsd ? usd(r.pnl * solUsd) : ''}</td></tr>`;
+  }).join('');
+  return `<div class="daily" style="grid-column:1/-1"><h3 style="margin-top:4px">Daily realized PnL (ICT)</h3>
+    <div class="tablewrap"><table class="hist dailypnl"><thead><tr><th>Day</th><th>PnL SOL</th><th>Closes</th><th></th><th></th></tr></thead><tbody>${tr}</tbody></table></div>
+    <p class="muted" style="font-size:11px;margin:6px 0 0">Sum of logged close PnL per Asia/Saigon calendar day. Unrealized (open position) is not split by day — see Avg daily PnL above for total wallet PnL / days.</p></div>`;
+}
 function renderPnl(cur, rent, hist, solUsd) {
   const init = Number(config.initial_balance_sol ?? 0.5);
   const tot = cur - init;
+  const startMs = Date.parse(config.start_date || '') || Date.parse((hist?.points || [])[0]?.ts || '') || Date.now();
+  const days = Math.max(1, (Date.now() - startMs) / 864e5);
+  const avg = tot / days;
+  const avgPct = (tot / init) * 100 / days;
   const pts = (hist?.points || []).map((p) => ({ t: Date.parse(p.ts), v: Number(p.value_sol) })).filter((p) => isFinite(p.t) && isFinite(p.v)).sort((a, b) => a.t - b.t);
   const target = Date.now() - 864e5;
   let ref = null, label = '';
@@ -226,10 +260,13 @@ function renderPnl(cur, rent, hist, solUsd) {
   const realized = (config.closed_positions || []).filter((c) => c.closed && Date.parse(c.closed) >= target && c.pnl_sol != null);
   const rsum = realized.reduce((s, c) => s + c.pnl_sol, 0);
   const u = (n) => (solUsd && n != null ? ' · ' + usd(n * solUsd) : '');
+  const daily = dailyRealizedRows();
   $('#pnl').innerHTML = `
     <div class="stat big"><label>24h PnL</label><b class="${cls(d24)}">${sgn(d24)} SOL <span>${ref ? pct((d24 / ref.v) * 100) : '—'}</span></b><small>${ref ? esc(label) : 'No value history yet'}${u(d24)}</small>${realized.length ? `<small>Realized (closed last 24h, logged): <span class="${cls(rsum)}">${sgn(rsum)} SOL</span> · ${realized.length} close(s)</small>` : ''}</div>
-    <div class="stat big"><label>Total PnL vs ${fmt(init, 4)} SOL start</label><b class="${cls(tot)}">${sgn(tot)} SOL <span>${pct((tot / init) * 100)}</span></b><small>Now ${fmt(cur, 6)} SOL (free SOL + positions + fees + ${fmt(rent, 4)} rent)${u(tot)} · since ${esc(config.start_date ? ict(config.start_date) : '—')}</small></div>`;
-  window.__pnl = { cur, tot, d24, ref };
+    <div class="stat big"><label>Total PnL vs ${fmt(init, 4)} SOL start</label><b class="${cls(tot)}">${sgn(tot)} SOL <span>${pct((tot / init) * 100)}</span></b><small>Now ${fmt(cur, 6)} SOL (free SOL + positions + fees + ${fmt(rent, 4)} rent)${u(tot)} · since ${esc(config.start_date ? ict(config.start_date) : '—')}</small></div>
+    <div class="stat big"><label>Avg daily PnL</label><b class="${cls(avg)}">${sgn(avg)} SOL <span>${pct(avgPct)}</span></b><small>Total ÷ ${days.toFixed(2)} days since start${u(avg)} · % of ${fmt(init, 4)} SOL start per day</small></div>
+    ${dailyRealizedHtml(daily, solUsd)}`;
+  window.__pnl = { cur, tot, d24, ref, avg, days, avgPct };
 }
 function binChart(p) {
   const bins = [...p.bins].sort((a, b) => a.id - b.id);
