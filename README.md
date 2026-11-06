@@ -24,3 +24,5 @@ and enable Pages. All paths are relative and `dist/app.js` is prebuilt, so nothi
 
 ## Rebuild (only if you edit src/)
     npm install && ./build.sh
+
+<!-- pnl fix deploy 2026-11-07 01:18 ICT -->
