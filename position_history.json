@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T21:13:25.837Z",
+ "updated": "2026-11-10T22:10:16.351Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
@@ -7,13 +7,30 @@
    "status": "open",
    "pair": "STANK-SOL",
    "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-   "position": "2e91JP897rfWkYnxsZbmtnVDF8FCHgT3p2Dbh7sBzRM3",
-   "opened": "2026-11-10T21:13:00.000Z",
+   "position": "3y8HfoybvEQqNVQEU4JFjr4CCr5PDep9BRLoqoMdj14y",
+   "opened": "2026-11-10T22:09:00.000Z",
    "entry_sol": 0.37,
-   "open_tx": "4LaJn4rR2XfGtkxWkzdda7tU7gwUPDPRmCJB2kecoToLpSV5upYd1pXGu3WY2Vpx5vbZYZpNJM8Np9xxEBqeU2ZW"
+   "open_tx": "5nsSeoxBx6UqQWdspLDQqeQu6k69gBqrNq9CdZVDzzdNkCEudoDYErCaWRfPX4ZNtJp2147gLesABnrNznE5JjV1"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "2e91JP897rfWkYnxsZbmtnVDF8FCHgT3p2Dbh7sBzRM3",
+   "opened": "2026-11-10T21:13:00.000Z",
+   "closed": "2026-11-10T22:09:00.000Z",
+   "entry_sol": 0.37,
+   "exit_sol": 0.370035,
+   "pnl_sol": 0.000035,
+   "pnl_pct": 0.01,
+   "pnl_basis": "logged",
+   "reason": "chase: price above range for 3 consecutive checks (bin -267 vs top -274) with healthy 5m volume ($10.1k vs ~$5.8k avg) and strong 1h fees; closed and reopened just below new price. Swap also cleared earlier STANK dust.",
+   "open_tx": "4LaJn4rR2XfGtkxWkzdda7tU7gwUPDPRmCJB2kecoToLpSV5upYd1pXGu3WY2Vpx5vbZYZpNJM8Np9xxEBqeU2ZW",
+   "close_tx": "65St9wHkc7xeG8Y77rMJmQRhgPiomj88qKkbAPHXZB4zKwB9pZ6RL5ma6y12jMgDvvnydUCZoNc6TDDFeSAsKfds",
+   "swap_tx": "vPDYb6vtbZ3yoKLQh5Hw9mBU6FhN1CV7Ch8dzQS1zyeft7uQmejxQ6fYriCQeFguvvWu384hzzwxmU2GB65Q6dw"
+  },
   {
    "status": "closed",
    "pair": "STANK-SOL",
@@ -134,5 +151,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.020704
+ "realized_total_sol": -0.020669
 }
