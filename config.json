@@ -1,7 +1,7 @@
 {
   "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
   "start_sol": 0.5,
-  "start_date": "2026-11-10",
+  "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
   "positions": [
@@ -14,7 +14,7 @@
         -680,
         -616
       ],
-      "opened": "2026-11-10T20:36+07:00",
+      "opened": "2026-11-10T20:34+07:00",
       "open_tx": "3Wr87KSgbKrJNvmb1e8v3TYLUASZfb8z4oT7QDh1rY8mcUdLy7UgJTK3ZUyivq6RcnXZHb1P8L9euYFCMYTTHHp5",
       "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
       "deposited_sol": 0.42
