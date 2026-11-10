@@ -37,6 +37,11 @@ const ict = (d) => new Date(d).toLocaleString('en-GB', { timeZone: 'Asia/Saigon'
 
 // ---------- state / settings ----------
 let config = { positions: [] };
+function startSol() {
+  const v = config.start_sol ?? config.initial_balance_sol;
+  const n = Number(v);
+  return (v != null && v !== '' && Number.isFinite(n) && n > 0) ? n : null;
+}
 const params = new URLSearchParams(location.search);
 let wallet = '';
 let timer = null, countdown = 0;
@@ -186,6 +191,10 @@ const cls = (n) => (n == null || !isFinite(n) ? '' : n >= 0 ? 'pos' : 'neg');
 function renderHistory(h, live, solUsd) {
   const el = $('#history');
   if (!h) { el.innerHTML = '<p class="muted">Position history unavailable.</p>'; return; }
+  if (startSol() == null && !(h.open || []).length && !(h.closed || []).length) {
+    el.innerHTML = '<p class="muted">No trades yet — waiting for funding. History will start with the next deposit and position.</p>';
+    return;
+  }
   const meteora = (pool) => `<a href="https://app.meteora.ag/dlmm/${esc(pool)}" target="_blank" rel="noopener">${esc(short(pool))}</a>`;
   const tl = (t) => (t ? link(t, 'tx', short(t)) : '—');
   const t = (d) => (d ? esc(ict(d).replace(' ICT', '')) : '—');
@@ -199,11 +208,14 @@ function renderHistory(h, live, solUsd) {
     <tfoot><tr><td><b>Realized total (${closed.length} closed)</b></td><td class="${cls(tot)}"><b>${sgn(tot)}</b></td><td colspan="7" class="muted">Exit/PnL from autopilot logs; MAMESUKE uses wallet delta (incl. swap). Open row is live (incl. fees).</td></tr></tfoot></table></div>${pnlSummary(closed, unrOk ? unr : null, unrEntry, (h.open || []).length, solUsd)}`;
 }
 function pnlSummary(closed, unr, unrEntry, nOpen, solUsd) {
-  const init = Number(config.initial_balance_sol ?? 0.5);
+  const init = startSol();
   const real = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
   const wins = closed.filter((r) => (r.pnl_sol || 0) > 0).length, losses = closed.filter((r) => (r.pnl_sol || 0) < 0).length;
   const comb = unr != null ? real + unr : null;
   const u = (n) => (solUsd && n != null ? usd(n * solUsd) : '—');
+  if (init == null) {
+    return `<h3>PnL summary</h3><p class="muted">Waiting for funding — PnL vs start will appear after <code>start_sol</code> is set.</p>`;
+  }
   return `<h3>PnL summary</h3><div class="grid">
     <div class="stat big"><label>Realized PnL</label><b class="${cls(real)}">${sgn(real)} SOL <span>${pct((real / init) * 100)}</span></b><small>${u(real)} · ${closed.length} closed · ${wins}W / ${losses}L · win rate ${closed.length ? ((wins / closed.length) * 100).toFixed(0) : '—'}%</small></div>
     <div class="stat big"><label>Unrealized PnL</label><b class="${cls(unr)}">${sgn(unr)} SOL <span>${unr != null && unrEntry ? pct((unr / unrEntry) * 100) : '—'}</span></b><small>${u(unr)} · ${nOpen} open (live, incl. fees) · % vs ${fmt(unrEntry, 4)} SOL deposited</small></div>
@@ -241,7 +253,14 @@ function dailyRealizedHtml(rows, solUsd) {
     <p class="muted" style="font-size:11px;margin:6px 0 0">Sum of logged close PnL per Asia/Saigon calendar day. Unrealized (open position) is not split by day — see Avg daily PnL above for total wallet PnL / days.</p></div>`;
 }
 function renderPnl(cur, rent, hist, solUsd) {
-  const init = Number(config.initial_balance_sol ?? 0.5);
+  const init = startSol();
+  if (init == null) {
+    $('#pnl').innerHTML = `
+      <div class="stat big"><label>PnL</label><b>Waiting for funding</b>
+      <small>No start balance yet (start_sol). Wallet now ${fmt(cur, 6)} SOL${rent ? ` (incl. ${fmt(rent, 4)} rent)` : ''}. Average daily PnL and the daily table will appear after the bot wallet is funded.</small></div>`;
+    window.__pnl = { cur, tot: null, awaiting: true };
+    return;
+  }
   const tot = cur - init;
   const startMs = Date.parse(config.start_date || '') || Date.parse((hist?.points || [])[0]?.ts || '') || Date.now();
   const days = Math.max(1, (Date.now() - startMs) / 864e5);
