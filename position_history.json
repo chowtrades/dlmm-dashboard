@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-10T16:13:09.015Z",
+ "updated": "2026-11-10T17:07:45.456Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "STANK-SOL",
    "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
    "position": "BcKLSXpcjJ1A4Zo1y2B1Bw9ksQkxDZVoLWwWsHWtDzAc",
    "opened": "2026-11-10T16:13:00.000Z",
+   "closed": "2026-11-10T17:06:00.000Z",
    "entry_sol": 0.37,
-   "open_tx": "QHTL8t9M5zwhnNbefNYjDRuYZbgvStcq6maSatnhJoCkWwpdTyX454BGMaKNA6JemZztNzoGwdDb6s1oXuaJvpz"
-  }
- ],
- "closed": [
+   "exit_sol": 0.370424,
+   "pnl_sol": 0.000424,
+   "pnl_pct": 0.11,
+   "pnl_basis": "logged",
+   "reason": "price above range for 3 consecutive checks; took the small profit, no chasing",
+   "open_tx": "QHTL8t9M5zwhnNbefNYjDRuYZbgvStcq6maSatnhJoCkWwpdTyX454BGMaKNA6JemZztNzoGwdDb6s1oXuaJvpz",
+   "close_tx": "4T2J427cwncKfDvvChKvRSSvcFets2k3fvvRt6Keqany8thEtPv87oABWh2Ke4mQYayBVumFQxmLq68tHVWaneW4",
+   "swap_tx": "3rHA99z7AwKDu1RM1bukyBpUSkZjp1xLFpgcwafVDNDC47adN7mh4FB2qmEMFkAbzeN2aziDcNXLfHfCUrHiE97p"
+  },
   {
    "status": "closed",
    "pair": "X-SOL",
@@ -83,5 +90,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.021407
+ "realized_total_sol": -0.020983
 }
