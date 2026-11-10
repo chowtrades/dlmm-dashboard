@@ -8,18 +8,35 @@
     {
       "pair": "X-SOL",
       "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-      "position": "CFSgQVm711oeDGAiv5NAHYAdPADRYTMpJ9aPnXVw5J9w",
+      "position": "8BTG1yb1kP2ZYjsVgzAusFyENMLTh4sUN6Bo1fdNMiy9",
       "strategy": "bid-ask",
       "range": [
-        -680,
-        -616
+        -676,
+        -612
       ],
-      "opened": "2026-11-10T20:34+07:00",
-      "open_tx": "3Wr87KSgbKrJNvmb1e8v3TYLUASZfb8z4oT7QDh1rY8mcUdLy7UgJTK3ZUyivq6RcnXZHb1P8L9euYFCMYTTHHp5",
+      "opened": "2026-11-10T20:39+07:00",
+      "open_tx": "49nmwoNsqoxHNcYnLoFzeDtEA6bBUbMqg4FhFVJzhLKSX3JAFHmR8r6pe5tkquGTiMASPHtH4GpB8S3PEA4Tys9u",
       "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
-      "deposited_sol": 0.42
+      "deposited_sol": 0.4202
     }
   ],
-  "closed_positions": [],
+  "closed_positions": [
+    {
+      "pair": "X-SOL",
+      "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+      "position": "CFSgQVm711oeDGAiv5NAHYAdPADRYTMpJ9aPnXVw5J9w",
+      "strategy": "bid-ask",
+      "opened": "2026-11-10T20:34+07:00",
+      "closed": "2026-11-10T20:39+07:00",
+      "open_tx": "3Wr87KSgbKrJNvmb1e8v3TYLUASZfb8z4oT7QDh1rY8mcUdLy7UgJTK3ZUyivq6RcnXZHb1P8L9euYFCMYTTHHp5",
+      "close_tx": "2uS3c7H9ApmijqTQqH8KJXZ8KBSqepVGG7cqjPgwbC3ETZmVsbTsqSQtikELmWa4kLBZNeMAxRuEx61Dc7nzaV6W",
+      "entry_sol": 0.42,
+      "exit_sol": 0.420237,
+      "pnl_sol": 0.000237,
+      "pnl_pct": 0.06,
+      "reason": "reposition (Chow): price ran above range",
+      "result": "gain"
+    }
+  ],
   "status": "active"
 }

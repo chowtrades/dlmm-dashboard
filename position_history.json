@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T13:36:05.703Z",
+ "updated": "2026-11-10T13:39:13.036Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
@@ -7,12 +7,30 @@
    "status": "open",
    "pair": "X-SOL",
    "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-   "position": "CFSgQVm711oeDGAiv5NAHYAdPADRYTMpJ9aPnXVw5J9w",
-   "opened": "2026-11-10T13:34:00.000Z",
-   "entry_sol": 0.42,
-   "open_tx": "3Wr87KSgbKrJNvmb1e8v3TYLUASZfb8z4oT7QDh1rY8mcUdLy7UgJTK3ZUyivq6RcnXZHb1P8L9euYFCMYTTHHp5"
+   "position": "8BTG1yb1kP2ZYjsVgzAusFyENMLTh4sUN6Bo1fdNMiy9",
+   "opened": "2026-11-10T13:39:00.000Z",
+   "entry_sol": 0.4202,
+   "open_tx": "49nmwoNsqoxHNcYnLoFzeDtEA6bBUbMqg4FhFVJzhLKSX3JAFHmR8r6pe5tkquGTiMASPHtH4GpB8S3PEA4Tys9u"
   }
  ],
- "closed": [],
- "realized_total_sol": 0
+ "closed": [
+  {
+   "status": "closed",
+   "pair": "X-SOL",
+   "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+   "position": "CFSgQVm711oeDGAiv5NAHYAdPADRYTMpJ9aPnXVw5J9w",
+   "opened": "2026-11-10T13:34:00.000Z",
+   "closed": "2026-11-10T13:39:00.000Z",
+   "entry_sol": 0.42,
+   "exit_sol": 0.420237,
+   "pnl_sol": 0.000237,
+   "pnl_pct": 0.06,
+   "pnl_basis": "logged",
+   "reason": "reposition (Chow): price ran above range",
+   "open_tx": "3Wr87KSgbKrJNvmb1e8v3TYLUASZfb8z4oT7QDh1rY8mcUdLy7UgJTK3ZUyivq6RcnXZHb1P8L9euYFCMYTTHHp5",
+   "close_tx": "2uS3c7H9ApmijqTQqH8KJXZ8KBSqepVGG7cqjPgwbC3ETZmVsbTsqSQtikELmWa4kLBZNeMAxRuEx61Dc7nzaV6W",
+   "swap_tx": null
+  }
+ ],
+ "realized_total_sol": 0.000237
 }
