@@ -4,22 +4,7 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "8ruEoPFP8tWwDnnZ58uotSa45sCHSQiVNa75caxVys95",
-      "strategy": "bid-ask",
-      "range": [
-        -357,
-        -293
-      ],
-      "opened": "2026-11-11T00:20+07:00",
-      "open_tx": "2TvGiQv9ibJ2UyCd31MtT7nBREw9xMnYcGoKaGDdcvQSzzToVnQoUkHUGU2L4HiiS79a8DH1vCZeoR2nFDoccWVt",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "pair": "X-SOL",
@@ -115,6 +100,26 @@
       "pnl_sol": 0.000424,
       "entry_value_sol": 0.37,
       "close_reason": "price above range for 3 consecutive checks"
+    },
+    {
+      "pair": "STANK-SOL",
+      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+      "position": "8ruEoPFP8tWwDnnZ58uotSa45sCHSQiVNa75caxVys95",
+      "strategy": "bid-ask",
+      "range": [
+        -357,
+        -293
+      ],
+      "opened": "2026-11-11T00:20+07:00",
+      "open_tx": "2TvGiQv9ibJ2UyCd31MtT7nBREw9xMnYcGoKaGDdcvQSzzToVnQoUkHUGU2L4HiiS79a8DH1vCZeoR2nFDoccWVt",
+      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+      "deposited_sol": 0.37,
+      "closed": "2026-11-11T01:41:00+07:00",
+      "close_tx": "58krAetLb5shYviSRT6vgexC9bnYtfvvtZsacwUPRCvaaAH2itELSEBZW5axpsFhitZFpARU7s53GzH8U4TG9oq6",
+      "swap_tx": "4xxBcXg9L1ba5w51V74PUsSqGFBh5pqULAagdCYb79oDVxLVqVe8XssEXyWaKHnJFNhJMwkVL3vanM2A1H7Wxkpf",
+      "pnl_sol": 0.000188,
+      "entry_value_sol": 0.369996,
+      "close_reason": "price above range for 3 checks, volume fading (no chase)"
     }
   ],
   "status": "active"
