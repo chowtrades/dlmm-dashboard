@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-10T14:47:57.291Z",
+ "updated": "2026-11-10T15:25:20.716Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "X-SOL",
    "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
    "position": "DHsmypLCpgn79QWq7Dxhg7W8QZHsBvNo69sk2v1k3VKZ",
    "opened": "2026-11-10T14:47:17.000Z",
+   "closed": "2026-11-10T15:24:00.000Z",
    "entry_sol": 0.425,
-   "open_tx": "2hfUcJx5wNvUnTfe5FihFTSBgEaB9xk1NVFPba38rzYLNMEeiMJnhvY742BUMnU1MB6tZDea7y7v1r7m3jafHdc5"
-  }
- ],
- "closed": [
+   "exit_sol": 0.3903,
+   "pnl_sol": -0.030808,
+   "pnl_pct": -7.25,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [stop_value] value 0.3903 SOL <= override stop 0.4165 SOL (-2% override; Chow removed it at 22:24 ICT seconds after the close executed)",
+   "open_tx": "2hfUcJx5wNvUnTfe5FihFTSBgEaB9xk1NVFPba38rzYLNMEeiMJnhvY742BUMnU1MB6tZDea7y7v1r7m3jafHdc5",
+   "close_tx": "5ggxDQwuAtcfWkSqriPXTU1vkSjFLMSCU4ZkUBb6ej6YJML45LB44Vj5P5agwJskfUst8sWJLnx3mRruX6i65dvb",
+   "swap_tx": "4FxrDDDSx5nJYVPVW4JZrNfVJHZsdyuYV17paCgewqTJqJS9dMJEu38r1fDp2DXPTne6GK5pH3FSaq85jkpbW1hn"
+  },
   {
    "status": "closed",
    "pair": "X-SOL",
@@ -66,5 +73,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": 0.009401
+ "realized_total_sol": -0.021407
 }
