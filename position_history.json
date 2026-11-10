@@ -1,8 +1,18 @@
 {
- "updated": "2026-11-10T17:07:45.456Z",
+ "updated": "2026-11-10T17:20:16.552Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "8ruEoPFP8tWwDnnZ58uotSa45sCHSQiVNa75caxVys95",
+   "opened": "2026-11-10T17:20:00.000Z",
+   "entry_sol": 0.37,
+   "open_tx": "2TvGiQv9ibJ2UyCd31MtT7nBREw9xMnYcGoKaGDdcvQSzzToVnQoUkHUGU2L4HiiS79a8DH1vCZeoR2nFDoccWVt"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
