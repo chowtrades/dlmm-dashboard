@@ -4,22 +4,7 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "pair": "X-SOL",
-      "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-      "position": "FjpY9Q8BWByacDMmGomfVidMZNbQtochTpXpAaDA7egu",
-      "strategy": "bid-ask",
-      "range": [
-        -631,
-        -567
-      ],
-      "opened": "2026-11-10T20:43+07:00",
-      "open_tx": "5HEwvL5as4Y6ZCSyTNkQtsYCpzagHLoKaZvni5nFETunU3jWhXwuJWmKWKXGq4yFBVN7rAFgLsH7rkiVHBmqxpXG",
-      "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
-      "deposited_sol": 0.42
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "pair": "X-SOL",
@@ -52,6 +37,25 @@
       "pnl_pct": 0.86,
       "reason": "reposition (Chow): price ran above range; exit includes 202.9 X fees (~0.0022 SOL) held in wallet",
       "result": "gain"
+    },
+    {
+      "pair": "X-SOL",
+      "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+      "position": "FjpY9Q8BWByacDMmGomfVidMZNbQtochTpXpAaDA7egu",
+      "strategy": "bid-ask",
+      "range": [
+        -631,
+        -567
+      ],
+      "opened": "2026-11-10T20:43+07:00",
+      "open_tx": "5HEwvL5as4Y6ZCSyTNkQtsYCpzagHLoKaZvni5nFETunU3jWhXwuJWmKWKXGq4yFBVN7rAFgLsH7rkiVHBmqxpXG",
+      "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
+      "deposited_sol": 0.42,
+      "closed": "2026-11-10T20:53:38+07:00",
+      "close_tx": "42iQxQghsQqiCALvndbgWiM7XxNfbQ1ge6XxqduRJgDFJ5CUYQPvtxCQB6ZCpWMovWzVhtsUVxE756f4j4q26STA",
+      "swap_tx": "2XHjCEzJeQKTzPt8fC3oFGHUCaaZcpTTyhcmYcFdv6VRWbSPeMCxv4RGbrH8QsMMXyodcsbsMU2Dx4n36M7GZgdx",
+      "pnl_sol": 0.005535,
+      "close_reason": "[take_profit] value 0.4247 SOL >= Chow target 0.4242 SOL and price not rising"
     }
   ],
   "status": "active"
