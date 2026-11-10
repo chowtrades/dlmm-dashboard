@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T13:39:13.036Z",
+ "updated": "2026-11-10T13:43:49.851Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
@@ -7,13 +7,30 @@
    "status": "open",
    "pair": "X-SOL",
    "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-   "position": "8BTG1yb1kP2ZYjsVgzAusFyENMLTh4sUN6Bo1fdNMiy9",
-   "opened": "2026-11-10T13:39:00.000Z",
-   "entry_sol": 0.4202,
-   "open_tx": "49nmwoNsqoxHNcYnLoFzeDtEA6bBUbMqg4FhFVJzhLKSX3JAFHmR8r6pe5tkquGTiMASPHtH4GpB8S3PEA4Tys9u"
+   "position": "FjpY9Q8BWByacDMmGomfVidMZNbQtochTpXpAaDA7egu",
+   "opened": "2026-11-10T13:43:00.000Z",
+   "entry_sol": 0.42,
+   "open_tx": "5HEwvL5as4Y6ZCSyTNkQtsYCpzagHLoKaZvni5nFETunU3jWhXwuJWmKWKXGq4yFBVN7rAFgLsH7rkiVHBmqxpXG"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "X-SOL",
+   "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+   "position": "8BTG1yb1kP2ZYjsVgzAusFyENMLTh4sUN6Bo1fdNMiy9",
+   "opened": "2026-11-10T13:39:00.000Z",
+   "closed": "2026-11-10T13:43:00.000Z",
+   "entry_sol": 0.4202,
+   "exit_sol": 0.423829,
+   "pnl_sol": 0.003629,
+   "pnl_pct": 0.86,
+   "pnl_basis": "logged",
+   "reason": "reposition (Chow): price ran above range; exit includes 202.9 X fees (~0.0022 SOL) held in wallet",
+   "open_tx": "49nmwoNsqoxHNcYnLoFzeDtEA6bBUbMqg4FhFVJzhLKSX3JAFHmR8r6pe5tkquGTiMASPHtH4GpB8S3PEA4Tys9u",
+   "close_tx": "5irfyanXP3T8VGHs9jgomrEvvqNGC5KK3g5JFWCUaX4mVk9iNt8zyJ95fpWjxDczv67VzqTDXmdYs9wedXimF52r",
+   "swap_tx": null
+  },
   {
    "status": "closed",
    "pair": "X-SOL",
@@ -32,5 +49,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": 0.000237
+ "realized_total_sol": 0.003866
 }
