@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-10T13:43:49.851Z",
+ "updated": "2026-11-10T14:00:18.583Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "X-SOL",
    "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
    "position": "FjpY9Q8BWByacDMmGomfVidMZNbQtochTpXpAaDA7egu",
    "opened": "2026-11-10T13:43:00.000Z",
+   "closed": "2026-11-10T13:53:00.000Z",
    "entry_sol": 0.42,
-   "open_tx": "5HEwvL5as4Y6ZCSyTNkQtsYCpzagHLoKaZvni5nFETunU3jWhXwuJWmKWKXGq4yFBVN7rAFgLsH7rkiVHBmqxpXG"
-  }
- ],
- "closed": [
+   "exit_sol": 0.425535,
+   "pnl_sol": 0.005535,
+   "pnl_pct": 1.32,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [take_profit] value 0.4247 SOL >= Chow target 0.4242 SOL and price not rising",
+   "open_tx": "5HEwvL5as4Y6ZCSyTNkQtsYCpzagHLoKaZvni5nFETunU3jWhXwuJWmKWKXGq4yFBVN7rAFgLsH7rkiVHBmqxpXG",
+   "close_tx": "42iQxQghsQqiCALvndbgWiM7XxNfbQ1ge6XxqduRJgDFJ5CUYQPvtxCQB6ZCpWMovWzVhtsUVxE756f4j4q26STA",
+   "swap_tx": "2XHjCEzJeQKTzPt8fC3oFGHUCaaZcpTTyhcmYcFdv6VRWbSPeMCxv4RGbrH8QsMMXyodcsbsMU2Dx4n36M7GZgdx"
+  },
   {
    "status": "closed",
    "pair": "X-SOL",
@@ -49,5 +56,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": 0.003866
+ "realized_total_sol": 0.009401
 }
