@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T22:10:16.351Z",
+ "updated": "2026-11-10T23:12:42.895Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
@@ -7,13 +7,30 @@
    "status": "open",
    "pair": "STANK-SOL",
    "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-   "position": "3y8HfoybvEQqNVQEU4JFjr4CCr5PDep9BRLoqoMdj14y",
-   "opened": "2026-11-10T22:09:00.000Z",
+   "position": "CHoasJjuuqkDFpPzhCCxcbNgk2rrggpr9RHESJaZa231",
+   "opened": "2026-11-10T23:12:00.000Z",
    "entry_sol": 0.37,
-   "open_tx": "5nsSeoxBx6UqQWdspLDQqeQu6k69gBqrNq9CdZVDzzdNkCEudoDYErCaWRfPX4ZNtJp2147gLesABnrNznE5JjV1"
+   "open_tx": "TqPcyDvi8VLEKV2s6ML5qzz8oC5kWPMqoq7LLPE5EAJgVKvGRRTeQh4tEHwVDNawx79if7U3DnygFoJ5kU7oCZC"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "3y8HfoybvEQqNVQEU4JFjr4CCr5PDep9BRLoqoMdj14y",
+   "opened": "2026-11-10T22:09:00.000Z",
+   "closed": "2026-11-10T22:51:00.000Z",
+   "entry_sol": 0.37,
+   "exit_sol": 0.374386,
+   "pnl_sol": 0.004386,
+   "pnl_pct": 1.19,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [take_profit] value 0.3747 SOL (1.27%) >= target 0.3737 and price not rising (5m volume fading)",
+   "open_tx": "5nsSeoxBx6UqQWdspLDQqeQu6k69gBqrNq9CdZVDzzdNkCEudoDYErCaWRfPX4ZNtJp2147gLesABnrNznE5JjV1",
+   "close_tx": "5XFN3bd22BtVsazLQyKgAReqVRJmqHvbJAzP3E9jPqe8yY76HatSpa9mdcnA7bWGgxNqsmwCx7ngQzqUQzh7YK3T",
+   "swap_tx": "2UiebhUycnAZP2oZdpDGUgqyttnzK5p2p7PoLxDroxT9HKXhcGLmAiKiUrWCFCQUjoisQcP1KmjZVJQJqeXLMsav"
+  },
   {
    "status": "closed",
    "pair": "STANK-SOL",
@@ -151,5 +168,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.020669
+ "realized_total_sol": -0.016283
 }
