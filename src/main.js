@@ -400,7 +400,7 @@ function schedule() {
 }
 
 async function init() {
-  try { config = await getJSON('config.json'); } catch (e) { console.warn('config.json missing', e); }
+  try { config = await getJSON('config.json?t=' + Date.now()); } catch (e) { console.warn('config.json missing', e); }
   wallet = params.get('wallet') || config.wallet || '';
   $('#wallet').value = wallet;
   const s = settings();
