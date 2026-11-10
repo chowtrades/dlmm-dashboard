@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-10T19:15:55.440Z",
+ "updated": "2026-11-10T20:43:51.807Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "STANK-SOL",
    "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
    "position": "2KfAp8BkptTbe6ZzshsjVEfj4PuzTVk3cbt8W73dmx2u",
    "opened": "2026-11-10T19:15:00.000Z",
+   "closed": "2026-11-10T20:42:00.000Z",
    "entry_sol": 0.37,
-   "open_tx": "2eB351y8nNzcYNU3cxfZhBXHp1PsVUhZmwGYzFWzi5mpmACKSAwoystF7yKf921anGEkNcrCo5vvt1b5yEGwSshA"
-  }
- ],
- "closed": [
+   "exit_sol": 0.370091,
+   "pnl_sol": 0.000091,
+   "pnl_pct": 0.02,
+   "pnl_basis": "logged",
+   "reason": "price above range for 3 consecutive checks with fading 5-minute volume ($431 vs ~$1.8k avg); closed and stayed in SOL instead of chasing. STANK fee dust (1.558 STANK, ~0.00009 SOL) left unswapped after Jupiter 429 and an expired retry",
+   "open_tx": "2eB351y8nNzcYNU3cxfZhBXHp1PsVUhZmwGYzFWzi5mpmACKSAwoystF7yKf921anGEkNcrCo5vvt1b5yEGwSshA",
+   "close_tx": "2mAeZYXjp5svnjTCvF2PNEFeAbpPRGjLd8BgWiJc2VHUwgaHXNvKZvHoCbpEPzMa66MDWggm1gu8x54NGuYK6sho",
+   "swap_tx": null
+  },
   {
    "status": "closed",
    "pair": "STANK-SOL",
@@ -117,5 +124,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.020795
+ "realized_total_sol": -0.020704
 }
