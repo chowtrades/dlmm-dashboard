@@ -4,22 +4,7 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "pair": "mihao-SOL",
-      "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
-      "position": "HXyWp5Akhb2Qrp12T8AXQE41ib7zhcxadvkCJdrNcggd",
-      "strategy": "bid-ask",
-      "range": [
-        -674,
-        -610
-      ],
-      "opened": "2026-11-11T09:25+07:00",
-      "open_tx": "3PRTbGMvEjha5hZ6CmFyxP1hsk3LiKgL2fBABeppYaHcDWkyfQ4437qBRnonHahvNA4oB7rkk9nswZEkwLtp2pjo",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.38
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "pair": "X-SOL",
@@ -82,8 +67,8 @@
         -654
       ],
       "range_price_sol": [
-        3.27596e-06,
-        5.45522e-06
+        0.00000327596,
+        0.00000545522
       ],
       "opened": "2026-11-10T21:47:17+07:00",
       "open_tx": "2hfUcJx5wNvUnTfe5FihFTSBgEaB9xk1NVFPba38rzYLNMEeiMJnhvY742BUMnU1MB6tZDea7y7v1r7m3jafHdc5",
@@ -151,7 +136,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T03:42:00+07:00",
       "close_tx": "2mAeZYXjp5svnjTCvF2PNEFeAbpPRGjLd8BgWiJc2VHUwgaHXNvKZvHoCbpEPzMa66MDWggm1gu8x54NGuYK6sho",
-      "pnl_sol": 9.1e-05,
+      "pnl_sol": 0.000091,
       "entry_value_sol": 0.37,
       "close_reason": "price above range for 3 checks, volume fading (no chase)"
     },
@@ -170,7 +155,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T05:09:00+07:00",
       "close_tx": "65St9wHkc7xeG8Y77rMJmQRhgPiomj88qKkbAPHXZB4zKwB9pZ6RL5ma6y12jMgDvvnydUCZoNc6TDDFeSAsKfds",
-      "pnl_sol": 3.5e-05,
+      "pnl_sol": 0.000035,
       "entry_value_sol": 0.37,
       "close_reason": "chase: above range x3, healthy volume; reopened below new price"
     },
@@ -245,7 +230,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T08:46+07:00",
       "close_tx": "Zsdxmr6ZvQMzmuiK7KFYDMJGWsL3tDNKYaUQDnK2vA4ThRdA17xa8QUDRgBhwhjWX5vUoCBkg3k1xBLvWPN7J4v",
-      "pnl_sol": 3e-05,
+      "pnl_sol": 0.00003,
       "close_reason": "chase: above range with healthy volume; reopened lower range below new price"
     },
     {
@@ -284,6 +269,25 @@
       "close_tx": "52YpjHGFCevSnsWkiASDPW1ewQy3ohHGJPwHADFx3Fga1JYRp9sbtZNkotUorH36zodooD5nFHbsaU1QCVpUroi7",
       "pnl_sol": 0.0001,
       "close_reason": "chase: above range with healthy volume; reopened below new price"
+    },
+    {
+      "pair": "mihao-SOL",
+      "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
+      "position": "HXyWp5Akhb2Qrp12T8AXQE41ib7zhcxadvkCJdrNcggd",
+      "strategy": "bid-ask",
+      "range": [
+        -674,
+        -610
+      ],
+      "opened": "2026-11-11T09:25+07:00",
+      "open_tx": "3PRTbGMvEjha5hZ6CmFyxP1hsk3LiKgL2fBABeppYaHcDWkyfQ4437qBRnonHahvNA4oB7rkk9nswZEkwLtp2pjo",
+      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+      "deposited_sol": 0.38,
+      "closed": "2026-11-11T09:48:35+07:00",
+      "close_tx": "2yBMw82MLzncZCAP8fdwRuxdHkRfoiaXo1nS7Bc6cATG8noLBgLeLd4Z6R1VWG49MVpXiPTiY5X6mYRBpr1Nvck5",
+      "swap_tx": "GfR4bytYtJ3x2SSPesFruHHqpNvnFZPhXZQbTVqTPumsBvnbykJtMXajZmNSFjjvUY9sGs67p9QGoUDA5ZBbmsQ",
+      "pnl_sol": 0.003705,
+      "close_reason": "[take_profit] value 0.3840 SOL (1.06%) >= target 0.3838 and price not rising (5m volume fading)"
     }
   ],
   "status": "active"
