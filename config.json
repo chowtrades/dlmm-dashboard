@@ -8,14 +8,14 @@
     {
       "pair": "mihao-SOL",
       "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
-      "position": "9BjGhHqnQrAsa9tQzsp1FxnnN5GFHP8NXt8sV9FBJhnh",
+      "position": "F2pZVNi4FFwVRgDTz81ZwYoMSH3peNTnN79QRMSHeET",
       "strategy": "bid-ask",
       "range": [
-        -1042,
-        -978
+        -889,
+        -825
       ],
-      "opened": "2026-11-11T08:28+07:00",
-      "open_tx": "aHki4Vk1Fu7gQhQYxPvNaVZzQycHm5CtFAaGbpDTbNNeGTsRqKS18GgqKw1P1zCLneYc9E91iBu1ykKWiXwu532",
+      "opened": "2026-11-11T08:46+07:00",
+      "open_tx": "4Pm8oA8SVh2BVBGaasKBA9oUbFewC7mvM3GFfyAyDDRwaf7uhCxVwLq1A3u1BdsYJhctWFSURZxLLKNSAvVLrNE9",
       "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
       "deposited_sol": 0.37
     }
@@ -229,6 +229,24 @@
       "close_tx": "2qooNf3nd9QTSQKARpMhXQgXj932u7HzThqaNdMEjcm1YHp7r8VXRKfvmn4UA9VECZmbThgSubuVxsxbu5wntJvR",
       "pnl_sol": -0.00105,
       "close_reason": "above range; pool weakening (liquidity -12%, volume collapsing), closed instead of chasing"
+    },
+    {
+      "pair": "mihao-SOL",
+      "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+      "position": "9BjGhHqnQrAsa9tQzsp1FxnnN5GFHP8NXt8sV9FBJhnh",
+      "strategy": "bid-ask",
+      "range": [
+        -1042,
+        -978
+      ],
+      "opened": "2026-11-11T08:28+07:00",
+      "open_tx": "aHki4Vk1Fu7gQhQYxPvNaVZzQycHm5CtFAaGbpDTbNNeGTsRqKS18GgqKw1P1zCLneYc9E91iBu1ykKWiXwu532",
+      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+      "deposited_sol": 0.37,
+      "closed": "2026-11-11T08:46+07:00",
+      "close_tx": "Zsdxmr6ZvQMzmuiK7KFYDMJGWsL3tDNKYaUQDnK2vA4ThRdA17xa8QUDRgBhwhjWX5vUoCBkg3k1xBLvWPN7J4v",
+      "pnl_sol": 3e-05,
+      "close_reason": "chase: above range with healthy volume; reopened lower range below new price"
     }
   ],
   "status": "active"
