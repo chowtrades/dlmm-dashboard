@@ -2,37 +2,103 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DLMM Dashboard (read-only)</title>
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- brand:meta (generated from brand.json by tools/brand.mjs; edit brand.json, not this block) -->
+<title>ChowBot · Live DLMM trading dashboard</title>
+<meta name="description" content="ChowBot trades fresh Solana memecoin pools on Meteora DLMM, fully on autopilot. Live wallet value, PnL, win rate and every trade, on-chain and verifiable.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ChowBot">
+<meta property="og:title" content="ChowBot · Live DLMM trading dashboard">
+<meta property="og:description" content="ChowBot trades fresh Solana memecoin pools on Meteora DLMM, fully on autopilot. Live wallet value, PnL, win rate and every trade, on-chain and verifiable.">
+<meta property="og:url" content="https://chowtrades.github.io/dlmm-dashboard/">
+<meta property="og:image" content="https://chowtrades.github.io/dlmm-dashboard/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChowBot · Live DLMM trading dashboard">
+<meta name="twitter:description" content="ChowBot trades fresh Solana memecoin pools on Meteora DLMM, fully on autopilot. Live wallet value, PnL, win rate and every trade, on-chain and verifiable.">
+<meta name="twitter:image" content="https://chowtrades.github.io/dlmm-dashboard/assets/og.png">
+<!-- /brand:meta -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-<header>
-  <h1>Meteora DLMM · <span class="muted">read-only</span></h1>
-  <form id="walletForm" class="row">
-    <input id="wallet" spellcheck="false" autocomplete="off" placeholder="Wallet address" aria-label="Wallet address">
-    <button type="submit">Load</button>
-    <button type="button" id="refreshNow" title="Refresh now">↻</button>
-  </form>
-  <div class="sub"><span id="walletLink"></span></div>
-  <div class="sub"><span id="status" class="status">Loading…</span> · <span id="countdown"></span></div>
+<div class="glow" aria-hidden="true"></div>
+<header class="top">
+  <a class="brand" href="./">
+    <img class="logo" src="assets/logo-icon.png" alt="" width="44" height="44" data-brand-logo>
+    <span class="brand-text">
+      <span class="brand-name" data-brand="name">ChowBot</span>
+      <span class="brand-tag" data-brand="tagline">Autonomous Meteora DLMM liquidity bot on Solana</span>
+    </span>
+  </a>
+  <div class="top-actions">
+    <span id="live" class="live"><i></i><span id="liveText">Connecting…</span></span>
+    <button type="button" id="share" class="btn">Share</button>
+    <button type="button" id="refreshNow" class="btn icon" title="Refresh now" aria-label="Refresh now">↻</button>
+  </div>
 </header>
 <main>
   <div id="notes"></div>
-  <section class="card"><div id="pnl" class="grid"><div class="stat big"><label>PnL</label><b>Loading…</b></div></div></section>
-  <section class="card"><div id="summary" class="grid"></div></section>
-  <div id="positions"></div>
-  <section class="card"><h3 style="margin-top:0">Position history</h3><div id="history"><p class="muted">Loading…</p></div></section>
-  <details class="card">
-    <summary>Settings (RPC)</summary>
-    <p class="muted">Saved in this browser only (localStorage). Leave empty for defaults. A custom RPC (e.g. Helius/QuickNode/Triton with browser origin allowed) is used for all calls, including position discovery.</p>
-    <label>RPC URL <input id="rpc" spellcheck="false" autocomplete="off"></label>
-    <label>Discovery RPC (getProgramAccounts, used only when no custom RPC) <input id="disc" spellcheck="false" autocomplete="off"></label>
-    <div class="row"><button type="button" id="saveRpc">Save</button><button type="button" id="resetRpc">Reset to defaults</button></div>
-  </details>
-  <p class="muted foot">No keys, no signing, no backend. Data: Solana RPC, Meteora data API, Jupiter price API. PnL uses <code>start_sol</code> in <code>config.json</code> (set after the wallet is funded). Tip: <code>?wallet=&lt;address&gt;</code>.</p>
+
+  <section class="card hero">
+    <div id="heroMain" class="hero-main"><div class="eyebrow">Portfolio value</div><div class="big skeleton">Loading…</div></div>
+    <div id="kpis" class="kpis"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <div><h2>Performance</h2><div class="sub" id="chartSub">Wallet value in SOL</div></div>
+      <div class="tabs" id="rangeTabs" role="tablist">
+        <button type="button" data-range="24h">24H</button>
+        <button type="button" data-range="7d">7D</button>
+        <button type="button" data-range="all" class="on">ALL</button>
+      </div>
+    </div>
+    <div id="valueChart" class="vchart"></div>
+  </section>
+
+  <div class="cols">
+    <div id="positions"></div>
+    <section class="card" id="dailyCard">
+      <div class="card-head"><div><h2>Daily PnL</h2><div class="sub">Realized, by ICT day</div></div></div>
+      <div id="daily"><p class="muted">Loading…</p></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="card-head"><div><h2>Trade history</h2><div class="sub" id="histSub">Every position the bot opened, newest first</div></div></div>
+    <div id="history"><p class="muted">Loading…</p></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><div><h2>Wallet</h2><div class="sub" id="walletLink"></div></div></div>
+    <div id="summary" class="grid4"></div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot-row"><span id="status" class="status">Loading…</span><span class="dot">·</span><span id="countdown"></span></div>
+    <details class="settings">
+      <summary>Settings</summary>
+      <form id="walletForm" class="row">
+        <input id="wallet" spellcheck="false" autocomplete="off" placeholder="Wallet address" aria-label="Wallet address">
+        <button type="submit" class="btn">Load</button>
+      </form>
+      <p class="muted">Custom RPC (saved in this browser only). Leave empty for public defaults. A custom RPC is used for all calls, including position discovery.</p>
+      <label>RPC URL <input id="rpc" spellcheck="false" autocomplete="off"></label>
+      <label>Discovery RPC (getProgramAccounts, used only when no custom RPC) <input id="disc" spellcheck="false" autocomplete="off"></label>
+      <div class="row"><button type="button" id="saveRpc" class="btn">Save</button><button type="button" id="resetRpc" class="btn">Reset to defaults</button></div>
+    </details>
+    <p class="muted small">Read-only and fully on-chain: no keys, no signing, no backend. Data from Solana RPC, Meteora and Jupiter. Values in SOL; PnL measured against the starting balance. Not financial advice.</p>
+  </footer>
 </main>
-<script src="dist/app.js?v=5df9cf1"></script>
+<div id="toast" class="toast" role="status"></div>
+<script src="dist/app.js?v=3"></script>
 </body>
 </html>

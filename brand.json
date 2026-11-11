@@ -1,0 +1,9 @@
+{
+  "name": "ChowBot",
+  "logo": "assets/logo-icon.png",
+  "wordmark": "assets/logo-wordmark.png",
+  "tagline": "Autonomous Meteora DLMM liquidity bot on Solana",
+  "description": "ChowBot trades fresh Solana memecoin pools on Meteora DLMM, fully on autopilot. Live wallet value, PnL, win rate and every trade, on-chain and verifiable.",
+  "url": "https://chowtrades.github.io/dlmm-dashboard/",
+  "theme_color": "#0a0a0a"
+}

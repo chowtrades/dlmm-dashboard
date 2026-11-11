@@ -188,43 +188,184 @@ function buildPosition(entry, posData, pool, prices, cfg) {
 // ---------- render ----------
 const sgn = (n, d = 4) => (n == null || !isFinite(n) ? '—' : (n >= 0 ? '+' : '−') + Math.abs(n).toFixed(d));
 const cls = (n) => (n == null || !isFinite(n) ? '' : n >= 0 ? 'pos' : 'neg');
-function renderHistory(h, live, solUsd) {
-  const el = $('#history');
-  if (!h) { el.innerHTML = '<p class="muted">Position history unavailable.</p>'; return; }
-  if (startSol() == null && !(h.open || []).length && !(h.closed || []).length) {
-    el.innerHTML = '<p class="muted">No trades yet — waiting for funding. History will start with the next deposit and position.</p>';
-    return;
-  }
-  const meteora = (pool) => `<a href="https://app.meteora.ag/dlmm/${esc(pool)}" target="_blank" rel="noopener">${esc(short(pool))}</a>`;
-  const tl = (t) => (t ? link(t, 'tx', short(t)) : '—');
-  const t = (d) => (d ? esc(ict(d).replace(' ICT', '')) : '—');
-  const row = (r, exit, pnl, pp, status) => `<tr><td><b>${esc(r.pair)}</b> <span class="badge ${status === 'open' ? 'in' : 'cl'}">${status}</span><small>${link(r.position, 'account')}</small></td><td class="pnlcol ${cls(pnl)}"><b>${sgn(pnl)}</b><small class="${cls(pnl)}">${pp != null ? pct(pp) : ''}</small></td><td>${meteora(r.pool)}</td><td>${t(r.opened)}</td><td>${r.closed ? t(r.closed) : '—'}</td><td>${fmt(r.entry_sol, 4)}</td><td>${exit != null ? fmt(exit, 4) : '—'}</td><td class="reason">${esc(r.reason || (status === 'open' ? 'live' : ''))}</td><td>${tl(r.open_tx)} / ${tl(r.close_tx)}</td></tr>`;
-  let unr = 0, unrEntry = 0, unrOk = true;
-  const openRows = (h.open || []).map((r) => { const p = live.find((x) => x.position === r.position); const entry = r.entry_sol ?? p?.pnl?.dep; const v = p?.pnl?.total ?? (p ? (p.valueSol || 0) + (p.feesSol || 0) : null); const d = v != null && entry != null ? v - entry : null; if (d == null || !isFinite(d)) unrOk = false; else { unr += d; unrEntry += entry; } return row({ ...r, entry_sol: entry }, v, d, d != null && entry ? (d / entry) * 100 : null, 'open'); });
-  const closed = h.closed || [];
-  const tot = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
-  el.innerHTML = `<div class="tablewrap"><table class="hist"><thead><tr><th>Pair</th><th>PnL SOL / %</th><th>Pool</th><th>Opened (ICT)</th><th>Closed (ICT)</th><th>Entry SOL</th><th>Exit SOL</th><th>Close reason</th><th>Open / close tx</th></tr></thead><tbody>
-    ${openRows.join('')}${closed.map((r) => row(r, r.exit_sol, r.pnl_sol, r.pnl_pct, 'closed')).join('')}</tbody>
-    <tfoot><tr><td><b>Realized total (${closed.length} closed)</b></td><td class="${cls(tot)}"><b>${sgn(tot)}</b></td><td colspan="7" class="muted">Exit/PnL from autopilot logs; MAMESUKE uses wallet delta (incl. swap). Open row is live (incl. fees).</td></tr></tfoot></table></div>${pnlSummary(closed, unrOk ? unr : null, unrEntry, (h.open || []).length, solUsd)}`;
+const ictShort = (d) => new Date(d).toLocaleString('en-GB', { timeZone: 'Asia/Saigon', hour12: false, day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' });
+const ictTime = (d) => new Date(d).toLocaleTimeString('en-GB', { timeZone: 'Asia/Saigon', hour12: false, hour: '2-digit', minute: '2-digit' });
+function dur(ms) {
+  if (!isFinite(ms) || ms < 0) return '—';
+  const m = Math.round(ms / 6e4);
+  if (m < 60) return m + 'm';
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h ${String(m % 60).padStart(2, '0')}m`;
+  return `${Math.floor(h / 24)}d ${h % 24}h`;
 }
-function pnlSummary(closed, unr, unrEntry, nOpen, solUsd) {
-  const init = startSol();
-  const real = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
-  const wins = closed.filter((r) => (r.pnl_sol || 0) > 0).length, losses = closed.filter((r) => (r.pnl_sol || 0) < 0).length;
-  const comb = unr != null ? real + unr : null;
-  const u = (n) => (solUsd && n != null ? usd(n * solUsd) : '—');
-  if (init == null) {
-    return `<h3>PnL summary</h3><p class="muted">Waiting for funding — PnL vs start will appear after <code>start_sol</code> is set.</p>`;
-  }
-  return `<h3>PnL summary</h3><div class="grid">
-    <div class="stat big"><label>Realized PnL</label><b class="${cls(real)}">${sgn(real)} SOL <span>${pct((real / init) * 100)}</span></b><small>${u(real)} · ${closed.length} closed · ${wins}W / ${losses}L · win rate ${closed.length ? ((wins / closed.length) * 100).toFixed(0) : '—'}%</small></div>
-    <div class="stat big"><label>Unrealized PnL</label><b class="${cls(unr)}">${sgn(unr)} SOL <span>${unr != null && unrEntry ? pct((unr / unrEntry) * 100) : '—'}</span></b><small>${u(unr)} · ${nOpen} open (live, incl. fees) · % vs ${fmt(unrEntry, 4)} SOL deposited</small></div>
-    <div class="stat big"><label>Combined PnL</label><b class="${cls(comb)}">${sgn(comb)} SOL <span>${comb != null ? pct((comb / init) * 100) : '—'}</span></b><small>${u(comb)} · realized + unrealized · % vs ${fmt(init, 4)} SOL start</small></div>
-  </div><p class="muted" style="font-size:11px;margin:6px 0 0">Realized/combined % are vs the ${fmt(init, 4)} SOL initial balance. Excludes position rent (see Total PnL at top for full wallet value).</p>`;
-}
+const ago = (t) => dur(Date.now() - t) + ' ago';
 function ictYmd(d) {
   return new Date(d).toLocaleDateString('en-CA', { timeZone: 'Asia/Saigon' }); // YYYY-MM-DD in ICT
 }
+const sol = (n, d = 4) => `${fmt(n, d)} <small>SOL</small>`;
+
+// Brand name comes from brand.json, stamped into index.html by tools/brand.mjs
+const brandName = () => document.querySelector('[data-brand="name"]')?.textContent.trim() || 'The bot';
+
+let view = { series: [], closed: [], cur: null, range: 'all' };
+
+function historyPoints(hist) {
+  return (hist?.points || []).map((p) => ({ t: Date.parse(p.ts), v: Number(p.value_sol) })).filter((p) => isFinite(p.t) && isFinite(p.v)).sort((a, b) => a.t - b.t);
+}
+
+function renderHero(cur, rent, freeSol, hist, ph, solUsd) {
+  const init = startSol();
+  const closed = ph?.closed || [];
+  const nOpen = (ph?.open || []).length;
+  const wins = closed.filter((r) => (r.pnl_sol || 0) > 0).length, losses = closed.filter((r) => (r.pnl_sol || 0) < 0).length;
+  const real = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
+  const u = (n) => (solUsd && n != null && isFinite(n) ? usd(n * solUsd) : '');
+  if (init == null) {
+    $('#heroMain').innerHTML = `<div class="eyebrow">Portfolio value</div><div class="big">${sol(cur, 4)}</div><div class="usd">${u(cur)}</div><div class="since">Waiting for funding. PnL starts once the bot wallet is funded.</div>`;
+    $('#kpis').innerHTML = '';
+    window.__pnl = { cur, tot: null, awaiting: true };
+    return;
+  }
+  const tot = cur - init;
+  const pts = historyPoints(hist);
+  const startMs = Date.parse(config.start_date || '') || pts[0]?.t || Date.now();
+  const days = Math.max(1, (Date.now() - startMs) / 864e5);
+  const avg = tot / days, avgPct = (tot / init) * 100 / days;
+  // today (ICT calendar day): now vs the last snapshot before ICT midnight (or the first one today)
+  const midnight = Date.parse(ictYmd(Date.now()) + 'T00:00:00+07:00');
+  const before = pts.filter((p) => p.t <= midnight);
+  const tRef = before.length ? before[before.length - 1] : pts.find((p) => p.t >= midnight) || (startMs >= midnight ? { t: startMs, v: init } : null);
+  const today = tRef ? cur - tRef.v : null;
+  const todayN = closed.filter((r) => r.closed && ictYmd(r.closed) === ictYmd(Date.now())).length;
+  // 24h
+  const target = Date.now() - 864e5;
+  const old = pts.filter((p) => p.t <= target);
+  const ref = pts.length ? (old.length ? old[old.length - 1] : pts[0]) : null;
+  const d24 = ref ? cur - ref.v : null;
+  const wr = closed.length ? (wins / closed.length) * 100 : null;
+  $('#heroMain').innerHTML = `
+    <div class="eyebrow">Portfolio value</div>
+    <div class="big">${fmt(cur, 4)}<small>SOL</small></div>
+    <div class="usd">${u(cur) || '&nbsp;'}</div>
+    <div class="pill ${cls(tot)}">${tot >= 0 ? '▲' : '▼'} ${pct((tot / init) * 100)} <span style="opacity:.75">· ${sgn(tot)} SOL</span></div>
+    <div class="since">All-time vs ${fmt(init, 4)} SOL start · since ${esc(ictShort(startMs))} ICT</div>`;
+  const kpi = (label, val, c, small, extra = '') => `<div class="kpi"><label>${label}</label><b class="${c}">${val}</b><small>${small}</small>${extra}</div>`;
+  $('#kpis').innerHTML = [
+    kpi("Today's PnL", today != null ? pct((today / tRef.v) * 100) : '—', cls(today), today != null ? `${sgn(today)} SOL · ${todayN} close${todayN === 1 ? '' : 's'}` : 'no data yet'),
+    kpi('24h PnL', d24 != null ? pct((d24 / ref.v) * 100) : '—', cls(d24), d24 != null ? `${sgn(d24)} SOL${old.length ? '' : ` · ${dur(Date.now() - ref.t)} of data`}` : 'no data yet'),
+    kpi('Avg / day', pct(avgPct), cls(avg), `${sgn(avg)} SOL · ${days.toFixed(1)} days`),
+    kpi('Win rate', wr != null ? wr.toFixed(0) + '%' : '—', '', `${wins}W · ${losses}L`, closed.length ? `<div class="wl"><i style="width:${wr.toFixed(1)}%"></i></div>` : ''),
+    kpi('Trades', String(closed.length + nOpen), '', `${closed.length} closed · ${nOpen} open`),
+    kpi('Realized PnL', sgn(real), cls(real), `${pct((real / init) * 100)} of start${u(real) ? ' · ' + u(real) : ''}`),
+  ].join('');
+  window.__pnl = { cur, tot, d24, ref, avg, days, avgPct, today };
+}
+
+function renderValueChart() {
+  const el = $('#valueChart');
+  const init = startSol();
+  const all = view.series;
+  if (all.length < 2) { el.innerHTML = '<div class="empty">Not enough history yet. The chart fills in as snapshots arrive.</div>'; return; }
+  const now = Date.now();
+  const span = { '24h': 864e5, '7d': 7 * 864e5 }[view.range];
+  let pts = span ? all.filter((p) => p.t >= now - span) : all;
+  if (pts.length < 2) pts = all.slice(-2);
+  const W = Math.max(280, el.clientWidth || 800), H = W < 600 ? 210 : 270;
+  const L = 6, R = 58, T = 14, B = 26;
+  const t0 = pts[0].t, t1 = pts[pts.length - 1].t;
+  const vs = pts.map((p) => p.v).concat(init != null ? [init] : []);
+  let lo = Math.min(...vs), hi = Math.max(...vs);
+  const padv = (hi - lo || 0.01) * 0.12; lo -= padv; hi += padv;
+  const x = (t) => L + ((t - t0) / (t1 - t0 || 1)) * (W - L - R);
+  const y = (v) => T + ((hi - v) / (hi - lo)) * (H - T - B);
+  const line = pts.map((p, i) => `${i ? 'L' : 'M'}${x(p.t).toFixed(1)},${y(p.v).toFixed(1)}`).join('');
+  const area = `${line}L${x(t1).toFixed(1)},${H - B}L${x(t0).toFixed(1)},${H - B}Z`;
+  let grid = '';
+  for (let i = 0; i <= 4; i++) {
+    const v = lo + ((hi - lo) * i) / 4, yy = y(v).toFixed(1);
+    grid += `<line class="gl" x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}"/><text class="yl" x="${W - R + 8}" y="${+yy + 3.5}">${v.toFixed(3)}</text>`;
+  }
+  const multiDay = t1 - t0 > 1.5 * 864e5;
+  const nx = W < 600 ? 3 : 5;
+  for (let i = 0; i <= nx; i++) {
+    const t = t0 + ((t1 - t0) * i) / nx;
+    const lab = multiDay ? new Date(t).toLocaleDateString('en-GB', { timeZone: 'Asia/Saigon', day: 'numeric', month: 'short' }) : ictTime(t);
+    grid += `<text class="xl" x="${x(t).toFixed(1)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === nx ? 'end' : 'middle'}">${lab}</text>`;
+  }
+  const base = init != null ? `<line class="base" x1="${L}" x2="${W - R}" y1="${y(init).toFixed(1)}" y2="${y(init).toFixed(1)}"/><text class="baselbl" x="${L + 4}" y="${(y(init) - 6).toFixed(1)}">START ${fmt(init, 3)}</text>` : '';
+  const near = (t) => pts.reduce((b, p) => (Math.abs(p.t - t) < Math.abs(b.t - t) ? p : b));
+  const marks = view.closed.filter((c) => c.closed && Date.parse(c.closed) >= t0 && Date.parse(c.closed) <= t1 && c.pnl_sol != null).map((c) => {
+    const t = Date.parse(c.closed), v = near(t).v;
+    return `<circle cx="${x(t).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.5" fill="#0a0a0a" stroke="${c.pnl_sol >= 0 ? '#5fb98a' : '#d0716a'}" stroke-width="2"><title>${esc(c.pair)} closed ${esc(ictShort(t))} · ${sgn(c.pnl_sol)} SOL</title></circle>`;
+  }).join('');
+  const last = pts[pts.length - 1];
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Wallet value over time">
+    <defs><linearGradient id="va" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4AF37" stop-opacity=".30"/><stop offset="1" stop-color="#D4AF37" stop-opacity="0"/></linearGradient>
+    <linearGradient id="vl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9C7A1E"/><stop offset=".6" stop-color="#D4AF37"/><stop offset="1" stop-color="#F7D774"/></linearGradient></defs>
+    ${grid}${base}<path d="${area}" fill="url(#va)"/><path d="${line}" fill="none" stroke="url(#vl)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${marks}<circle cx="${x(last.t).toFixed(1)}" cy="${y(last.v).toFixed(1)}" r="4.5" fill="#F5C542"/><circle cx="${x(last.t).toFixed(1)}" cy="${y(last.v).toFixed(1)}" r="9" fill="#F5C542" opacity=".18"/>
+    <line id="hx" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="#D4AF37" stroke-opacity=".5" stroke-dasharray="3 3" style="display:none"/>
+    <circle id="hd" r="4.5" fill="#F5C542" stroke="#0a0a0a" stroke-width="2" style="display:none"/>
+    <rect id="hov" x="${L}" y="0" width="${W - L - R}" height="${H}" fill="transparent"/></svg><div class="tip" id="vtip"></div>`;
+  const hov = $('#hov'), tip = $('#vtip'), hx = $('#hx'), hd = $('#hd');
+  const move = (ev) => {
+    const r = hov.ownerSVGElement.getBoundingClientRect();
+    const cx = ((ev.touches ? ev.touches[0].clientX : ev.clientX) - r.left) * (W / r.width);
+    const t = t0 + ((cx - L) / (W - L - R)) * (t1 - t0);
+    const p = near(t), px = x(p.t), py = y(p.v);
+    hx.setAttribute('x1', px); hx.setAttribute('x2', px); hx.style.display = '';
+    hd.setAttribute('cx', px); hd.setAttribute('cy', py); hd.style.display = '';
+    const d = init != null ? p.v - init : null;
+    tip.innerHTML = `<b>${fmt(p.v, 4)} SOL</b>${d != null ? ` <span class="${cls(d)}">${pct((d / init) * 100)}</span>` : ''}<small>${esc(ictShort(p.t))} ICT</small>`;
+    tip.style.display = 'block';
+    tip.style.left = Math.min(Math.max((px / W) * r.width, 70), r.width - 70) + 'px';
+    tip.style.top = (py / H) * r.height + 'px';
+  };
+  const leave = () => { tip.style.display = 'none'; hx.style.display = 'none'; hd.style.display = 'none'; };
+  hov.addEventListener('mousemove', move); hov.addEventListener('touchmove', move, { passive: true });
+  hov.addEventListener('mouseleave', leave); hov.addEventListener('touchend', leave);
+  const first = pts[0];
+  $('#chartSub').innerHTML = `Wallet value in SOL · <span class="${cls(last.v - first.v)}">${pct(((last.v - first.v) / first.v) * 100)}</span> over ${dur(t1 - t0)}`;
+}
+
+function renderHistory(h, live, solUsd) {
+  const el = $('#history');
+  if (!h) { el.innerHTML = '<p class="muted">Trade history unavailable.</p>'; return; }
+  if (startSol() == null && !(h.open || []).length && !(h.closed || []).length) {
+    el.innerHTML = '<p class="muted">No trades yet. History starts with the first position.</p>';
+    return;
+  }
+  const meteora = (pool) => `<a href="https://app.meteora.ag/dlmm/${esc(pool)}" target="_blank" rel="noopener">Pool ↗</a>`;
+  const tl = (t, l) => (t ? link(t, 'tx', l + ' ↗') : '');
+  const row = (r, exit, pnl, pp, status) => {
+    const o = Date.parse(r.opened), c = r.closed ? Date.parse(r.closed) : Date.now();
+    return `<tr>
+    <td class="pr"><b>${esc(r.pair)}</b> ${status === 'open' ? '<span class="badge open">Live</span>' : ''}<small>${r.opened ? esc(ictShort(r.opened)) : '—'}</small></td>
+    <td class="n ${cls(pnl)}">${sgn(pnl)}<small>${pp != null ? pct(pp) : ''}</small></td>
+    <td class="n">${dur(c - o)}</td>
+    <td class="n hide-sm">${fmt(r.entry_sol, 4)} → ${exit != null ? fmt(exit, 4) : '—'}</td>
+    <td class="reason hide-sm"><span title="${esc(r.reason || '')}">${esc(r.reason || (status === 'open' ? 'live position' : ''))}</span></td>
+    <td class="lk hide-sm">${meteora(r.pool)}${link(r.position, 'account', 'Position ↗')}${tl(r.open_tx, 'Open')} ${tl(r.close_tx, 'Close')}</td></tr>`;
+  };
+  let unr = 0, unrOk = true;
+  const openRows = (h.open || []).map((r) => { const p = live.find((x) => x.position === r.position); const entry = r.entry_sol ?? p?.pnl?.dep; const v = p?.pnl?.total ?? (p ? (p.valueSol || 0) + (p.feesSol || 0) : null); const d = v != null && entry != null ? v - entry : null; if (d == null || !isFinite(d)) unrOk = false; else unr += d; return row({ ...r, entry_sol: entry }, v, d, d != null && entry ? (d / entry) * 100 : null, 'open'); });
+  const closed = h.closed || [];
+  const real = closed.reduce((s, r) => s + (r.pnl_sol || 0), 0);
+  const best = closed.reduce((b, r) => (b == null || (r.pnl_sol ?? -1e9) > b.pnl_sol ? r : b), null);
+  const worst = closed.reduce((b, r) => (b == null || (r.pnl_sol ?? 1e9) < b.pnl_sol ? r : b), null);
+  const held = closed.map((r) => Date.parse(r.closed) - Date.parse(r.opened)).filter((x) => isFinite(x) && x >= 0);
+  const u = (n) => (solUsd && n != null ? usd(n * solUsd) : '');
+  $('#histSub').textContent = `${closed.length} closed${(h.open || []).length ? ` · ${(h.open || []).length} live` : ''} · newest first`;
+  el.innerHTML = `<div class="tablewrap"><table class="hist"><thead><tr><th>Pair</th><th class="n">PnL SOL</th><th class="n">Held</th><th class="n hide-sm">Entry → Exit</th><th class="hide-sm">Exit reason</th><th class="hide-sm">Links</th></tr></thead><tbody>
+    ${openRows.join('')}${closed.map((r) => row(r, r.exit_sol, r.pnl_sol, r.pnl_pct, 'closed')).join('')}</tbody></table></div>
+    <div class="summary-strip">
+      <div class="stat"><label>Realized total</label><b class="${cls(real)}">${sgn(real)} SOL</b><small>${u(real) || '&nbsp;'}</small></div>
+      <div class="stat"><label>Unrealized</label><b class="${cls(unrOk ? unr : null)}">${(h.open || []).length ? sgn(unrOk ? unr : null) + ' SOL' : '—'}</b><small>${(h.open || []).length ? 'live, incl. fees' : 'all in SOL'}</small></div>
+      <div class="stat"><label>Best / worst</label><b><span class="pos">${best ? sgn(best.pnl_sol, 3) : '—'}</span> / <span class="neg">${worst ? sgn(worst.pnl_sol, 3) : '—'}</span></b><small>${best ? esc(best.pair) : ''}${worst ? ' / ' + esc(worst.pair) : ''}</small></div>
+      <div class="stat"><label>Avg hold</label><b>${held.length ? dur(held.reduce((a, b) => a + b, 0) / held.length) : '—'}</b><small>per closed trade</small></div>
+    </div>`;
+}
+
 function dailyRealizedRows() {
   const by = new Map();
   for (const c of config.closed_positions || []) {
@@ -235,110 +376,86 @@ function dailyRealizedRows() {
     cur.n += 1;
     by.set(k, cur);
   }
-  return [...by.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([day, v]) => ({ day, ...v }));
+  return [...by.entries()].sort((a, b) => b[0].localeCompare(a[0])).map(([day, v]) => ({ day, ...v }));
 }
-function dailyRealizedHtml(rows, solUsd) {
-  if (!rows.length) return '';
+function renderDaily(solUsd) {
+  const rows = dailyRealizedRows();
+  const el = $('#daily');
+  if (!rows.length) { el.innerHTML = '<p class="muted">No closed trades yet.</p>'; return; }
   const max = Math.max(...rows.map((r) => Math.abs(r.pnl)), 1e-9);
-  const bar = (n) => {
-    const w = Math.max(2, (Math.abs(n) / max) * 100);
-    return `<span class="dbar"><i class="${n >= 0 ? 'pos' : 'neg'}" style="width:${w.toFixed(1)}%"></i></span>`;
-  };
-  const tr = rows.map((r) => {
+  el.innerHTML = rows.map((r) => {
     const label = new Date(r.day + 'T12:00:00+07:00').toLocaleDateString('en-GB', { timeZone: 'Asia/Saigon', day: 'numeric', month: 'short' });
-    return `<tr><td>${esc(label)}</td><td class="pnlcol ${cls(r.pnl)}"><b>${sgn(r.pnl)}</b></td><td class="muted">${r.n} close${r.n === 1 ? '' : 's'}</td><td>${bar(r.pnl)}</td><td class="muted">${solUsd ? usd(r.pnl * solUsd) : ''}</td></tr>`;
-  }).join('');
-  return `<div class="daily" style="grid-column:1/-1"><h3 style="margin-top:4px">Daily realized PnL (ICT)</h3>
-    <div class="tablewrap"><table class="hist dailypnl"><thead><tr><th>Day</th><th>PnL SOL</th><th>Closes</th><th></th><th></th></tr></thead><tbody>${tr}</tbody></table></div>
-    <p class="muted" style="font-size:11px;margin:6px 0 0">Sum of logged close PnL per Asia/Saigon calendar day. Unrealized (open position) is not split by day — see Avg daily PnL above for total wallet PnL / days.</p></div>`;
+    const w = Math.max(3, (Math.abs(r.pnl) / max) * 100);
+    return `<div class="drow"><span>${esc(label)}<br><small class="muted">${r.n} close${r.n === 1 ? '' : 's'}</small></span><span class="dbar"><i class="${r.pnl >= 0 ? 'pos' : 'neg'}" style="width:${w.toFixed(1)}%"></i></span><span class="v ${cls(r.pnl)}">${sgn(r.pnl)}<small>${solUsd ? usd(r.pnl * solUsd) : ''}</small></span></div>`;
+  }).join('') + '<p class="muted small" style="margin:10px 0 0">Sum of closed-trade PnL per Asia/Saigon day.</p>';
 }
-function renderPnl(cur, rent, hist, solUsd) {
-  const init = startSol();
-  if (init == null) {
-    $('#pnl').innerHTML = `
-      <div class="stat big"><label>PnL</label><b>Waiting for funding</b>
-      <small>No start balance yet (start_sol). Wallet now ${fmt(cur, 6)} SOL${rent ? ` (incl. ${fmt(rent, 4)} rent)` : ''}. Average daily PnL and the daily table will appear after the bot wallet is funded.</small></div>`;
-    window.__pnl = { cur, tot: null, awaiting: true };
-    return;
-  }
-  const tot = cur - init;
-  const startMs = Date.parse(config.start_date || '') || Date.parse((hist?.points || [])[0]?.ts || '') || Date.now();
-  const days = Math.max(1, (Date.now() - startMs) / 864e5);
-  const avg = tot / days;
-  const avgPct = (tot / init) * 100 / days;
-  const pts = (hist?.points || []).map((p) => ({ t: Date.parse(p.ts), v: Number(p.value_sol) })).filter((p) => isFinite(p.t) && isFinite(p.v)).sort((a, b) => a.t - b.t);
-  const target = Date.now() - 864e5;
-  let ref = null, label = '';
-  if (pts.length) {
-    const old = pts.filter((p) => p.t <= target);
-    ref = old.length ? old.reduce((b, p) => (Math.abs(p.t - target) < Math.abs(b.t - target) ? p : b)) : pts[0];
-    const hrs = (Date.now() - ref.t) / 36e5;
-    label = `vs ${fmt(ref.v, 4)} SOL at ${ict(ref.t)}${old.length ? '' : ` (oldest point, only ${hrs.toFixed(1)}h)`}`;
-  }
-  const d24 = ref ? cur - ref.v : null;
-  const realized = (config.closed_positions || []).filter((c) => c.closed && Date.parse(c.closed) >= target && c.pnl_sol != null);
-  const rsum = realized.reduce((s, c) => s + c.pnl_sol, 0);
-  const u = (n) => (solUsd && n != null ? ' · ' + usd(n * solUsd) : '');
-  const daily = dailyRealizedRows();
-  $('#pnl').innerHTML = `
-    <div class="stat big"><label>24h PnL</label><b class="${cls(d24)}">${sgn(d24)} SOL <span>${ref ? pct((d24 / ref.v) * 100) : '—'}</span></b><small>${ref ? esc(label) : 'No value history yet'}${u(d24)}</small>${realized.length ? `<small>Realized (closed last 24h, logged): <span class="${cls(rsum)}">${sgn(rsum)} SOL</span> · ${realized.length} close(s)</small>` : ''}</div>
-    <div class="stat big"><label>Total PnL vs ${fmt(init, 4)} SOL start</label><b class="${cls(tot)}">${sgn(tot)} SOL <span>${pct((tot / init) * 100)}</span></b><small>Now ${fmt(cur, 6)} SOL (free SOL + positions + fees + ${fmt(rent, 4)} rent)${u(tot)} · since ${esc(config.start_date ? ict(config.start_date) : '—')}</small></div>
-    <div class="stat big"><label>Avg daily PnL</label><b class="${cls(avg)}">${sgn(avg)} SOL <span>${pct(avgPct)}</span></b><small>Total ÷ ${days.toFixed(2)} days since start${u(avg)} · % of ${fmt(init, 4)} SOL start per day</small></div>
-    ${dailyRealizedHtml(daily, solUsd)}`;
-  window.__pnl = { cur, tot, d24, ref, avg, days, avgPct };
-}
+
 function binChart(p) {
   const bins = [...p.bins].sort((a, b) => a.id - b.id);
   if (!bins.length) return '';
-  const W = 720, H = 200, pad = 2;
+  const W = 720, H = 170, pad = 2;
   const lo = Math.min(bins[0].id, p.active), hi = Math.max(bins[bins.length - 1].id, p.active);
   const n = hi - lo + 1;
   const bw = (W - 2) / n;
   const max = Math.max(...bins.map((b) => b.v), 1e-18);
   let bars = '';
   for (const b of bins) {
-    const h = (b.v / max) * (H - pad - 8);
+    const h = (b.v / max) * (H - pad - 10);
     const x = 1 + (b.id - lo) * bw;
     const isA = b.id === p.active;
-    const fill = isA ? '#facc15' : b.y > 0 && b.x === 0 ? '#22d3ee' : b.x > 0 && b.y === 0 ? '#a78bfa' : '#34d399';
-    bars += `<rect x="${x.toFixed(2)}" y="${(H - pad - h).toFixed(2)}" width="${Math.max(bw - 1, 0.6).toFixed(2)}" height="${Math.max(h, b.v > 0 ? 1 : 0).toFixed(2)}" fill="${fill}"><title>bin ${b.id}\nprice ${fmtPrice(b.price)} ${p.symY}\n${fmt(b.x)} ${p.symX} + ${fmt(b.y)} ${p.symY}${isA ? '\nACTIVE' : ''}</title></rect>`;
+    const fill = isA ? '#F7D774' : b.y > 0 && b.x === 0 ? '#D4AF37' : b.x > 0 && b.y === 0 ? '#7d6a3a' : '#b8901f';
+    bars += `<rect x="${x.toFixed(2)}" y="${(H - pad - h).toFixed(2)}" width="${Math.max(bw - 1, 0.6).toFixed(2)}" height="${Math.max(h, b.v > 0 ? 1 : 0).toFixed(2)}" rx="1" fill="${fill}"><title>bin ${b.id}\nprice ${fmtPrice(b.price)} ${p.symY}\n${fmt(b.x)} ${p.symX} + ${fmt(b.y)} ${p.symY}${isA ? '\nACTIVE' : ''}</title></rect>`;
   }
   const ax = 1 + (p.active - lo) * bw + bw / 2;
-  const marker = `<line x1="${ax}" x2="${ax}" y1="4" y2="${H - pad}" stroke="#facc15" stroke-dasharray="3 3" stroke-width="1.5"/>`;
+  const marker = `<line x1="${ax}" x2="${ax}" y1="4" y2="${H - pad}" stroke="#F7D774" stroke-dasharray="3 3" stroke-width="1.5"/>`;
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="bin liquidity">${bars}${marker}</svg>
-  <div class="axis"><span>${fmtPrice(bins[0].price)}</span><span class="act">active bin ${p.active} · ${fmtPrice(p.pActive)}</span><span>${fmtPrice(bins[bins.length - 1].price)}</span></div>
-  <div class="legend"><span><i style="background:#a78bfa"></i>${esc(p.symX)} only</span><span><i style="background:#22d3ee"></i>${esc(p.symY)} only</span><span><i style="background:#34d399"></i>mixed</span><span><i style="background:#facc15"></i>active bin</span></div>`;
+  <div class="axis"><span>${fmtPrice(bins[0].price)}</span><span class="act">active ${fmtPrice(p.pActive)}</span><span>${fmtPrice(bins[bins.length - 1].price)}</span></div>
+  <div class="legend"><span><i style="background:#D4AF37"></i>${esc(p.symY)}</span><span><i style="background:#7d6a3a"></i>${esc(p.symX)}</span><span><i style="background:#b8901f"></i>mixed</span><span><i style="background:#F7D774"></i>active bin</span></div>`;
 }
 
 function positionCard(p) {
   const pi = p.poolInfo;
-  const badge = p.inRange ? '<span class="badge in">IN RANGE</span>' : `<span class="badge out">OUT OF RANGE ${p.active < p.lower ? '▼ below' : '▲ above'}</span>`;
+  const badge = p.inRange ? '<span class="badge in">● In range</span>' : `<span class="badge out">Out of range ${p.active < p.lower ? '▼' : '▲'}</span>`;
   const pnl = p.pnl
-    ? `<div class="stat"><label>PnL vs deposit</label><b class="${p.pnl.abs >= 0 ? 'pos' : 'neg'}">${p.pnl.abs >= 0 ? '+' : ''}${p.pnl.abs.toFixed(6)} SOL</b><small>${pct(p.pnl.pct)} · ${usd(p.pnl.usd)}</small><small>deposited ${fmt(p.pnl.dep)} SOL → now ${fmt(p.pnl.total, 6)} SOL (incl. fees)</small></div>`
-    : `<div class="stat"><label>PnL vs deposit</label><b>—</b><small>add this position to config.json</small></div>`;
-  const opened = p.cfg?.opened ? `<small>opened ${ict(p.cfg.opened)}${p.cfg.strategy ? ' · ' + esc(p.cfg.strategy) : ''}${p.cfg.open_tx ? ' · ' + link(p.cfg.open_tx, 'tx', 'open tx') : ''}</small>` : '';
+    ? `<div class="stat"><label>PnL</label><b class="${cls(p.pnl.abs)}">${sgn(p.pnl.abs, 5)} SOL</b><small>${pct(p.pnl.pct)} · incl. fees</small></div>`
+    : `<div class="stat"><label>PnL</label><b>—</b><small>deposit not logged</small></div>`;
+  const opened = p.cfg?.opened ? `Opened ${esc(ictShort(p.cfg.opened))} ICT · ${ago(Date.parse(p.cfg.opened))}` : '';
   return `<section class="card">
-    <div class="head">
-      <div><h2>${esc(p.name)} ${badge}</h2>
-      <small>bin step ${p.step} · position ${link(p.position)} · pool ${link(p.pool)} · <a href="https://app.meteora.ag/dlmm/${p.pool}" target="_blank" rel="noopener">Meteora</a></small>${opened}</div>
-    </div>
+    <div class="card-head"><div><h2>Current position</h2><div class="sub">${opened}</div></div>${badge}</div>
+    <div class="pos-head"><span class="pair">${esc(p.name)}</span><span class="sub" style="margin:0">bin step ${p.step} · ${p.cfg?.strategy ? esc(p.cfg.strategy) + ' · ' : ''}<a href="https://app.meteora.ag/dlmm/${p.pool}" target="_blank" rel="noopener">Meteora ↗</a> · ${link(p.position, 'account', 'Solscan ↗')}</span></div>
     <div class="grid">
-      <div class="stat"><label>Value</label><b>${fmt(p.valueSol, 6)} SOL</b><small>${usd(p.valueUsd)}${p.jupValueUsd != null ? ' · Jup mark ' + usd(p.jupValueUsd) : ''}</small></div>
+      <div class="stat"><label>Value</label><b>${fmt(p.valueSol, 5)} SOL</b><small>${usd(p.valueUsd)}</small></div>
       ${pnl}
-      <div class="stat"><label>Range (${esc(p.symY)} per ${esc(p.symX)})</label><b>${fmtPrice(p.pLo)} – ${fmtPrice(p.pHi)}</b><small>bins ${p.lower} … ${p.upper} (${p.upper - p.lower + 1})</small></div>
-      <div class="stat"><label>Active price</label><b>${fmtPrice(p.pActive)}</b><small>bin ${p.active}${p.usdX != null ? ' · ' + esc(p.symX) + ' $' + fmtPrice(p.usdX) : ''}</small></div>
-      <div class="stat"><label>Amounts</label><b>${fmt(p.X, 2)} ${esc(p.symX)}</b><b>${fmt(p.Y, 6)} ${esc(p.symY)}</b></div>
-      <div class="stat"><label>Unclaimed fees</label><b>${fmt(p.fX, 2)} ${esc(p.symX)} · ${fmt(p.fY, 6)} ${esc(p.symY)}</b><small>≈ ${fmt(p.feesSol, 5)} SOL · ${usd(p.feesUsd)}${p.cX || p.cY ? ` · claimed ${fmt(p.cX, 2)} ${esc(p.symX)} / ${fmt(p.cY, 6)} ${esc(p.symY)}` : ''}</small></div>
+      <div class="stat"><label>Unclaimed fees</label><b>${fmt(p.feesSol, 5)} SOL</b><small>${usd(p.feesUsd)}</small></div>
+      <div class="stat"><label>Deposited</label><b>${p.pnl ? fmt(p.pnl.dep, 4) + ' SOL' : '—'}</b><small>${p.upper - p.lower + 1} bins</small></div>
     </div>
-    <h3>Position liquidity by bin</h3>
+    <h3>Liquidity by bin</h3>
     ${binChart(p)}
-    ${pi ? `<h3>Pool stats</h3><div class="grid">
-      <div class="stat"><label>TVL</label><b>${usd(pi.tvl)}</b><small>${fmt(pi.token_x_amount, 2)} ${esc(p.symX)} + ${fmt(pi.token_y_amount, 2)} ${esc(p.symY)}</small></div>
-      <div class="stat"><label>24h volume</label><b>${usd(pi.volume?.['24h'])}</b><small>1h ${usd(pi.volume?.['1h'])}</small></div>
-      <div class="stat"><label>24h fees / TVL</label><b>${pct(pi.fee_tvl_ratio?.['24h']).replace('+', '')}</b><small>fees 24h ${usd(pi.fees?.['24h'])} · base fee ${pi.pool_config?.base_fee_pct ?? '—'}% · dyn ${pi.dynamic_fee_pct != null ? pi.dynamic_fee_pct.toFixed(3) + '%' : '—'}</small></div>
-      <div class="stat"><label>Tokens</label><small>${esc(p.symX)} ${link(p.xMint, 'token')}${pi.token_x?.is_verified === false ? ' <span class="warn">unverified</span>' : ''}</small><small>${esc(p.symY)} ${link(p.yMint, 'token')}</small><small>mcap ${usd(pi.token_x?.market_cap)}</small></div>
-    </div>` : '<p class="muted">Pool stats unavailable (Meteora data API).</p>'}
+    ${pi ? `<h3>Pool</h3><div class="grid">
+      <div class="stat"><label>TVL</label><b>${usd(pi.tvl)}</b><small>mcap ${usd(pi.token_x?.market_cap)}</small></div>
+      <div class="stat"><label>Volume 24h</label><b>${usd(pi.volume?.['24h'])}</b><small>1h ${usd(pi.volume?.['1h'])}</small></div>
+      <div class="stat"><label>Fees / TVL 24h</label><b>${pct(pi.fee_tvl_ratio?.['24h']).replace('+', '')}</b><small>base fee ${pi.pool_config?.base_fee_pct ?? '—'}%</small></div>
+      <div class="stat"><label>Token</label><b>${esc(p.symX)}</b><small>${link(p.xMint, 'token')}${pi.token_x?.is_verified === false ? ' · unverified' : ''}</small></div>
+    </div>` : ''}
   </section>`;
+}
+function waitingCard(freeSol, ph) {
+  const last = (ph?.closed || [])[0];
+  return `<section class="card">
+    <div class="card-head"><div><h2>Current position</h2><div class="sub">Live from chain</div></div><span class="badge cl">Flat</span></div>
+    <div class="waiting"><div class="radar"><i></i></div>
+      <div class="t">In SOL, waiting for the next setup</div>
+      <div class="d">${esc(brandName())} is holding SOL and scanning fresh Meteora DLMM pools for momentum, volume and fees that fit its entry rules.</div>
+      <div class="grid">
+        <div class="stat"><label>Ready capital</label><b>${fmt(freeSol, 4)} SOL</b><small>free wallet balance</small></div>
+        ${last ? `<div class="stat"><label>Last trade</label><b class="${cls(last.pnl_sol)}">${esc(last.pair)} ${sgn(last.pnl_sol, 4)}</b><small>closed ${last.closed ? ago(Date.parse(last.closed)) : '—'}</small></div>` : ''}
+      </div></div>
+  </section>`;
+}
+
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 2200);
 }
 
 async function refresh() {
@@ -363,27 +480,39 @@ async function refresh() {
         positions.push(buildPosition(e, pd, pools[i], prices, cfg));
       }
     });
-    const sol = lamports / LAMPORTS_PER_SOL;
+    const free = lamports / LAMPORTS_PER_SOL;
     let rent = 0;
     try { const accs = await conn.getMultipleAccountsInfo(positions.map((p) => new PublicKey(p.position))); rent = accs.reduce((s, a) => s + (a?.lamports || 0), 0) / LAMPORTS_PER_SOL; } catch (e) { notes.push('Position rent lookup failed; total excludes rent.'); }
     const totPos = positions.reduce((s, p) => s + (p.valueSol || 0) + (p.feesSol || 0), 0);
-    const hist = await getJSON('value_history.json?t=' + Date.now()).catch(() => null);
-    renderPnl(sol + totPos + rent, rent, hist, solUsd);
-    renderHistory(await getJSON('position_history.json?t=' + Date.now()).catch(() => null), positions, solUsd);
+    const [hist, ph] = await Promise.all([
+      getJSON('value_history.json?t=' + Date.now()).catch(() => null),
+      getJSON('position_history.json?t=' + Date.now()).catch(() => null),
+    ]);
+    const cur = free + totPos + rent;
+    renderHero(cur, rent, free, hist, ph, solUsd);
+    view.series = [...historyPoints(hist), { t: Date.now(), v: cur }];
+    view.closed = ph?.closed || [];
+    renderValueChart();
+    renderHistory(ph, positions, solUsd);
+    renderDaily(solUsd);
     $('#summary').innerHTML = `
-      <div class="stat"><label>Wallet SOL</label><b>${fmt(sol, 4)} SOL</b><small>${usd(solUsd ? sol * solUsd : null)}</small></div>
-      <div class="stat"><label>DLMM positions</label><b>${positions.length}</b><small>${fmt(totPos, 6)} SOL incl. fees · ${usd(solUsd ? totPos * solUsd : null)}</small></div>
-      <div class="stat"><label>Total (SOL + LP)</label><b>${fmt(sol + totPos, 4)} SOL</b><small>${usd(solUsd ? (sol + totPos) * solUsd : null)}</small></div>
+      <div class="stat"><label>Free SOL</label><b>${fmt(free, 4)} SOL</b><small>${usd(solUsd ? free * solUsd : null)}</small></div>
+      <div class="stat"><label>In positions</label><b>${fmt(totPos, 4)} SOL</b><small>${positions.length} open · incl. fees</small></div>
+      <div class="stat"><label>Position rent</label><b>${fmt(rent, 4)} SOL</b><small>refunded on close</small></div>
       <div class="stat"><label>SOL price</label><b>${usd(solUsd)}</b><small>Jupiter</small></div>`;
-    $('#walletLink').innerHTML = link(wallet, 'account', wallet);
-    $('#positions').innerHTML = positions.length ? positions.map(positionCard).join('') : '<section class="card"><p class="muted">No open DLMM positions found for this wallet.</p></section>';
+    $('#walletLink').innerHTML = link(wallet, 'account', short(wallet) + ' on Solscan ↗');
+    $('#positions').innerHTML = positions.length ? positions.map(positionCard).join('') : waitingCard(free, ph);
     $('#notes').innerHTML = notes.map((x) => `<div class="note">${esc(x)}</div>`).join('');
-    status.textContent = `Updated ${ict(Date.now())} · positions via ${via} · RPC ${new URL(settings().rpc).host}`;
-    window.__dash = { ok: true, positions: positions.length, sol, updated: Date.now() };
+    status.textContent = `Updated ${ict(Date.now())} · positions via ${via}`;
+    $('#live').className = 'live ok';
+    $('#liveText').textContent = 'Live · ' + ictTime(Date.now()) + ' ICT';
+    window.__dash = { ok: true, positions: positions.length, sol: free, updated: Date.now() };
   } catch (e) {
     console.warn(e);
-    status.textContent = 'Error: ' + (e.message || e) + ' — try a different RPC in Settings.';
+    status.textContent = 'Error: ' + (e.message || e) + ' (try a different RPC in Settings)';
     status.className = 'status err';
+    $('#live').className = 'live err';
+    $('#liveText').textContent = 'Reconnecting…';
     window.__dash = { ok: false, error: String(e.message || e) };
   }
 }
@@ -401,6 +530,7 @@ function schedule() {
 
 async function init() {
   try { config = await getJSON('config.json?t=' + Date.now()); } catch (e) { console.warn('config.json missing', e); }
+  config.positions = config.positions || [];
   wallet = params.get('wallet') || config.wallet || '';
   $('#wallet').value = wallet;
   const s = settings();
@@ -422,6 +552,20 @@ async function init() {
   });
   $('#resetRpc').addEventListener('click', () => { localStorage.removeItem(LS_RPC); localStorage.removeItem(LS_DISC); $('#rpc').value = ''; $('#disc').value = ''; refresh(); schedule(); });
   $('#refreshNow').addEventListener('click', () => { refresh(); schedule(); });
+  $('#rangeTabs').addEventListener('click', (ev) => {
+    const b = ev.target.closest('button[data-range]'); if (!b) return;
+    view.range = b.dataset.range;
+    $('#rangeTabs').querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b));
+    renderValueChart();
+  });
+  let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(renderValueChart, 150); });
+  $('#share').addEventListener('click', async () => {
+    const url = location.origin + location.pathname;
+    try {
+      if (navigator.share) await navigator.share({ title: document.title, url });
+      else { await navigator.clipboard.writeText(url); toast('Link copied'); }
+    } catch {}
+  });
   await refresh();
   schedule();
 }

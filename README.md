@@ -1,4 +1,15 @@
-# Meteora DLMM dashboard (read-only, static)
+# ChowBot · Meteora DLMM dashboard (read-only, static)
+
+## Branding (name, tagline, logo)
+- Everything lives in `brand.json`: `name`, `tagline`, `description`, `logo` (header icon + favicons),
+  `wordmark` (used in the link-preview image), `url`.
+- Logo files: `assets/logo-icon.png` (square icon) and `assets/logo-wordmark.png` (transparent, tight crop).
+  To revise, overwrite those files (or point `brand.json` at new ones).
+- Then run `node tools/brand.mjs` (or `./build.sh`). It rewrites the `<!-- brand:meta -->` block in
+  `index.html` (title, description, OG/Twitter tags), the header name/tagline/logo, and regenerates
+  `assets/favicon-32.png`, `assets/apple-touch-icon.png`, `assets/icon-512.png` and `assets/og.png` (1200x630)
+  with headless Chrome (`npm i` installs playwright-core; set `CHROME=` if Chrome isn't at /usr/bin/google-chrome).
+- Commit and push; GitHub Pages serves it as-is.
 
 Runs entirely in the browser: no backend, no keys, no signing. Open `index.html` through any static host.
 
