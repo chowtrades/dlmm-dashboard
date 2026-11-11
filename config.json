@@ -4,7 +4,22 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [],
+  "positions": [
+    {
+      "pair": "mihao-SOL",
+      "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
+      "position": "5mu9ePLJ1sf4kEETPtk5Tj8Wj2k2qarZvD42ouKe9vJd",
+      "strategy": "bid-ask",
+      "range": [
+        -310,
+        -246
+      ],
+      "opened": "2026-11-11T07:41+07:00",
+      "open_tx": "HmWUTUcEudfoD8eG33sPhWe8Wy7pSpYaccyFJ8ugpwQv4KtvDeSFFReU59V4GorwwVPchK1CvEW6JdK4RXm1Hpi",
+      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+      "deposited_sol": 0.35
+    }
+  ],
   "closed_positions": [
     {
       "pair": "X-SOL",
