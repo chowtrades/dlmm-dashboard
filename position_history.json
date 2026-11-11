@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-11T22:16:06.165Z",
+ "updated": "2026-11-11T22:19:43.577Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "PUSSY-SOL",
    "pool": "HcyYBrZVFDDVBLtLxL5C1HDJND1p86BoNA6m7MjBKE3p",
    "position": "G3EyM74ytibBBkZWrsjHa6EaPaNXCeBLyVJD6T8iqqKs",
    "opened": "2026-11-11T22:16:00.000Z",
+   "closed": "2026-11-11T22:19:00.000Z",
    "entry_sol": 0.38,
-   "open_tx": "2TA3u1CpqU2PHC1eksMWEhKBU3ZJAPL2S1BRXbfDHmxVLPz9VrSb63YSHxUjQPGyWhkzw5Nafpq2u59nkA4gD6LR"
-  }
- ],
- "closed": [
+   "exit_sol": 0.352892,
+   "pnl_sol": -0.027108,
+   "pnl_pct": -7.13,
+   "pnl_basis": "logged",
+   "reason": "bounce rollover take-profit",
+   "open_tx": "2TA3u1CpqU2PHC1eksMWEhKBU3ZJAPL2S1BRXbfDHmxVLPz9VrSb63YSHxUjQPGyWhkzw5Nafpq2u59nkA4gD6LR",
+   "close_tx": "mrcQwsnFACxn7Yxaja1ZkUq1Fgrd57YrnugvfTTm7SU7SRuyJCmug6BdtiX2JYqRjm7whWNLNXXk1gbETq4k3kP",
+   "swap_tx": null
+  },
   {
    "status": "closed",
    "pair": "mihao-SOL",
@@ -389,5 +396,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.016366
+ "realized_total_sol": -0.043474
 }
