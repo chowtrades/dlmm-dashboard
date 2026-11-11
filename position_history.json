@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-11T16:49:15.676Z",
+ "updated": "2026-11-11T18:22:54.054Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "mihao-SOL",
    "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
    "position": "AoLVcaZ1BwwPwM9MRhfnSf4dHm2ZFX95HBijfQyerRCR",
    "opened": "2026-11-11T16:49:00.000Z",
+   "closed": "2026-11-11T18:22:00.000Z",
    "entry_sol": 0.38,
-   "open_tx": "1FekZREVzHnt5FpxiX7Kny4JfbmfcKsRH5BHWbfvEZQvY6s3GJKrYUoT6r88YkYHqH3K2dUgZjwbMjemWYGdhhd"
-  }
- ],
- "closed": [
+   "exit_sol": 0.381127,
+   "pnl_sol": 0.001127,
+   "pnl_pct": 0.3,
+   "pnl_basis": "logged",
+   "reason": "chase: 3 checks above range, volume healthy",
+   "open_tx": "1FekZREVzHnt5FpxiX7Kny4JfbmfcKsRH5BHWbfvEZQvY6s3GJKrYUoT6r88YkYHqH3K2dUgZjwbMjemWYGdhhd",
+   "close_tx": "5U1Li6gqkXwcr8FRyZFYCW72QMygHZ1sWUyuhc2kHsUn9fxnUwmcdf52K25XAdScKcyy4sgxFESFCdpwY5jy8sWR",
+   "swap_tx": "2npe4d4z2HM1fD6fMfPv8TK7QAhMxQTz3MhrhtNbqknmhYukZw5M39QPxaCPmS1eHzbdLSJyKPNae38UGM9zxokg"
+  },
   {
    "status": "closed",
    "pair": "mihao-SOL",
@@ -355,5 +362,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.018843
+ "realized_total_sol": -0.017716
 }
