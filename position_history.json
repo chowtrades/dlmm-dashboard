@@ -1,19 +1,36 @@
 {
- "updated": "2026-11-11T02:50:41.904Z",
+ "updated": "2026-11-11T03:39:02.981Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
   {
    "status": "open",
+   "pair": "FLOAT-SOL",
+   "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
+   "position": "2Duc2CBu5CFKqLhgccPAMi15EePnydvyG2hMTHFgtr6z",
+   "opened": "2026-11-11T03:39:00.000Z",
+   "entry_sol": 0.36,
+   "open_tx": "2GCQGzDHJ1XaFMGAB6QvzqFs4UGofuFcWKRM6cdJs4KA9MhdZuDTjKLxrmVpAjpMfJudceZR7FZdZUq2ouug3qzP"
+  }
+ ],
+ "closed": [
+  {
+   "status": "closed",
    "pair": "mihao-SOL",
    "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
    "position": "EvpgrtGaMybYEgQx9pQ3o5Ggc6BxyYMRwYiDprwZXDxQ",
    "opened": "2026-11-11T02:51:00.000Z",
+   "closed": "2026-11-11T03:21:00.000Z",
    "entry_sol": 0.38,
-   "open_tx": "5RCvc1EftDrSWwK1rAs3UaT6AbPEafCi1LfimVX2LArHpkXMxNrz6oiGKbyJV5kLpc4vZbntTYvmzLKfyhLZuSLu"
-  }
- ],
- "closed": [
+   "exit_sol": 0.36136,
+   "pnl_sol": -0.01864,
+   "pnl_pct": -4.91,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [liquidity_drop] pool liquidity $89321 down 30.1% vs entry $127868",
+   "open_tx": "5RCvc1EftDrSWwK1rAs3UaT6AbPEafCi1LfimVX2LArHpkXMxNrz6oiGKbyJV5kLpc4vZbntTYvmzLKfyhLZuSLu",
+   "close_tx": "2Lp4mXgC3k3Zes72CVtQPGcHECcnAyG4WJkYgf6Ku1Zy7XY7LXFtf2Qf375HUPDDFvLR53LUN7QjdawavbJZKSAF",
+   "swap_tx": "39zAPvtjS2i7445sdwBuqidmNdHs3QeK1oBxTG4zPC1iLL4AC5m28Wf9741PyJ2gWDDEYRD622qSzJ1B6Rhqv8dY"
+  },
   {
    "status": "closed",
    "pair": "mihao-SOL",
@@ -270,5 +287,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.002456
+ "realized_total_sol": -0.021096
 }
