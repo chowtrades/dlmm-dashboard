@@ -1,19 +1,36 @@
 {
- "updated": "2026-11-11T01:46:17.469Z",
+ "updated": "2026-11-11T02:05:09.049Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
   {
    "status": "open",
    "pair": "mihao-SOL",
-   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
-   "position": "F2pZVNi4FFwVRgDTz81ZwYoMSH3peNTnN79QRMSHeET",
-   "opened": "2026-11-11T01:46:00.000Z",
-   "entry_sol": 0.37,
-   "open_tx": "4Pm8oA8SVh2BVBGaasKBA9oUbFewC7mvM3GFfyAyDDRwaf7uhCxVwLq1A3u1BdsYJhctWFSURZxLLKNSAvVLrNE9"
+   "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
+   "position": "3oQtTcR63B7uGZLFAZKH9Tqd7p4q8arMVLUqtZTsfHB6",
+   "opened": "2026-11-11T02:05:00.000Z",
+   "entry_sol": 0.38,
+   "open_tx": "4NGYCWwUtXSa7bU957SbK4cbiTsP1qVi4ZZWZ6mYpHWxukWhQhpTWqp9xv6ZMN4UHPqjner13zUgyHFqbTfaTnFm"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "mihao-SOL",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "F2pZVNi4FFwVRgDTz81ZwYoMSH3peNTnN79QRMSHeET",
+   "opened": "2026-11-11T01:46:00.000Z",
+   "closed": "2026-11-11T02:03:00.000Z",
+   "entry_sol": 0.37,
+   "exit_sol": 0.378626,
+   "pnl_sol": 0.008626,
+   "pnl_pct": 2.33,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [take_profit_upper] bounced back to top of range (active bin -800, upper -825) at 2.33%; value 0.3786 SOL",
+   "open_tx": "4Pm8oA8SVh2BVBGaasKBA9oUbFewC7mvM3GFfyAyDDRwaf7uhCxVwLq1A3u1BdsYJhctWFSURZxLLKNSAvVLrNE9",
+   "close_tx": "2PpDEPhbeoiLUR8Mzynxbj2aC3LyK8iQjX9UTvRfh3Ji2qYCgukCABfDjm3xJ8TJA2XtAHE4HAQCbii6PuGJSsjb",
+   "swap_tx": "5kspFSNmdKD29EeCisrG2RSFAWkWy8Rjpb8eyJRcz1tZuX36UP5JvyJiWZoK1QzEGFX2tJTBv1rBsV9toY6RsX3r"
+  },
   {
    "status": "closed",
    "pair": "mihao-SOL",
@@ -219,5 +236,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.014887
+ "realized_total_sol": -0.006261
 }
