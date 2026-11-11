@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T02:05:09.049Z",
+ "updated": "2026-11-11T02:25:01.130Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
@@ -7,13 +7,30 @@
    "status": "open",
    "pair": "mihao-SOL",
    "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
-   "position": "3oQtTcR63B7uGZLFAZKH9Tqd7p4q8arMVLUqtZTsfHB6",
-   "opened": "2026-11-11T02:05:00.000Z",
+   "position": "HXyWp5Akhb2Qrp12T8AXQE41ib7zhcxadvkCJdrNcggd",
+   "opened": "2026-11-11T02:25:00.000Z",
    "entry_sol": 0.38,
-   "open_tx": "4NGYCWwUtXSa7bU957SbK4cbiTsP1qVi4ZZWZ6mYpHWxukWhQhpTWqp9xv6ZMN4UHPqjner13zUgyHFqbTfaTnFm"
+   "open_tx": "3PRTbGMvEjha5hZ6CmFyxP1hsk3LiKgL2fBABeppYaHcDWkyfQ4437qBRnonHahvNA4oB7rkk9nswZEkwLtp2pjo"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "mihao-SOL",
+   "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
+   "position": "3oQtTcR63B7uGZLFAZKH9Tqd7p4q8arMVLUqtZTsfHB6",
+   "opened": "2026-11-11T02:05:00.000Z",
+   "closed": "2026-11-11T02:25:00.000Z",
+   "entry_sol": 0.38,
+   "exit_sol": 0.380097,
+   "pnl_sol": 0.0001,
+   "pnl_pct": 0.03,
+   "pnl_basis": "logged",
+   "reason": "chase: above range 3 checks with healthy volume (5m $146k, 1h fees 3.5% of TVL), liquidity up vs entry; reopened just below new price",
+   "open_tx": "4NGYCWwUtXSa7bU957SbK4cbiTsP1qVi4ZZWZ6mYpHWxukWhQhpTWqp9xv6ZMN4UHPqjner13zUgyHFqbTfaTnFm",
+   "close_tx": "52YpjHGFCevSnsWkiASDPW1ewQy3ohHGJPwHADFx3Fga1JYRp9sbtZNkotUorH36zodooD5nFHbsaU1QCVpUroi7",
+   "swap_tx": null
+  },
   {
    "status": "closed",
    "pair": "mihao-SOL",
@@ -236,5 +253,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.006261
+ "realized_total_sol": -0.006161
 }
