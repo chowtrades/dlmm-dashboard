@@ -35,7 +35,8 @@ let html = fs.readFileSync(ip, 'utf8');
 html = html.replace(/<!-- brand:meta[\s\S]*?<!-- \/brand:meta -->/, meta)
   .replace(/(data-brand="name">)[^<]*/, `$1${esc(b.name)}`)
   .replace(/(data-brand="tagline">)[^<]*/, `$1${esc(b.tagline)}`)
-  .replace(/src="[^"]*"([^>]*data-brand-logo)/, `src="${esc(b.logo)}"$1`);
+  .replace(/src="[^"]*"([^>]*data-brand-logo)/, `src="${esc(b.logo)}"$1`)
+  .replace(/src="[^"]*" alt="[^"]*"([^>]*data-brand-wordmark)/, `src="${esc(b.wordmark || '')}" alt="${esc(b.name)}"$1`);
 fs.writeFileSync(ip, html);
 console.log('index.html branded as', b.name);
 
