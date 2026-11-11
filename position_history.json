@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-11T04:25:18.722Z",
+ "updated": "2026-11-11T07:39:13.811Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "FLOAT-SOL",
    "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
    "position": "28rrjSjCWwJrqMBjVDSDxPX8Hf33WwhpWEXDGu7VcJJL",
    "opened": "2026-11-11T04:26:00.000Z",
+   "closed": "2026-11-11T07:31:00.000Z",
    "entry_sol": 0.385,
-   "open_tx": "4ivg15UGoxT4bJccXnx6pgd3LjQ45xMPtRkqGo95GLnzEbeV5gJsXWGXLe7ppZzVg68xAAaxsAceGCinC8u12k5d"
-  }
- ],
- "closed": [
+   "exit_sol": 0.385633,
+   "pnl_sol": 0.000633,
+   "pnl_pct": 0.16,
+   "pnl_basis": "logged",
+   "reason": "manual close by Chow",
+   "open_tx": "4ivg15UGoxT4bJccXnx6pgd3LjQ45xMPtRkqGo95GLnzEbeV5gJsXWGXLe7ppZzVg68xAAaxsAceGCinC8u12k5d",
+   "close_tx": "53NCesEHUdbPZkgGeSUKaWDpMtpQzTX8asCDBQzQ6YYFha3wMLGY3tVGaMqxL3HeP9nFiw2QdHrkFwdyyTJjhYfK",
+   "swap_tx": null
+  },
   {
    "status": "closed",
    "pair": "FLOAT-SOL",
@@ -304,5 +311,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.019856
+ "realized_total_sol": -0.019223
 }
