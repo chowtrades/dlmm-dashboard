@@ -1,19 +1,36 @@
 {
- "updated": "2026-11-11T02:25:01.130Z",
+ "updated": "2026-11-11T02:50:41.904Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
   {
    "status": "open",
    "pair": "mihao-SOL",
-   "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
-   "position": "HXyWp5Akhb2Qrp12T8AXQE41ib7zhcxadvkCJdrNcggd",
-   "opened": "2026-11-11T02:25:00.000Z",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "EvpgrtGaMybYEgQx9pQ3o5Ggc6BxyYMRwYiDprwZXDxQ",
+   "opened": "2026-11-11T02:51:00.000Z",
    "entry_sol": 0.38,
-   "open_tx": "3PRTbGMvEjha5hZ6CmFyxP1hsk3LiKgL2fBABeppYaHcDWkyfQ4437qBRnonHahvNA4oB7rkk9nswZEkwLtp2pjo"
+   "open_tx": "5RCvc1EftDrSWwK1rAs3UaT6AbPEafCi1LfimVX2LArHpkXMxNrz6oiGKbyJV5kLpc4vZbntTYvmzLKfyhLZuSLu"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "mihao-SOL",
+   "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
+   "position": "HXyWp5Akhb2Qrp12T8AXQE41ib7zhcxadvkCJdrNcggd",
+   "opened": "2026-11-11T02:25:00.000Z",
+   "closed": "2026-11-11T02:48:00.000Z",
+   "entry_sol": 0.38,
+   "exit_sol": 0.383705,
+   "pnl_sol": 0.003705,
+   "pnl_pct": 0.97,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [take_profit] value 0.3840 SOL (1.06%) >= target 0.3838 and price not rising (5m volume fading)",
+   "open_tx": "3PRTbGMvEjha5hZ6CmFyxP1hsk3LiKgL2fBABeppYaHcDWkyfQ4437qBRnonHahvNA4oB7rkk9nswZEkwLtp2pjo",
+   "close_tx": "2yBMw82MLzncZCAP8fdwRuxdHkRfoiaXo1nS7Bc6cATG8noLBgLeLd4Z6R1VWG49MVpXiPTiY5X6mYRBpr1Nvck5",
+   "swap_tx": "GfR4bytYtJ3x2SSPesFruHHqpNvnFZPhXZQbTVqTPumsBvnbykJtMXajZmNSFjjvUY9sGs67p9QGoUDA5ZBbmsQ"
+  },
   {
    "status": "closed",
    "pair": "mihao-SOL",
@@ -253,5 +270,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.006161
+ "realized_total_sol": -0.002456
 }
