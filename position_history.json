@@ -1,8 +1,18 @@
 {
- "updated": "2026-11-11T07:39:13.811Z",
+ "updated": "2026-11-11T15:06:09.502Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "mihao-SOL",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "986k9Mu55w7KxFEpe3Dj1KDzpyfc6GXoKi6P8ZQbqHh1",
+   "opened": "2026-11-11T15:06:00.000Z",
+   "entry_sol": 0.375,
+   "open_tx": "MNDHpjfFp7u3VhFjH7CtMk7Pa3LPQLZsS3DHGUy4UcaN4dY9D9B8Pncdo35vFCUNK2GoMAcQJxTHF92wF7Ekhxp"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
