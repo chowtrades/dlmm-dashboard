@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T22:19:43.577Z",
+ "updated": "2026-11-11T22:20:21.302Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [],
@@ -12,14 +12,14 @@
    "opened": "2026-11-11T22:16:00.000Z",
    "closed": "2026-11-11T22:19:00.000Z",
    "entry_sol": 0.38,
-   "exit_sol": 0.352892,
-   "pnl_sol": -0.027108,
-   "pnl_pct": -7.13,
+   "exit_sol": 0.381192,
+   "pnl_sol": 0.001192,
+   "pnl_pct": 0.31,
    "pnl_basis": "logged",
    "reason": "bounce rollover take-profit",
    "open_tx": "2TA3u1CpqU2PHC1eksMWEhKBU3ZJAPL2S1BRXbfDHmxVLPz9VrSb63YSHxUjQPGyWhkzw5Nafpq2u59nkA4gD6LR",
    "close_tx": "mrcQwsnFACxn7Yxaja1ZkUq1Fgrd57YrnugvfTTm7SU7SRuyJCmug6BdtiX2JYqRjm7whWNLNXXk1gbETq4k3kP",
-   "swap_tx": null
+   "swap_tx": "3RaEN874zjZKqdteh3LZoKrabjLerNMsdRcBPBiTpgYWNksW3gMYrYx3hFodj3Qwsc6R7cHEnjh7VVdYbLPP6Ty6"
   },
   {
    "status": "closed",
@@ -396,5 +396,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.043474
+ "realized_total_sol": -0.015174
 }
