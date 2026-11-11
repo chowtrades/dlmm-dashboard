@@ -1,8 +1,18 @@
 {
- "updated": "2026-11-11T19:08:32.032Z",
+ "updated": "2026-11-11T22:16:06.165Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "PUSSY-SOL",
+   "pool": "HcyYBrZVFDDVBLtLxL5C1HDJND1p86BoNA6m7MjBKE3p",
+   "position": "G3EyM74ytibBBkZWrsjHa6EaPaNXCeBLyVJD6T8iqqKs",
+   "opened": "2026-11-11T22:16:00.000Z",
+   "entry_sol": 0.38,
+   "open_tx": "2TA3u1CpqU2PHC1eksMWEhKBU3ZJAPL2S1BRXbfDHmxVLPz9VrSb63YSHxUjQPGyWhkzw5Nafpq2u59nkA4gD6LR"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
