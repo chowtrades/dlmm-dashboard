@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-11T00:40:28.729Z",
+ "updated": "2026-11-11T01:21:41.861Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "mihao-SOL",
    "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
    "position": "5mu9ePLJ1sf4kEETPtk5Tj8Wj2k2qarZvD42ouKe9vJd",
    "opened": "2026-11-11T00:41:00.000Z",
+   "closed": "2026-11-11T01:20:00.000Z",
    "entry_sol": 0.35,
-   "open_tx": "HmWUTUcEudfoD8eG33sPhWe8Wy7pSpYaccyFJ8ugpwQv4KtvDeSFFReU59V4GorwwVPchK1CvEW6JdK4RXm1Hpi"
-  }
- ],
- "closed": [
+   "exit_sol": 0.350228,
+   "pnl_sol": -0.00105,
+   "pnl_pct": -0.3,
+   "pnl_basis": "logged",
+   "reason": "above range 3 checks; no chase: pool no longer passes (liquidity -12.4% vs entry and falling, 1h volume down from ~1.4M to 275k, sells 49 vs buys 6 in 5m); closed and stayed in SOL",
+   "open_tx": "HmWUTUcEudfoD8eG33sPhWe8Wy7pSpYaccyFJ8ugpwQv4KtvDeSFFReU59V4GorwwVPchK1CvEW6JdK4RXm1Hpi",
+   "close_tx": "2qooNf3nd9QTSQKARpMhXQgXj932u7HzThqaNdMEjcm1YHp7r8VXRKfvmn4UA9VECZmbThgSubuVxsxbu5wntJvR",
+   "swap_tx": null
+  },
   {
    "status": "closed",
    "pair": "STANK-SOL",
@@ -185,5 +192,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.013867
+ "realized_total_sol": -0.014917
 }

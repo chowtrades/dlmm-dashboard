@@ -4,22 +4,7 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "pair": "mihao-SOL",
-      "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
-      "position": "5mu9ePLJ1sf4kEETPtk5Tj8Wj2k2qarZvD42ouKe9vJd",
-      "strategy": "bid-ask",
-      "range": [
-        -310,
-        -246
-      ],
-      "opened": "2026-11-11T07:41+07:00",
-      "open_tx": "HmWUTUcEudfoD8eG33sPhWe8Wy7pSpYaccyFJ8ugpwQv4KtvDeSFFReU59V4GorwwVPchK1CvEW6JdK4RXm1Hpi",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.35
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "pair": "X-SOL",
@@ -211,6 +196,24 @@
       "swap_tx": "54u6csQQ7pmHyFLQm4Dbt1B791i1yCi2gisryz8WdPSbnt8BfZaKsCY5YP3Tc6vPseLZjnPh7R8B7EqwX9fRgH2z",
       "pnl_sol": 0.002416,
       "close_reason": "[take_profit] value 0.3739 SOL (1.06%) >= target 0.3737, 5m volume fading"
+    },
+    {
+      "pair": "mihao-SOL",
+      "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
+      "position": "5mu9ePLJ1sf4kEETPtk5Tj8Wj2k2qarZvD42ouKe9vJd",
+      "strategy": "bid-ask",
+      "range": [
+        -310,
+        -246
+      ],
+      "opened": "2026-11-11T07:41+07:00",
+      "open_tx": "HmWUTUcEudfoD8eG33sPhWe8Wy7pSpYaccyFJ8ugpwQv4KtvDeSFFReU59V4GorwwVPchK1CvEW6JdK4RXm1Hpi",
+      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+      "deposited_sol": 0.35,
+      "closed": "2026-11-11T08:20+07:00",
+      "close_tx": "2qooNf3nd9QTSQKARpMhXQgXj932u7HzThqaNdMEjcm1YHp7r8VXRKfvmn4UA9VECZmbThgSubuVxsxbu5wntJvR",
+      "pnl_sol": -0.00105,
+      "close_reason": "above range; pool weakening (liquidity -12%, volume collapsing), closed instead of chasing"
     }
   ],
   "status": "active"
