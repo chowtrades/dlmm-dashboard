@@ -384,10 +384,11 @@ function renderDaily(solUsd) {
   if (!rows.length) { el.innerHTML = '<p class="muted">No closed trades yet.</p>'; return; }
   const max = Math.max(...rows.map((r) => Math.abs(r.pnl)), 1e-9);
   el.innerHTML = rows.map((r) => {
-    const label = new Date(r.day + 'T12:00:00+07:00').toLocaleDateString('en-GB', { timeZone: 'Asia/Saigon', day: 'numeric', month: 'short' });
+    const label = new Date(r.day + 'T12:00:00+07:00').toLocaleDateString('en-GB', { timeZone: 'Asia/Saigon', weekday: 'short', day: 'numeric', month: 'short' });
+    const isToday = r.day === ictYmd(Date.now());
     const w = Math.max(3, (Math.abs(r.pnl) / max) * 100);
-    return `<div class="drow"><span>${esc(label)}<br><small class="muted">${r.n} close${r.n === 1 ? '' : 's'}</small></span><span class="dbar"><i class="${r.pnl >= 0 ? 'pos' : 'neg'}" style="width:${w.toFixed(1)}%"></i></span><span class="v ${cls(r.pnl)}">${sgn(r.pnl)}<small>${solUsd ? usd(r.pnl * solUsd) : ''}</small></span></div>`;
-  }).join('') + '<p class="muted small" style="margin:10px 0 0">Sum of closed-trade PnL per Asia/Saigon day.</p>';
+    return `<div class="drow"><span>${esc(label)}<br><small class="muted">${isToday ? 'today · ' : ''}${r.n} close${r.n === 1 ? '' : 's'}</small></span><span class="dbar"><i class="${r.pnl >= 0 ? 'pos' : 'neg'}" style="width:${w.toFixed(1)}%"></i></span><span class="v ${cls(r.pnl)}">${sgn(r.pnl)}<small>${solUsd ? usd(r.pnl * solUsd) : ''}</small></span></div>`;
+  }).join('') + '<p class="muted small" style="margin:10px 0 0">Sum of logged closed-trade PnL per Asia/Saigon (ICT) day. Today’s PnL above is the change in total wallet value since ICT midnight, so it also includes swap costs and leftover token dust.</p>';
 }
 
 function binChart(p) {

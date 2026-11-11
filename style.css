@@ -105,7 +105,7 @@ h3{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.09
 .waiting .grid{width:100%;margin-top:18px;text-align:left}
 
 /* daily */
-.drow{display:grid;grid-template-columns:62px 1fr 92px;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #1b1914;font-size:12.5px}
+.drow{display:grid;grid-template-columns:96px 1fr 92px;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #1b1914;font-size:12.5px}
 .drow:last-child{border-bottom:0}
 .dbar{height:8px;background:var(--bg2);border-radius:4px;position:relative;overflow:hidden}
 .dbar i{position:absolute;top:0;bottom:0;border-radius:4px}.dbar i.pos{background:linear-gradient(90deg,#3f7d5d,var(--pos))}.dbar i.neg{background:linear-gradient(90deg,#8d4a45,var(--neg))}
