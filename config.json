@@ -4,22 +4,7 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "CHoasJjuuqkDFpPzhCCxcbNgk2rrggpr9RHESJaZa231",
-      "strategy": "bid-ask",
-      "range": [
-        -340,
-        -276
-      ],
-      "opened": "2026-11-11T06:12+07:00",
-      "open_tx": "TqPcyDvi8VLEKV2s6ML5qzz8oC5kWPMqoq7LLPE5EAJgVKvGRRTeQh4tEHwVDNawx79if7U3DnygFoJ5kU7oCZC",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "pair": "X-SOL",
@@ -192,6 +177,25 @@
       "swap_tx": "2UiebhUycnAZP2oZdpDGUgqyttnzK5p2p7PoLxDroxT9HKXhcGLmAiKiUrWCFCQUjoisQcP1KmjZVJQJqeXLMsav",
       "pnl_sol": 0.004386,
       "close_reason": "[take_profit] value 0.3747 SOL (1.27%) >= target 0.3737 and price not rising (5m volume fading)"
+    },
+    {
+      "pair": "STANK-SOL",
+      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+      "position": "CHoasJjuuqkDFpPzhCCxcbNgk2rrggpr9RHESJaZa231",
+      "strategy": "bid-ask",
+      "range": [
+        -340,
+        -276
+      ],
+      "opened": "2026-11-11T06:12+07:00",
+      "open_tx": "TqPcyDvi8VLEKV2s6ML5qzz8oC5kWPMqoq7LLPE5EAJgVKvGRRTeQh4tEHwVDNawx79if7U3DnygFoJ5kU7oCZC",
+      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+      "deposited_sol": 0.37,
+      "closed": "2026-11-11T07:18:45+07:00",
+      "close_tx": "3q6cNB4FdLcqsUhb65gpsYsLYidz6RhK8YxKMoLi5HNrACePHF2Pay6YU7aVu3xQfqXE5ppnjatDrPgssvZMumrT",
+      "swap_tx": "54u6csQQ7pmHyFLQm4Dbt1B791i1yCi2gisryz8WdPSbnt8BfZaKsCY5YP3Tc6vPseLZjnPh7R8B7EqwX9fRgH2z",
+      "pnl_sol": 0.002416,
+      "close_reason": "[take_profit] value 0.3739 SOL (1.06%) >= target 0.3737, 5m volume fading"
     }
   ],
   "status": "active"

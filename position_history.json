@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-10T23:12:42.895Z",
+ "updated": "2026-11-11T00:26:51.878Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "STANK-SOL",
    "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
    "position": "CHoasJjuuqkDFpPzhCCxcbNgk2rrggpr9RHESJaZa231",
    "opened": "2026-11-10T23:12:00.000Z",
+   "closed": "2026-11-11T00:18:00.000Z",
    "entry_sol": 0.37,
-   "open_tx": "TqPcyDvi8VLEKV2s6ML5qzz8oC5kWPMqoq7LLPE5EAJgVKvGRRTeQh4tEHwVDNawx79if7U3DnygFoJ5kU7oCZC"
-  }
- ],
- "closed": [
+   "exit_sol": 0.372416,
+   "pnl_sol": 0.002416,
+   "pnl_pct": 0.65,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [take_profit] value 0.3739 SOL (1.06%) >= target 0.3737 and price not rising (5m volume fading); watcher froze after the close, autopilot swapped the 853.9 STANK left to SOL",
+   "open_tx": "TqPcyDvi8VLEKV2s6ML5qzz8oC5kWPMqoq7LLPE5EAJgVKvGRRTeQh4tEHwVDNawx79if7U3DnygFoJ5kU7oCZC",
+   "close_tx": "3q6cNB4FdLcqsUhb65gpsYsLYidz6RhK8YxKMoLi5HNrACePHF2Pay6YU7aVu3xQfqXE5ppnjatDrPgssvZMumrT",
+   "swap_tx": "54u6csQQ7pmHyFLQm4Dbt1B791i1yCi2gisryz8WdPSbnt8BfZaKsCY5YP3Tc6vPseLZjnPh7R8B7EqwX9fRgH2z"
+  },
   {
    "status": "closed",
    "pair": "STANK-SOL",
@@ -168,5 +175,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.016283
+ "realized_total_sol": -0.013867
 }
