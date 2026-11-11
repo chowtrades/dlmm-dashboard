@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T03:39:02.981Z",
+ "updated": "2026-11-11T04:25:18.722Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
@@ -7,13 +7,30 @@
    "status": "open",
    "pair": "FLOAT-SOL",
    "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
-   "position": "2Duc2CBu5CFKqLhgccPAMi15EePnydvyG2hMTHFgtr6z",
-   "opened": "2026-11-11T03:39:00.000Z",
-   "entry_sol": 0.36,
-   "open_tx": "2GCQGzDHJ1XaFMGAB6QvzqFs4UGofuFcWKRM6cdJs4KA9MhdZuDTjKLxrmVpAjpMfJudceZR7FZdZUq2ouug3qzP"
+   "position": "28rrjSjCWwJrqMBjVDSDxPX8Hf33WwhpWEXDGu7VcJJL",
+   "opened": "2026-11-11T04:26:00.000Z",
+   "entry_sol": 0.385,
+   "open_tx": "4ivg15UGoxT4bJccXnx6pgd3LjQ45xMPtRkqGo95GLnzEbeV5gJsXWGXLe7ppZzVg68xAAaxsAceGCinC8u12k5d"
   }
  ],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "FLOAT-SOL",
+   "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
+   "position": "2Duc2CBu5CFKqLhgccPAMi15EePnydvyG2hMTHFgtr6z",
+   "opened": "2026-11-11T03:39:00.000Z",
+   "closed": "2026-11-11T04:25:00.000Z",
+   "entry_sol": 0.36,
+   "exit_sol": 0.36124,
+   "pnl_sol": 0.00124,
+   "pnl_pct": 0.34,
+   "pnl_basis": "logged",
+   "reason": "chase: above range 3 checks with healthy volume (5m $7.6k vs $5.4k avg, 1h fees ~0.3% of TVL), liquidity flat vs entry; reopened just below new price",
+   "open_tx": "2GCQGzDHJ1XaFMGAB6QvzqFs4UGofuFcWKRM6cdJs4KA9MhdZuDTjKLxrmVpAjpMfJudceZR7FZdZUq2ouug3qzP",
+   "close_tx": "4iUWL4ixhuXV5oTugeQGUwW4bGrNmmB44cqmQDhGuq8N8QP1ptn6xH31UTt4TYPUajStPzz5ND3Jw9KR22ts22cC",
+   "swap_tx": null
+  },
   {
    "status": "closed",
    "pair": "mihao-SOL",
@@ -287,5 +304,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.021096
+ "realized_total_sol": -0.019856
 }

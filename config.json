@@ -8,16 +8,16 @@
     {
       "pair": "FLOAT-SOL",
       "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
-      "position": "2Duc2CBu5CFKqLhgccPAMi15EePnydvyG2hMTHFgtr6z",
+      "position": "28rrjSjCWwJrqMBjVDSDxPX8Hf33WwhpWEXDGu7VcJJL",
       "strategy": "bid-ask",
       "range": [
-        -1014,
-        -950
+        -997,
+        -933
       ],
-      "opened": "2026-11-11T10:39+07:00",
-      "open_tx": "2GCQGzDHJ1XaFMGAB6QvzqFs4UGofuFcWKRM6cdJs4KA9MhdZuDTjKLxrmVpAjpMfJudceZR7FZdZUq2ouug3qzP",
+      "opened": "2026-11-11T11:26+07:00",
+      "open_tx": "4ivg15UGoxT4bJccXnx6pgd3LjQ45xMPtRkqGo95GLnzEbeV5gJsXWGXLe7ppZzVg68xAAaxsAceGCinC8u12k5d",
       "mint_x": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
-      "deposited_sol": 0.36
+      "deposited_sol": 0.385
     }
   ],
   "closed_positions": [
@@ -322,6 +322,25 @@
       "swap_tx": "39zAPvtjS2i7445sdwBuqidmNdHs3QeK1oBxTG4zPC1iLL4AC5m28Wf9741PyJ2gWDDEYRD622qSzJ1B6Rhqv8dY",
       "pnl_sol": -0.01864,
       "close_reason": "[liquidity_drop] pool liquidity $89321 down 30.1% vs entry $127868"
+    },
+    {
+      "pair": "FLOAT-SOL",
+      "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
+      "position": "2Duc2CBu5CFKqLhgccPAMi15EePnydvyG2hMTHFgtr6z",
+      "strategy": "bid-ask",
+      "range": [
+        -1014,
+        -950
+      ],
+      "opened": "2026-11-11T10:39+07:00",
+      "open_tx": "2GCQGzDHJ1XaFMGAB6QvzqFs4UGofuFcWKRM6cdJs4KA9MhdZuDTjKLxrmVpAjpMfJudceZR7FZdZUq2ouug3qzP",
+      "mint_x": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+      "deposited_sol": 0.36,
+      "closed": "2026-11-11T11:25:00+07:00",
+      "close_tx": "4iUWL4ixhuXV5oTugeQGUwW4bGrNmmB44cqmQDhGuq8N8QP1ptn6xH31UTt4TYPUajStPzz5ND3Jw9KR22ts22cC",
+      "swap_tx": null,
+      "pnl_sol": 0.00124,
+      "close_reason": "chase (above range, healthy volume)"
     }
   ],
   "status": "active"
