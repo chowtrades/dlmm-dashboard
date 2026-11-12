@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-12T00:26:41.104Z",
+ "updated": "2026-11-12T00:53:06.870Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "Max-SOL",
    "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
    "position": "AiMoqFy3AuuJFj3DR1cnj9nHt1yKJKUUnVPfeQJPfvbw",
    "opened": "2026-11-12T00:28:00.000Z",
+   "closed": "2026-11-12T00:53:00.000Z",
    "entry_sol": 0.36,
-   "open_tx": "5ysQMAoaewhnzWb7j3kbXBScTo9LwUcPCuViNaFuRxK3bzNvbSGPAq4JYbBLbHnAV2SNH5B1Z3j1pykYCTjmQmw1"
-  }
- ],
- "closed": [
+   "exit_sol": 0.360809,
+   "pnl_sol": 0.000809,
+   "pnl_pct": 0.22,
+   "pnl_basis": "logged",
+   "reason": "above range 3 checks; Max rolling over (m5 -8.6%, 1h vol down from ~725k to 221k), close and stay in SOL",
+   "open_tx": "5ysQMAoaewhnzWb7j3kbXBScTo9LwUcPCuViNaFuRxK3bzNvbSGPAq4JYbBLbHnAV2SNH5B1Z3j1pykYCTjmQmw1",
+   "close_tx": "4kQB78fRsrc1LjmrTWaLDb4SvFkiBf8P7UmnFkWUpErxUP9NdbM2vDuFya7SVW9xJ9DWP7Ha5VVN5XeVTZnHMqzR",
+   "swap_tx": "67jq2dR8ubwgqVYrkrgj2mUzU6D1s6AY5wPwBjMTkp6NELk4puvFi8vfmPZJPgwFaXX4CBKYx2MviqsxKHkVa9mh"
+  },
   {
    "status": "closed",
    "pair": "PUSSY-SOL",
@@ -406,5 +413,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.015174
+ "realized_total_sol": -0.014365
 }
