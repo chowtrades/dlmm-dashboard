@@ -1,568 +1,575 @@
 {
- "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
- "start_sol": 0.5,
- "awaiting_funding": false,
- "points": [
-  {
-   "ts": "2026-11-10T13:35:55.197Z",
-   "value_sol": 0.498814,
-   "sol": 0.036576,
-   "positions_sol": 0.462237,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T13:39:12.997Z",
-   "value_sol": 0.498662,
-   "sol": 0.036545,
-   "positions_sol": 0.462116,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T13:43:37.611Z",
-   "value_sol": 0.500055,
-   "sol": 0.038138,
-   "positions_sol": 0.461917,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T13:43:49.812Z",
-   "value_sol": 0.500082,
-   "sol": 0.038138,
-   "positions_sol": 0.461944,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T14:00:18.546Z",
-   "value_sol": 0.505573,
-   "sol": 0.505573,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T14:47:17.979Z",
-   "value_sol": 0.505519,
-   "sol": 0.038622,
-   "positions_sol": 0.466897,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T15:23:53.826Z",
-   "value_sol": 0.470756,
-   "sol": 0.038622,
-   "positions_sol": 0.432134,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T15:38:56.287Z",
-   "value_sol": 0.476238,
-   "sol": 0.476238,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T15:53:58.017Z",
-   "value_sol": 0.476238,
-   "sol": 0.476238,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T16:12:24.169Z",
-   "value_sol": 0.476238,
-   "sol": 0.476238,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T16:28:40.917Z",
-   "value_sol": 0.474752,
-   "sol": 0.062814,
-   "positions_sol": 0.411938,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T16:47:20.077Z",
-   "value_sol": 0.475122,
-   "sol": 0.062814,
-   "positions_sol": 0.412307,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T17:11:50.658Z",
-   "value_sol": 0.475129,
-   "sol": 0.475129,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T17:26:52.322Z",
-   "value_sol": 0.475119,
-   "sol": 0.063219,
-   "positions_sol": 0.4119,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T17:42:59.441Z",
-   "value_sol": 0.475124,
-   "sol": 0.063219,
-   "positions_sol": 0.411905,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T18:13:55.812Z",
-   "value_sol": 0.475224,
-   "sol": 0.063219,
-   "positions_sol": 0.412005,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T18:32:12.892Z",
-   "value_sol": 0.475303,
-   "sol": 0.063219,
-   "positions_sol": 0.412084,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T18:56:04.745Z",
-   "value_sol": 0.475293,
-   "sol": 0.475293,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T19:24:04.120Z",
-   "value_sol": 0.475291,
-   "sol": 0.063383,
-   "positions_sol": 0.411908,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T19:50:46.784Z",
-   "value_sol": 0.475335,
-   "sol": 0.063383,
-   "positions_sol": 0.411952,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T20:16:01.488Z",
-   "value_sol": 0.47546,
-   "sol": 0.063383,
-   "positions_sol": 0.412076,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T20:42:28.768Z",
-   "value_sol": 0.475369,
-   "sol": 0.475369,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T20:58:41.345Z",
-   "value_sol": 0.475369,
-   "sol": 0.475369,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-10T21:24:50.629Z",
-   "value_sol": 0.475383,
-   "sol": 0.06346,
-   "positions_sol": 0.411923,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T21:47:16.737Z",
-   "value_sol": 0.475391,
-   "sol": 0.06346,
-   "positions_sol": 0.411931,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T22:06:29.504Z",
-   "value_sol": 0.475396,
-   "sol": 0.06346,
-   "positions_sol": 0.411937,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T22:22:21.010Z",
-   "value_sol": 0.475488,
-   "sol": 0.063582,
-   "positions_sol": 0.411906,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T22:48:54.706Z",
-   "value_sol": 0.480153,
-   "sol": 0.063582,
-   "positions_sol": 0.416572,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T23:15:37.550Z",
-   "value_sol": 0.479855,
-   "sol": 0.067958,
-   "positions_sol": 0.411897,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-10T23:34:34.266Z",
-   "value_sol": 0.477931,
-   "sol": 0.067958,
-   "positions_sol": 0.409973,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T00:25:20.200Z",
-   "value_sol": 0.439305,
-   "sol": 0.439305,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T00:47:02.116Z",
-   "value_sol": 0.481187,
-   "sol": 0.088861,
-   "positions_sol": 0.392326,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T01:15:39.834Z",
-   "value_sol": 0.481247,
-   "sol": 0.088861,
-   "positions_sol": 0.392386,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T01:33:46.662Z",
-   "value_sol": 0.48099,
-   "sol": 0.069074,
-   "positions_sol": 0.411917,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T01:55:10.399Z",
-   "value_sol": 0.486466,
-   "sol": 0.069311,
-   "positions_sol": 0.417156,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T02:10:45.752Z",
-   "value_sol": 0.489918,
-   "sol": 0.067926,
-   "positions_sol": 0.421992,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T02:30:38.811Z",
-   "value_sol": 0.48836,
-   "sol": 0.067956,
-   "positions_sol": 0.420404,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T02:54:29.677Z",
-   "value_sol": 0.492989,
-   "sol": 0.071652,
-   "positions_sol": 0.421338,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T03:20:25.085Z",
-   "value_sol": 0.466624,
-   "sol": 0.071652,
-   "positions_sol": 0.394973,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T03:39:56.756Z",
-   "value_sol": 0.473414,
-   "sol": 0.071514,
-   "positions_sol": 0.401901,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T03:58:59.957Z",
-   "value_sol": 0.47444,
-   "sol": 0.071514,
-   "positions_sol": 0.402927,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T04:26:20.983Z",
-   "value_sol": 0.474638,
-   "sol": 0.047738,
-   "positions_sol": 0.4269,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T04:44:40.095Z",
-   "value_sol": 0.474765,
-   "sol": 0.047738,
-   "positions_sol": 0.427027,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T05:00:54.580Z",
-   "value_sol": 0.474801,
-   "sol": 0.047738,
-   "positions_sol": 0.427062,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T07:39:13.780Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T09:01:15.580Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T09:25:26.002Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T09:40:27.855Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T11:52:27.946Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T12:19:21.144Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T12:34:22.843Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T12:49:24.535Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T13:04:26.205Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T13:19:27.992Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T13:34:29.597Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T13:49:31.171Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T14:04:32.701Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T15:04:25.417Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T15:19:27.437Z",
-   "value_sol": 0.475351,
-   "sol": 0.053451,
-   "positions_sol": 0.4219,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T15:34:29.864Z",
-   "value_sol": 0.476649,
-   "sol": 0.053451,
-   "positions_sol": 0.423198,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T15:52:08.799Z",
-   "value_sol": 0.475513,
-   "sol": 0.475513,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T16:08:15.380Z",
-   "value_sol": 0.481412,
-   "sol": 0.481412,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T16:31:17.764Z",
-   "value_sol": 0.481412,
-   "sol": 0.481412,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T17:05:54.004Z",
-   "value_sol": 0.480018,
-   "sol": 0.057988,
-   "positions_sol": 0.42203,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T17:26:45.578Z",
-   "value_sol": 0.480445,
-   "sol": 0.057988,
-   "positions_sol": 0.422457,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T17:50:03.668Z",
-   "value_sol": 0.480924,
-   "sol": 0.057988,
-   "positions_sol": 0.422936,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T18:20:38.394Z",
-   "value_sol": 0.4811,
-   "sol": 0.057988,
-   "positions_sol": 0.423112,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T18:43:40.117Z",
-   "value_sol": 0.480833,
-   "sol": 0.049105,
-   "positions_sol": 0.431727,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T19:08:32.000Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T19:35:25.826Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T20:06:01.169Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T20:32:33.691Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T20:56:05.942Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T21:20:35.220Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T21:42:58.131Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T22:17:04.052Z",
-   "value_sol": 0.480817,
-   "sol": 0.058957,
-   "positions_sol": 0.42186,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T22:45:52.888Z",
-   "value_sol": 0.482049,
-   "sol": 0.482049,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T23:08:32.584Z",
-   "value_sol": 0.482049,
-   "sol": 0.482049,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T23:37:47.051Z",
-   "value_sol": 0.482049,
-   "sol": 0.482049,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-12T00:01:45.505Z",
-   "value_sol": 0.482049,
-   "sol": 0.482049,
-   "positions_sol": 0,
-   "positions": 0
-  }
- ],
- "updated": "2026-11-12T00:01:45.505Z"
+  "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+  "start_sol": 0.5,
+  "awaiting_funding": false,
+  "points": [
+    {
+      "ts": "2026-11-10T13:35:55.197Z",
+      "value_sol": 0.498814,
+      "sol": 0.036576,
+      "positions_sol": 0.462237,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T13:39:12.997Z",
+      "value_sol": 0.498662,
+      "sol": 0.036545,
+      "positions_sol": 0.462116,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T13:43:37.611Z",
+      "value_sol": 0.500055,
+      "sol": 0.038138,
+      "positions_sol": 0.461917,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T13:43:49.812Z",
+      "value_sol": 0.500082,
+      "sol": 0.038138,
+      "positions_sol": 0.461944,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T14:00:18.546Z",
+      "value_sol": 0.505573,
+      "sol": 0.505573,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T14:47:17.979Z",
+      "value_sol": 0.505519,
+      "sol": 0.038622,
+      "positions_sol": 0.466897,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T15:23:53.826Z",
+      "value_sol": 0.470756,
+      "sol": 0.038622,
+      "positions_sol": 0.432134,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T15:38:56.287Z",
+      "value_sol": 0.476238,
+      "sol": 0.476238,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T15:53:58.017Z",
+      "value_sol": 0.476238,
+      "sol": 0.476238,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T16:12:24.169Z",
+      "value_sol": 0.476238,
+      "sol": 0.476238,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T16:28:40.917Z",
+      "value_sol": 0.474752,
+      "sol": 0.062814,
+      "positions_sol": 0.411938,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T16:47:20.077Z",
+      "value_sol": 0.475122,
+      "sol": 0.062814,
+      "positions_sol": 0.412307,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T17:11:50.658Z",
+      "value_sol": 0.475129,
+      "sol": 0.475129,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T17:26:52.322Z",
+      "value_sol": 0.475119,
+      "sol": 0.063219,
+      "positions_sol": 0.4119,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T17:42:59.441Z",
+      "value_sol": 0.475124,
+      "sol": 0.063219,
+      "positions_sol": 0.411905,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T18:13:55.812Z",
+      "value_sol": 0.475224,
+      "sol": 0.063219,
+      "positions_sol": 0.412005,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T18:32:12.892Z",
+      "value_sol": 0.475303,
+      "sol": 0.063219,
+      "positions_sol": 0.412084,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T18:56:04.745Z",
+      "value_sol": 0.475293,
+      "sol": 0.475293,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T19:24:04.120Z",
+      "value_sol": 0.475291,
+      "sol": 0.063383,
+      "positions_sol": 0.411908,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T19:50:46.784Z",
+      "value_sol": 0.475335,
+      "sol": 0.063383,
+      "positions_sol": 0.411952,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T20:16:01.488Z",
+      "value_sol": 0.47546,
+      "sol": 0.063383,
+      "positions_sol": 0.412076,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T20:42:28.768Z",
+      "value_sol": 0.475369,
+      "sol": 0.475369,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T20:58:41.345Z",
+      "value_sol": 0.475369,
+      "sol": 0.475369,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-10T21:24:50.629Z",
+      "value_sol": 0.475383,
+      "sol": 0.06346,
+      "positions_sol": 0.411923,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T21:47:16.737Z",
+      "value_sol": 0.475391,
+      "sol": 0.06346,
+      "positions_sol": 0.411931,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T22:06:29.504Z",
+      "value_sol": 0.475396,
+      "sol": 0.06346,
+      "positions_sol": 0.411937,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T22:22:21.010Z",
+      "value_sol": 0.475488,
+      "sol": 0.063582,
+      "positions_sol": 0.411906,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T22:48:54.706Z",
+      "value_sol": 0.480153,
+      "sol": 0.063582,
+      "positions_sol": 0.416572,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T23:15:37.550Z",
+      "value_sol": 0.479855,
+      "sol": 0.067958,
+      "positions_sol": 0.411897,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-10T23:34:34.266Z",
+      "value_sol": 0.477931,
+      "sol": 0.067958,
+      "positions_sol": 0.409973,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T00:25:20.200Z",
+      "value_sol": 0.439305,
+      "sol": 0.439305,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T00:47:02.116Z",
+      "value_sol": 0.481187,
+      "sol": 0.088861,
+      "positions_sol": 0.392326,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T01:15:39.834Z",
+      "value_sol": 0.481247,
+      "sol": 0.088861,
+      "positions_sol": 0.392386,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T01:33:46.662Z",
+      "value_sol": 0.48099,
+      "sol": 0.069074,
+      "positions_sol": 0.411917,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T01:55:10.399Z",
+      "value_sol": 0.486466,
+      "sol": 0.069311,
+      "positions_sol": 0.417156,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T02:10:45.752Z",
+      "value_sol": 0.489918,
+      "sol": 0.067926,
+      "positions_sol": 0.421992,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T02:30:38.811Z",
+      "value_sol": 0.48836,
+      "sol": 0.067956,
+      "positions_sol": 0.420404,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T02:54:29.677Z",
+      "value_sol": 0.492989,
+      "sol": 0.071652,
+      "positions_sol": 0.421338,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T03:20:25.085Z",
+      "value_sol": 0.466624,
+      "sol": 0.071652,
+      "positions_sol": 0.394973,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T03:39:56.756Z",
+      "value_sol": 0.473414,
+      "sol": 0.071514,
+      "positions_sol": 0.401901,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T03:58:59.957Z",
+      "value_sol": 0.47444,
+      "sol": 0.071514,
+      "positions_sol": 0.402927,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T04:26:20.983Z",
+      "value_sol": 0.474638,
+      "sol": 0.047738,
+      "positions_sol": 0.4269,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T04:44:40.095Z",
+      "value_sol": 0.474765,
+      "sol": 0.047738,
+      "positions_sol": 0.427027,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T05:00:54.580Z",
+      "value_sol": 0.474801,
+      "sol": 0.047738,
+      "positions_sol": 0.427062,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T07:39:13.780Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T09:01:15.580Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T09:25:26.002Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T09:40:27.855Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T11:52:27.946Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T12:19:21.144Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T12:34:22.843Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T12:49:24.535Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T13:04:26.205Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T13:19:27.992Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T13:34:29.597Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T13:49:31.171Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T14:04:32.701Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T15:04:25.417Z",
+      "value_sol": 0.475271,
+      "sol": 0.475271,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T15:19:27.437Z",
+      "value_sol": 0.475351,
+      "sol": 0.053451,
+      "positions_sol": 0.4219,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T15:34:29.864Z",
+      "value_sol": 0.476649,
+      "sol": 0.053451,
+      "positions_sol": 0.423198,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T15:52:08.799Z",
+      "value_sol": 0.475513,
+      "sol": 0.475513,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T16:08:15.380Z",
+      "value_sol": 0.481412,
+      "sol": 0.481412,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T16:31:17.764Z",
+      "value_sol": 0.481412,
+      "sol": 0.481412,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T17:05:54.004Z",
+      "value_sol": 0.480018,
+      "sol": 0.057988,
+      "positions_sol": 0.42203,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T17:26:45.578Z",
+      "value_sol": 0.480445,
+      "sol": 0.057988,
+      "positions_sol": 0.422457,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T17:50:03.668Z",
+      "value_sol": 0.480924,
+      "sol": 0.057988,
+      "positions_sol": 0.422936,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T18:20:38.394Z",
+      "value_sol": 0.4811,
+      "sol": 0.057988,
+      "positions_sol": 0.423112,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T18:43:40.117Z",
+      "value_sol": 0.480833,
+      "sol": 0.049105,
+      "positions_sol": 0.431727,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T19:08:32.000Z",
+      "value_sol": 0.482355,
+      "sol": 0.482355,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T19:35:25.826Z",
+      "value_sol": 0.482355,
+      "sol": 0.482355,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T20:06:01.169Z",
+      "value_sol": 0.482355,
+      "sol": 0.482355,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T20:32:33.691Z",
+      "value_sol": 0.482355,
+      "sol": 0.482355,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T20:56:05.942Z",
+      "value_sol": 0.482355,
+      "sol": 0.482355,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T21:20:35.220Z",
+      "value_sol": 0.482355,
+      "sol": 0.482355,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T21:42:58.131Z",
+      "value_sol": 0.482355,
+      "sol": 0.482355,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T22:17:04.052Z",
+      "value_sol": 0.480817,
+      "sol": 0.058957,
+      "positions_sol": 0.42186,
+      "positions": 1
+    },
+    {
+      "ts": "2026-11-11T22:40:12.563Z",
+      "value_sol": 0.482049,
+      "sol": 0.482049,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T22:45:52.888Z",
+      "value_sol": 0.482049,
+      "sol": 0.482049,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T23:08:32.584Z",
+      "value_sol": 0.482049,
+      "sol": 0.482049,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-11T23:37:47.051Z",
+      "value_sol": 0.482049,
+      "sol": 0.482049,
+      "positions_sol": 0,
+      "positions": 0
+    },
+    {
+      "ts": "2026-11-12T00:01:45.505Z",
+      "value_sol": 0.482049,
+      "sol": 0.482049,
+      "positions_sol": 0,
+      "positions": 0
+    }
+  ],
+  "updated": "2026-11-12T00:01:45.505Z"
 }
