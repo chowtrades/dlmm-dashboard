@@ -4,7 +4,22 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [],
+  "positions": [
+    {
+      "pair": "HUNG-SOL",
+      "pool": "cyif7J8nYYYRDuc2ocyagB6s7Wygaho8RNB22E6QyiA",
+      "position": "3sfoqEkmdy34TFXV7XQX1YTBHp7QVyJmJXgTmeHqNJ2r",
+      "strategy": "bid-ask",
+      "range": [
+        -280,
+        -216
+      ],
+      "opened": "2026-11-12T22:07+07:00",
+      "open_tx": "2G3tuASwJjDjVunubt3akfuLVnpCDgdJ5XtyZptgtTGD39TB8VnN9shNik84WhQaAThwQSjXzHFzpetcNcB3ySKD",
+      "mint_x": "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump",
+      "deposited_sol": 0.36
+    }
+  ],
   "closed_positions": [
     {
       "pair": "X-SOL",
@@ -67,8 +82,8 @@
         -654
       ],
       "range_price_sol": [
-        0.00000327596,
-        0.00000545522
+        3.27596e-06,
+        5.45522e-06
       ],
       "opened": "2026-11-10T21:47:17+07:00",
       "open_tx": "2hfUcJx5wNvUnTfe5FihFTSBgEaB9xk1NVFPba38rzYLNMEeiMJnhvY742BUMnU1MB6tZDea7y7v1r7m3jafHdc5",
@@ -136,7 +151,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T03:42:00+07:00",
       "close_tx": "2mAeZYXjp5svnjTCvF2PNEFeAbpPRGjLd8BgWiJc2VHUwgaHXNvKZvHoCbpEPzMa66MDWggm1gu8x54NGuYK6sho",
-      "pnl_sol": 0.000091,
+      "pnl_sol": 9.1e-05,
       "entry_value_sol": 0.37,
       "close_reason": "price above range for 3 checks, volume fading (no chase)"
     },
@@ -155,7 +170,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T05:09:00+07:00",
       "close_tx": "65St9wHkc7xeG8Y77rMJmQRhgPiomj88qKkbAPHXZB4zKwB9pZ6RL5ma6y12jMgDvvnydUCZoNc6TDDFeSAsKfds",
-      "pnl_sol": 0.000035,
+      "pnl_sol": 3.5e-05,
       "entry_value_sol": 0.37,
       "close_reason": "chase: above range x3, healthy volume; reopened below new price"
     },
@@ -230,7 +245,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T08:46+07:00",
       "close_tx": "Zsdxmr6ZvQMzmuiK7KFYDMJGWsL3tDNKYaUQDnK2vA4ThRdA17xa8QUDRgBhwhjWX5vUoCBkg3k1xBLvWPN7J4v",
-      "pnl_sol": 0.00003,
+      "pnl_sol": 3e-05,
       "close_reason": "chase: above range with healthy volume; reopened lower range below new price"
     },
     {

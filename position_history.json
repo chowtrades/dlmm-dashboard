@@ -1,8 +1,18 @@
 {
- "updated": "2026-11-12T00:53:06.870Z",
+ "updated": "2026-11-12T15:07:20.622Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "HUNG-SOL",
+   "pool": "cyif7J8nYYYRDuc2ocyagB6s7Wygaho8RNB22E6QyiA",
+   "position": "3sfoqEkmdy34TFXV7XQX1YTBHp7QVyJmJXgTmeHqNJ2r",
+   "opened": "2026-11-12T15:07:00.000Z",
+   "entry_sol": 0.36,
+   "open_tx": "2G3tuASwJjDjVunubt3akfuLVnpCDgdJ5XtyZptgtTGD39TB8VnN9shNik84WhQaAThwQSjXzHFzpetcNcB3ySKD"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
