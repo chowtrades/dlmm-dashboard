@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-12T15:07:20.622Z",
+ "updated": "2026-11-12T16:27:19.681Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "HUNG-SOL",
    "pool": "cyif7J8nYYYRDuc2ocyagB6s7Wygaho8RNB22E6QyiA",
    "position": "3sfoqEkmdy34TFXV7XQX1YTBHp7QVyJmJXgTmeHqNJ2r",
    "opened": "2026-11-12T15:07:00.000Z",
+   "closed": "2026-11-12T16:21:00.000Z",
    "entry_sol": 0.36,
-   "open_tx": "2G3tuASwJjDjVunubt3akfuLVnpCDgdJ5XtyZptgtTGD39TB8VnN9shNik84WhQaAThwQSjXzHFzpetcNcB3ySKD"
-  }
- ],
- "closed": [
+   "exit_sol": 0.32558,
+   "pnl_sol": -0.03442,
+   "pnl_pct": -9.56,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [liquidity_drop] pool liquidity $61973 down 30.3% vs entry $88965",
+   "open_tx": "2G3tuASwJjDjVunubt3akfuLVnpCDgdJ5XtyZptgtTGD39TB8VnN9shNik84WhQaAThwQSjXzHFzpetcNcB3ySKD",
+   "close_tx": "4wyiL8LRVZaTUNGtmhvhSP2yQfbNXvhDfhZvD9BW1q69nzMbvPcKijX8cja5PmW3nqru5BXTJE3LDEpvfGa6XsaX",
+   "swap_tx": "4uKCtAeqJSTE35AX5PatqW1L7GpnajETeEa7kv5xWpkfoZVfsVXg2Vt8MtmxbgPmveTVGFWVAqkJ478cztVE73QF"
+  },
   {
    "status": "closed",
    "pair": "Max-SOL",
@@ -423,5 +430,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.014365
+ "realized_total_sol": -0.048785
 }
