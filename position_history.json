@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-13T10:56:58.994Z",
+ "updated": "2026-11-13T11:08:47.505Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "Sakura-SOL",
    "pool": "DutNdXzYJ1bWZk8EnSyi5oCD5fApwnShUaECZgAVwmDR",
    "position": "2sq2knoLfEDvCbjbK6ijGW3euPqjapBF1khS7kpXGuZu",
    "opened": "2026-11-13T10:57:00.000Z",
+   "closed": "2026-11-13T11:08:00.000Z",
    "entry_sol": 0.29,
-   "open_tx": "93N2dvjbJRh61b47VoDrf8uAP5m2Cfs96RuLYGvuJYqqra2CFXWmxsNCYbZWti7gYmzX8x49DgyC5ADJzAAU8Nh"
-  }
- ],
- "closed": [
+   "exit_sol": 0.28988,
+   "pnl_sol": -0.00012,
+   "pnl_pct": -0.04,
+   "pnl_basis": "logged",
+   "reason": "chase: above range 3 checks, healthy 5m volume",
+   "open_tx": "93N2dvjbJRh61b47VoDrf8uAP5m2Cfs96RuLYGvuJYqqra2CFXWmxsNCYbZWti7gYmzX8x49DgyC5ADJzAAU8Nh",
+   "close_tx": "2QHwhMCyK9K3Jx3HvXXtv1Tz5NjKmme72dypng1K4xRF3m1cqw2dYJmFW95V5K2nqTMQYc47tqA8yEcHzBzQoSi1",
+   "swap_tx": "4nRyqn2viGLy3yCaY8ioGisQU7g5NLWmfCMqK5nkbL3TkxN4SG2CPa7oFUqPTXe7EKGsZ8v1ktKQPhEB7PbWUfT9"
+  },
   {
    "status": "closed",
    "pair": "FOOD-SOL",
@@ -610,5 +617,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.043805
+ "realized_total_sol": -0.043925
 }
