@@ -4,22 +4,7 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [
-    {
-      "pair": "FOOD-SOL",
-      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
-      "position": "3tkcPhjRtNtF2JF4ZiWEVGoFaR1jip9F6tt5D4R6porM",
-      "strategy": "bid-ask",
-      "range": [
-        -628,
-        -564
-      ],
-      "opened": "2026-11-13T18:28+08:00",
-      "open_tx": "5r543ipqycvrPdZ6YcBrgU2atqCU5ta73YjjPjBRXCgFmCc4rwyGtcqtsjQbcNF9HJ3h8TNL7wJkMMMA3JrCZhDR",
-      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
-      "deposited_sol": 0.345
-    }
-  ],
+  "positions": [],
   "closed_positions": [
     {
       "pair": "X-SOL",
@@ -82,8 +67,8 @@
         -654
       ],
       "range_price_sol": [
-        3.27596e-06,
-        5.45522e-06
+        0.00000327596,
+        0.00000545522
       ],
       "opened": "2026-11-10T21:47:17+07:00",
       "open_tx": "2hfUcJx5wNvUnTfe5FihFTSBgEaB9xk1NVFPba38rzYLNMEeiMJnhvY742BUMnU1MB6tZDea7y7v1r7m3jafHdc5",
@@ -151,7 +136,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T03:42:00+07:00",
       "close_tx": "2mAeZYXjp5svnjTCvF2PNEFeAbpPRGjLd8BgWiJc2VHUwgaHXNvKZvHoCbpEPzMa66MDWggm1gu8x54NGuYK6sho",
-      "pnl_sol": 9.1e-05,
+      "pnl_sol": 0.000091,
       "entry_value_sol": 0.37,
       "close_reason": "price above range for 3 checks, volume fading (no chase)"
     },
@@ -170,7 +155,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T05:09:00+07:00",
       "close_tx": "65St9wHkc7xeG8Y77rMJmQRhgPiomj88qKkbAPHXZB4zKwB9pZ6RL5ma6y12jMgDvvnydUCZoNc6TDDFeSAsKfds",
-      "pnl_sol": 3.5e-05,
+      "pnl_sol": 0.000035,
       "entry_value_sol": 0.37,
       "close_reason": "chase: above range x3, healthy volume; reopened below new price"
     },
@@ -245,7 +230,7 @@
       "deposited_sol": 0.37,
       "closed": "2026-11-11T08:46+07:00",
       "close_tx": "Zsdxmr6ZvQMzmuiK7KFYDMJGWsL3tDNKYaUQDnK2vA4ThRdA17xa8QUDRgBhwhjWX5vUoCBkg3k1xBLvWPN7J4v",
-      "pnl_sol": 3e-05,
+      "pnl_sol": 0.00003,
       "close_reason": "chase: above range with healthy volume; reopened lower range below new price"
     },
     {
@@ -531,7 +516,7 @@
       "closed": "2026-11-13T10:02+07:00",
       "close_tx": "5mB1JoaDbxAtHUj5wQMkTPNVxP1mbYgHQ54rooicP3KfL3ch7eNF4eRn5nnV7H4JUjGGgdidk6Wit3WsFLfP1YNF",
       "swap_tx": "4ydfmCdNcpk6JXigaMp4CJzTxQYdGAiWsdYbZg6sLz2auGygQbdCjALNRVXKwy1uzz8V8JX64ZPxj7n1uvunNJHh",
-      "pnl_sol": 7.5e-05,
+      "pnl_sol": 0.000075,
       "close_reason": "chase: above range 3 checks"
     },
     {
@@ -665,8 +650,27 @@
       "closed": "2026-11-13T17:01+07:00",
       "close_tx": "4nd93AdUxtBKVMnWPJMSUSXYVasbR8VZJrFAZPeH5NwdhRP8Hm3UGCR3LzD4zLso8T4ax5futZdUVxGwxQGseF3G",
       "swap_tx": "3rYG7Fh8JGC82DpyF85pVJ1n92cPwy2UFkyXstokkocmKeVxREfg1Qfro92CBhy4GSy6xCsdua8qU4p1AonS1uqd",
-      "pnl_sol": -4.3e-05,
+      "pnl_sol": -0.000043,
       "close_reason": "above range 3 checks, 5m volume fading (30% of 1h avg), liquidity down; no chase"
+    },
+    {
+      "pair": "FOOD-SOL",
+      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+      "position": "3tkcPhjRtNtF2JF4ZiWEVGoFaR1jip9F6tt5D4R6porM",
+      "strategy": "bid-ask",
+      "range": [
+        -628,
+        -564
+      ],
+      "opened": "2026-11-13T18:28+08:00",
+      "open_tx": "5r543ipqycvrPdZ6YcBrgU2atqCU5ta73YjjPjBRXCgFmCc4rwyGtcqtsjQbcNF9HJ3h8TNL7wJkMMMA3JrCZhDR",
+      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+      "deposited_sol": 0.345,
+      "closed": "2026-11-13T17:42:05+07:00",
+      "close_tx": "5ooq99xKjnoNjiwNdz1mjx1hqmd4pcXVxyPFXGnivEorYyuKxQFyJp4xLLkQUh9GDRpyYsYTnsf1cHh6bNjTF6qY",
+      "swap_tx": "257DQuFg88PiZa21afm5phCGPgxYKG8KfvqqgFcuEpK6iyPA3CyorMmmazEmgiufYq27dasmyBq1pKx2AzoqagJC",
+      "pnl_sol": -0.000825,
+      "close_reason": "[deteriorating] liquidity down 20.1% vs entry and price -25.49% over 1h"
     }
   ],
   "status": "active"
