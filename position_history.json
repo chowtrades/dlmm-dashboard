@@ -1,9 +1,26 @@
 {
- "updated": "2026-11-13T04:20:59.097Z",
+ "updated": "2026-11-13T05:33:55.144Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [],
  "closed": [
+  {
+   "status": "closed",
+   "pair": "FOOD-SOL",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "position": "6tKLfaNLpge5W5iQqyeUQ6BzvEMtsGGsncPpD1XX3ppu",
+   "opened": "2026-11-13T05:17:00.000Z",
+   "closed": "2026-11-13T05:33:00.000Z",
+   "entry_sol": 0.24,
+   "exit_sol": 0.244537,
+   "pnl_sol": 0.004537,
+   "pnl_pct": 1.89,
+   "pnl_basis": "logged",
+   "reason": "bounce rollover take-profit",
+   "open_tx": "2TrmpgASY52b4w6jUYCfYxhfjZaYKB8TEq8UK1DTX3SXMK38Pnq1Dp1VU51GB3NsnscKa5TbjqpueptpKM8ebTdr",
+   "close_tx": "5RVEHGe3FuPxMorV9cwv7yCZyJFvjwyUgUPkrNcqMuYauUXWeT7bC2kiFnEHd1W1zuo5A1MeDXtA9yR6Njz8mrPv",
+   "swap_tx": "5RE9UNGb9dSi7zyCJXGAyEtVyWUcVgjs3d4gw6bbAtBw8CxP8xnvokFac2V4sC2DBthUNgZAhZiDUxMnZYR8aHGA"
+  },
   {
    "status": "closed",
    "pair": "Max-SOL",
@@ -481,5 +498,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.045065
+ "realized_total_sol": -0.040528
 }

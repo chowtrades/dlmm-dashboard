@@ -537,6 +537,26 @@
       "swap_tx": "2Ztv2vnhGupgcT4KziDSEHJ8ap19afeXLHkG7HNBqt8pppeXdtRhsv8JP67Xd8nURRsV4LXWB7UpFaN4a9PQUv3z",
       "pnl_sol": 0.001863,
       "close_reason": "bounce rollover take-profit"
+    },
+    {
+      "position": "6tKLfaNLpge5W5iQqyeUQ6BzvEMtsGGsncPpD1XX3ppu",
+      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+      "pair": "FOOD-SOL",
+      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+      "strategy": "bid-ask",
+      "range": [
+        -530,
+        -466
+      ],
+      "opened": "2026-11-13T12:17+07:00",
+      "open_tx": "2TrmpgASY52b4w6jUYCfYxhfjZaYKB8TEq8UK1DTX3SXMK38Pnq1Dp1VU51GB3NsnscKa5TbjqpueptpKM8ebTdr",
+      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+      "deposited_sol": 0.24,
+      "closed": "2026-11-13T12:33+07:00",
+      "close_tx": "5RVEHGe3FuPxMorV9cwv7yCZyJFvjwyUgUPkrNcqMuYauUXWeT7bC2kiFnEHd1W1zuo5A1MeDXtA9yR6Njz8mrPv",
+      "swap_tx": "5RE9UNGb9dSi7zyCJXGAyEtVyWUcVgjs3d4gw6bbAtBw8CxP8xnvokFac2V4sC2DBthUNgZAhZiDUxMnZYR8aHGA",
+      "pnl_sol": 0.004537,
+      "close_reason": "bounce rollover take-profit"
     }
   ],
   "status": "active"
