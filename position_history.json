@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-13T05:52:12.332Z",
+ "updated": "2026-11-13T06:14:01.214Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "FOOD-SOL",
    "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
    "position": "BecJ92o2vWavQkeCSjTLDo659bA739e8cFt14gD3NB5v",
    "opened": "2026-11-13T05:52:00.000Z",
+   "closed": "2026-11-13T06:14:00.000Z",
    "entry_sol": 0.35,
-   "open_tx": "5kSz8Sh7cPxVEaPFmYLmMaF9RiZQVS1YaRz2tataDwZN7fDsDWcAyT1Qsk3xZYnzgR5iJeHZBi7NKRYzib4aqkGb"
-  }
- ],
- "closed": [
+   "exit_sol": 0.352047,
+   "pnl_sol": 0.002047,
+   "pnl_pct": 0.58,
+   "pnl_basis": "logged",
+   "reason": "bounce rollover take-profit",
+   "open_tx": "5kSz8Sh7cPxVEaPFmYLmMaF9RiZQVS1YaRz2tataDwZN7fDsDWcAyT1Qsk3xZYnzgR5iJeHZBi7NKRYzib4aqkGb",
+   "close_tx": "5WxUozMmLDZMzMRcQNAwzg8kVuNqvVAXt8tqEMtwDvAZsWNnatD4uW2dGQgSkKWG3ZZ5ftgCmo9Lejgwv4iSypFC",
+   "swap_tx": "5JH5jQGQRaujLSWkhpXzzem9omc3UabKvVhdGSdvTgX6duuzE6Z2FVVcBbfvb1hCE3yDVinRim23hSanYJZAzJG4"
+  },
   {
    "status": "closed",
    "pair": "FOOD-SOL",
@@ -508,5 +515,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.040528
+ "realized_total_sol": -0.038481
 }
