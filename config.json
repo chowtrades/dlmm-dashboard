@@ -1,639 +1,654 @@
 {
-  "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-  "start_sol": 0.5,
-  "start_date": "2026-11-10T20:33+07:00",
-  "initial_balance_sol": 0.5,
-  "refreshSeconds": 60,
-  "positions": [],
-  "closed_positions": [
-    {
-      "pair": "X-SOL",
-      "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-      "position": "CFSgQVm711oeDGAiv5NAHYAdPADRYTMpJ9aPnXVw5J9w",
-      "strategy": "bid-ask",
-      "opened": "2026-11-10T20:34+07:00",
-      "closed": "2026-11-10T20:39+07:00",
-      "open_tx": "3Wr87KSgbKrJNvmb1e8v3TYLUASZfb8z4oT7QDh1rY8mcUdLy7UgJTK3ZUyivq6RcnXZHb1P8L9euYFCMYTTHHp5",
-      "close_tx": "2uS3c7H9ApmijqTQqH8KJXZ8KBSqepVGG7cqjPgwbC3ETZmVsbTsqSQtikELmWa4kLBZNeMAxRuEx61Dc7nzaV6W",
-      "entry_sol": 0.42,
-      "exit_sol": 0.420237,
-      "pnl_sol": 0.000237,
-      "pnl_pct": 0.06,
-      "reason": "reposition (Chow): price ran above range",
-      "result": "gain"
-    },
-    {
-      "pair": "X-SOL",
-      "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-      "position": "8BTG1yb1kP2ZYjsVgzAusFyENMLTh4sUN6Bo1fdNMiy9",
-      "strategy": "bid-ask",
-      "opened": "2026-11-10T20:39+07:00",
-      "closed": "2026-11-10T20:43+07:00",
-      "open_tx": "49nmwoNsqoxHNcYnLoFzeDtEA6bBUbMqg4FhFVJzhLKSX3JAFHmR8r6pe5tkquGTiMASPHtH4GpB8S3PEA4Tys9u",
-      "close_tx": "5irfyanXP3T8VGHs9jgomrEvvqNGC5KK3g5JFWCUaX4mVk9iNt8zyJ95fpWjxDczv67VzqTDXmdYs9wedXimF52r",
-      "entry_sol": 0.4202,
-      "exit_sol": 0.423829,
-      "pnl_sol": 0.003629,
-      "pnl_pct": 0.86,
-      "reason": "reposition (Chow): price ran above range; exit includes 202.9 X fees (~0.0022 SOL) held in wallet",
-      "result": "gain"
-    },
-    {
-      "pair": "X-SOL",
-      "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-      "position": "FjpY9Q8BWByacDMmGomfVidMZNbQtochTpXpAaDA7egu",
-      "strategy": "bid-ask",
-      "range": [
-        -631,
-        -567
-      ],
-      "opened": "2026-11-10T20:43+07:00",
-      "open_tx": "5HEwvL5as4Y6ZCSyTNkQtsYCpzagHLoKaZvni5nFETunU3jWhXwuJWmKWKXGq4yFBVN7rAFgLsH7rkiVHBmqxpXG",
-      "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
-      "deposited_sol": 0.42,
-      "closed": "2026-11-10T20:53:38+07:00",
-      "close_tx": "42iQxQghsQqiCALvndbgWiM7XxNfbQ1ge6XxqduRJgDFJ5CUYQPvtxCQB6ZCpWMovWzVhtsUVxE756f4j4q26STA",
-      "swap_tx": "2XHjCEzJeQKTzPt8fC3oFGHUCaaZcpTTyhcmYcFdv6VRWbSPeMCxv4RGbrH8QsMMXyodcsbsMU2Dx4n36M7GZgdx",
-      "pnl_sol": 0.005535,
-      "close_reason": "[take_profit] value 0.4247 SOL >= Chow target 0.4242 SOL and price not rising"
-    },
-    {
-      "pair": "X-SOL",
-      "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
-      "position": "DHsmypLCpgn79QWq7Dxhg7W8QZHsBvNo69sk2v1k3VKZ",
-      "strategy": "bid-ask",
-      "range": [
-        -718,
-        -654
-      ],
-      "range_price_sol": [
-        0.00000327596,
-        0.00000545522
-      ],
-      "opened": "2026-11-10T21:47:17+07:00",
-      "open_tx": "2hfUcJx5wNvUnTfe5FihFTSBgEaB9xk1NVFPba38rzYLNMEeiMJnhvY742BUMnU1MB6tZDea7y7v1r7m3jafHdc5",
-      "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
-      "deposited_sol": 0.425,
-      "entry_value_sol": 0.425,
-      "closed": "2026-11-10T22:24:08+07:00",
-      "close_tx": "5ggxDQwuAtcfWkSqriPXTU1vkSjFLMSCU4ZkUBb6ej6YJML45LB44Vj5P5agwJskfUst8sWJLnx3mRruX6i65dvb",
-      "swap_tx": "4FxrDDDSx5nJYVPVW4JZrNfVJHZsdyuYV17paCgewqTJqJS9dMJEu38r1fDp2DXPTne6GK5pH3FSaq85jkpbW1hn",
-      "pnl_sol": -0.030808,
-      "close_reason": "[stop_value] value 0.3903 SOL <= override stop 0.4165 SOL"
-    },
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "BcKLSXpcjJ1A4Zo1y2B1Bw9ksQkxDZVoLWwWsHWtDzAc",
-      "strategy": "bid-ask",
-      "range": [
-        -354,
-        -290
-      ],
-      "opened": "2026-11-10T23:13+07:00",
-      "open_tx": "QHTL8t9M5zwhnNbefNYjDRuYZbgvStcq6maSatnhJoCkWwpdTyX454BGMaKNA6JemZztNzoGwdDb6s1oXuaJvpz",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T00:06:20+07:00",
-      "close_tx": "4T2J427cwncKfDvvChKvRSSvcFets2k3fvvRt6Keqany8thEtPv87oABWh2Ke4mQYayBVumFQxmLq68tHVWaneW4",
-      "swap_tx": "3rHA99z7AwKDu1RM1bukyBpUSkZjp1xLFpgcwafVDNDC47adN7mh4FB2qmEMFkAbzeN2aziDcNXLfHfCUrHiE97p",
-      "pnl_sol": 0.000424,
-      "entry_value_sol": 0.37,
-      "close_reason": "price above range for 3 consecutive checks"
-    },
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "8ruEoPFP8tWwDnnZ58uotSa45sCHSQiVNa75caxVys95",
-      "strategy": "bid-ask",
-      "range": [
-        -357,
-        -293
-      ],
-      "opened": "2026-11-11T00:20+07:00",
-      "open_tx": "2TvGiQv9ibJ2UyCd31MtT7nBREw9xMnYcGoKaGDdcvQSzzToVnQoUkHUGU2L4HiiS79a8DH1vCZeoR2nFDoccWVt",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T01:41:00+07:00",
-      "close_tx": "58krAetLb5shYviSRT6vgexC9bnYtfvvtZsacwUPRCvaaAH2itELSEBZW5axpsFhitZFpARU7s53GzH8U4TG9oq6",
-      "swap_tx": "4xxBcXg9L1ba5w51V74PUsSqGFBh5pqULAagdCYb79oDVxLVqVe8XssEXyWaKHnJFNhJMwkVL3vanM2A1H7Wxkpf",
-      "pnl_sol": 0.000188,
-      "entry_value_sol": 0.369996,
-      "close_reason": "price above range for 3 checks, volume fading (no chase)"
-    },
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "2KfAp8BkptTbe6ZzshsjVEfj4PuzTVk3cbt8W73dmx2u",
-      "strategy": "bid-ask",
-      "range": [
-        -347,
-        -283
-      ],
-      "opened": "2026-11-11T02:15+07:00",
-      "open_tx": "2eB351y8nNzcYNU3cxfZhBXHp1PsVUhZmwGYzFWzi5mpmACKSAwoystF7yKf921anGEkNcrCo5vvt1b5yEGwSshA",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T03:42:00+07:00",
-      "close_tx": "2mAeZYXjp5svnjTCvF2PNEFeAbpPRGjLd8BgWiJc2VHUwgaHXNvKZvHoCbpEPzMa66MDWggm1gu8x54NGuYK6sho",
-      "pnl_sol": 0.000091,
-      "entry_value_sol": 0.37,
-      "close_reason": "price above range for 3 checks, volume fading (no chase)"
-    },
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "2e91JP897rfWkYnxsZbmtnVDF8FCHgT3p2Dbh7sBzRM3",
-      "strategy": "bid-ask",
-      "range": [
-        -338,
-        -274
-      ],
-      "opened": "2026-11-11T04:13+07:00",
-      "open_tx": "4LaJn4rR2XfGtkxWkzdda7tU7gwUPDPRmCJB2kecoToLpSV5upYd1pXGu3WY2Vpx5vbZYZpNJM8Np9xxEBqeU2ZW",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T05:09:00+07:00",
-      "close_tx": "65St9wHkc7xeG8Y77rMJmQRhgPiomj88qKkbAPHXZB4zKwB9pZ6RL5ma6y12jMgDvvnydUCZoNc6TDDFeSAsKfds",
-      "pnl_sol": 0.000035,
-      "entry_value_sol": 0.37,
-      "close_reason": "chase: above range x3, healthy volume; reopened below new price"
-    },
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "3y8HfoybvEQqNVQEU4JFjr4CCr5PDep9BRLoqoMdj14y",
-      "strategy": "bid-ask",
-      "range": [
-        -331,
-        -267
-      ],
-      "opened": "2026-11-11T05:09+07:00",
-      "open_tx": "5nsSeoxBx6UqQWdspLDQqeQu6k69gBqrNq9CdZVDzzdNkCEudoDYErCaWRfPX4ZNtJp2147gLesABnrNznE5JjV1",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T05:51:56+07:00",
-      "close_tx": "5XFN3bd22BtVsazLQyKgAReqVRJmqHvbJAzP3E9jPqe8yY76HatSpa9mdcnA7bWGgxNqsmwCx7ngQzqUQzh7YK3T",
-      "swap_tx": "2UiebhUycnAZP2oZdpDGUgqyttnzK5p2p7PoLxDroxT9HKXhcGLmAiKiUrWCFCQUjoisQcP1KmjZVJQJqeXLMsav",
-      "pnl_sol": 0.004386,
-      "close_reason": "[take_profit] value 0.3747 SOL (1.27%) >= target 0.3737 and price not rising (5m volume fading)"
-    },
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "CHoasJjuuqkDFpPzhCCxcbNgk2rrggpr9RHESJaZa231",
-      "strategy": "bid-ask",
-      "range": [
-        -340,
-        -276
-      ],
-      "opened": "2026-11-11T06:12+07:00",
-      "open_tx": "TqPcyDvi8VLEKV2s6ML5qzz8oC5kWPMqoq7LLPE5EAJgVKvGRRTeQh4tEHwVDNawx79if7U3DnygFoJ5kU7oCZC",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T07:18:45+07:00",
-      "close_tx": "3q6cNB4FdLcqsUhb65gpsYsLYidz6RhK8YxKMoLi5HNrACePHF2Pay6YU7aVu3xQfqXE5ppnjatDrPgssvZMumrT",
-      "swap_tx": "54u6csQQ7pmHyFLQm4Dbt1B791i1yCi2gisryz8WdPSbnt8BfZaKsCY5YP3Tc6vPseLZjnPh7R8B7EqwX9fRgH2z",
-      "pnl_sol": 0.002416,
-      "close_reason": "[take_profit] value 0.3739 SOL (1.06%) >= target 0.3737, 5m volume fading"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
-      "position": "5mu9ePLJ1sf4kEETPtk5Tj8Wj2k2qarZvD42ouKe9vJd",
-      "strategy": "bid-ask",
-      "range": [
-        -310,
-        -246
-      ],
-      "opened": "2026-11-11T07:41+07:00",
-      "open_tx": "HmWUTUcEudfoD8eG33sPhWe8Wy7pSpYaccyFJ8ugpwQv4KtvDeSFFReU59V4GorwwVPchK1CvEW6JdK4RXm1Hpi",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.35,
-      "closed": "2026-11-11T08:20+07:00",
-      "close_tx": "2qooNf3nd9QTSQKARpMhXQgXj932u7HzThqaNdMEjcm1YHp7r8VXRKfvmn4UA9VECZmbThgSubuVxsxbu5wntJvR",
-      "pnl_sol": -0.00105,
-      "close_reason": "above range; pool weakening (liquidity -12%, volume collapsing), closed instead of chasing"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
-      "position": "9BjGhHqnQrAsa9tQzsp1FxnnN5GFHP8NXt8sV9FBJhnh",
-      "strategy": "bid-ask",
-      "range": [
-        -1042,
-        -978
-      ],
-      "opened": "2026-11-11T08:28+07:00",
-      "open_tx": "aHki4Vk1Fu7gQhQYxPvNaVZzQycHm5CtFAaGbpDTbNNeGTsRqKS18GgqKw1P1zCLneYc9E91iBu1ykKWiXwu532",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T08:46+07:00",
-      "close_tx": "Zsdxmr6ZvQMzmuiK7KFYDMJGWsL3tDNKYaUQDnK2vA4ThRdA17xa8QUDRgBhwhjWX5vUoCBkg3k1xBLvWPN7J4v",
-      "pnl_sol": 0.00003,
-      "close_reason": "chase: above range with healthy volume; reopened lower range below new price"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
-      "position": "F2pZVNi4FFwVRgDTz81ZwYoMSH3peNTnN79QRMSHeET",
-      "strategy": "bid-ask",
-      "range": [
-        -889,
-        -825
-      ],
-      "opened": "2026-11-11T08:46+07:00",
-      "open_tx": "4Pm8oA8SVh2BVBGaasKBA9oUbFewC7mvM3GFfyAyDDRwaf7uhCxVwLq1A3u1BdsYJhctWFSURZxLLKNSAvVLrNE9",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-11T09:03:28+07:00",
-      "close_tx": "2PpDEPhbeoiLUR8Mzynxbj2aC3LyK8iQjX9UTvRfh3Ji2qYCgukCABfDjm3xJ8TJA2XtAHE4HAQCbii6PuGJSsjb",
-      "swap_tx": null,
-      "pnl_sol": 0.008626,
-      "close_reason": "[take_profit_upper] bounced back to top of range (active bin -800, upper -825) at 2.33%; value 0.3786 SOL"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
-      "position": "3oQtTcR63B7uGZLFAZKH9Tqd7p4q8arMVLUqtZTsfHB6",
-      "strategy": "bid-ask",
-      "range": [
-        -710,
-        -646
-      ],
-      "opened": "2026-11-11T09:05+07:00",
-      "open_tx": "4NGYCWwUtXSa7bU957SbK4cbiTsP1qVi4ZZWZ6mYpHWxukWhQhpTWqp9xv6ZMN4UHPqjner13zUgyHFqbTfaTnFm",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.38,
-      "closed": "2026-11-11T09:25+07:00",
-      "close_tx": "52YpjHGFCevSnsWkiASDPW1ewQy3ohHGJPwHADFx3Fga1JYRp9sbtZNkotUorH36zodooD5nFHbsaU1QCVpUroi7",
-      "pnl_sol": 0.0001,
-      "close_reason": "chase: above range with healthy volume; reopened below new price"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
-      "position": "HXyWp5Akhb2Qrp12T8AXQE41ib7zhcxadvkCJdrNcggd",
-      "strategy": "bid-ask",
-      "range": [
-        -674,
-        -610
-      ],
-      "opened": "2026-11-11T09:25+07:00",
-      "open_tx": "3PRTbGMvEjha5hZ6CmFyxP1hsk3LiKgL2fBABeppYaHcDWkyfQ4437qBRnonHahvNA4oB7rkk9nswZEkwLtp2pjo",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.38,
-      "closed": "2026-11-11T09:48:35+07:00",
-      "close_tx": "2yBMw82MLzncZCAP8fdwRuxdHkRfoiaXo1nS7Bc6cATG8noLBgLeLd4Z6R1VWG49MVpXiPTiY5X6mYRBpr1Nvck5",
-      "swap_tx": "GfR4bytYtJ3x2SSPesFruHHqpNvnFZPhXZQbTVqTPumsBvnbykJtMXajZmNSFjjvUY9sGs67p9QGoUDA5ZBbmsQ",
-      "pnl_sol": 0.003705,
-      "close_reason": "[take_profit] value 0.3840 SOL (1.06%) >= target 0.3838 and price not rising (5m volume fading)"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
-      "position": "EvpgrtGaMybYEgQx9pQ3o5Ggc6BxyYMRwYiDprwZXDxQ",
-      "strategy": "bid-ask",
-      "range": [
-        -875,
-        -811
-      ],
-      "opened": "2026-11-11T09:51+07:00",
-      "open_tx": "5RCvc1EftDrSWwK1rAs3UaT6AbPEafCi1LfimVX2LArHpkXMxNrz6oiGKbyJV5kLpc4vZbntTYvmzLKfyhLZuSLu",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.38,
-      "closed": "2026-11-11T10:21:11+07:00",
-      "close_tx": "2Lp4mXgC3k3Zes72CVtQPGcHECcnAyG4WJkYgf6Ku1Zy7XY7LXFtf2Qf375HUPDDFvLR53LUN7QjdawavbJZKSAF",
-      "swap_tx": "39zAPvtjS2i7445sdwBuqidmNdHs3QeK1oBxTG4zPC1iLL4AC5m28Wf9741PyJ2gWDDEYRD622qSzJ1B6Rhqv8dY",
-      "pnl_sol": -0.01864,
-      "close_reason": "[liquidity_drop] pool liquidity $89321 down 30.1% vs entry $127868"
-    },
-    {
-      "pair": "FLOAT-SOL",
-      "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
-      "position": "2Duc2CBu5CFKqLhgccPAMi15EePnydvyG2hMTHFgtr6z",
-      "strategy": "bid-ask",
-      "range": [
-        -1014,
-        -950
-      ],
-      "opened": "2026-11-11T10:39+07:00",
-      "open_tx": "2GCQGzDHJ1XaFMGAB6QvzqFs4UGofuFcWKRM6cdJs4KA9MhdZuDTjKLxrmVpAjpMfJudceZR7FZdZUq2ouug3qzP",
-      "mint_x": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
-      "deposited_sol": 0.36,
-      "closed": "2026-11-11T11:25:00+07:00",
-      "close_tx": "4iUWL4ixhuXV5oTugeQGUwW4bGrNmmB44cqmQDhGuq8N8QP1ptn6xH31UTt4TYPUajStPzz5ND3Jw9KR22ts22cC",
-      "swap_tx": null,
-      "pnl_sol": 0.00124,
-      "close_reason": "chase (above range, healthy volume)"
-    },
-    {
-      "pair": "FLOAT-SOL",
-      "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
-      "position": "28rrjSjCWwJrqMBjVDSDxPX8Hf33WwhpWEXDGu7VcJJL",
-      "strategy": "bid-ask",
-      "range": [
-        -997,
-        -933
-      ],
-      "opened": "2026-11-11T11:26+07:00",
-      "open_tx": "4ivg15UGoxT4bJccXnx6pgd3LjQ45xMPtRkqGo95GLnzEbeV5gJsXWGXLe7ppZzVg68xAAaxsAceGCinC8u12k5d",
-      "mint_x": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
-      "deposited_sol": 0.385,
-      "closed": "2026-11-11T14:31:16+07:00",
-      "close_tx": "53NCesEHUdbPZkgGeSUKaWDpMtpQzTX8asCDBQzQ6YYFha3wMLGY3tVGaMqxL3HeP9nFiw2QdHrkFwdyyTJjhYfK",
-      "swap_tx": null,
-      "pnl_sol": 0.000633,
-      "close_reason": "manual close by Chow"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
-      "position": "986k9Mu55w7KxFEpe3Dj1KDzpyfc6GXoKi6P8ZQbqHh1",
-      "strategy": "bid-ask",
-      "range": [
-        -690,
-        -626
-      ],
-      "opened": "2026-11-11T22:06+07:00",
-      "open_tx": "MNDHpjfFp7u3VhFjH7CtMk7Pa3LPQLZsS3DHGUy4UcaN4dY9D9B8Pncdo35vFCUNK2GoMAcQJxTHF92wF7Ekhxp",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.375,
-      "closed": "2026-11-11T22:17+07:00",
-      "close_tx": "4vbWoGU1RfyfSS53LE7KypXuR583k82vAoPx16H5aFKVC1RTVYenPZ5sL1epTxExCHaBUwtqew9tBbhez1i182HC",
-      "swap_tx": null,
-      "pnl_sol": 0.000218,
-      "close_reason": "chase rebalance (above range)"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
-      "position": "Gj5B9NsQeT1WMssmEmbTVzde9LLdKNjVgqz8A5KJ5xSw",
-      "strategy": "bid-ask",
-      "range": [
-        -666,
-        -602
-      ],
-      "opened": "2026-11-11T22:18+07:00",
-      "open_tx": "3Hw59eJMYKRZpLV24i4xFuUhpSe9dz5Vmt5HiuoEBz8UwiKwNVVAwkWY6JkyJiHyPvmuJs6RdkKszXSQAFSXhnks",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.38,
-      "closed": "2026-11-11T22:41+07:00",
-      "close_tx": "4j9KfoFUrkVK1citdfrMASH6sfLgUNAjPQYKJu2B6q2TAXn6jJAtRBByh3tZ9vLzAxnGRuEDybEx5bCe7o2rXZK",
-      "swap_tx": "4rGtPrPB1ypSkiowvkECyfv64nth9PRKsNxD6oT77kgUJAfuia9Lh645Ctk8ZV28DdWv7YzLmYooPyMKRdY2fqc1",
-      "pnl_sol": 0.000162,
-      "close_reason": "manual close by Chow (take profit)"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
-      "position": "AoLVcaZ1BwwPwM9MRhfnSf4dHm2ZFX95HBijfQyerRCR",
-      "strategy": "bid-ask",
-      "range": [
-        -221,
-        -157
-      ],
-      "opened": "2026-11-11T23:49+07:00",
-      "open_tx": "1FekZREVzHnt5FpxiX7Kny4JfbmfcKsRH5BHWbfvEZQvY6s3GJKrYUoT6r88YkYHqH3K2dUgZjwbMjemWYGdhhd",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "closed": "2026-11-12T01:23+07:00",
-      "close_tx": "5U1Li6gqkXwcr8FRyZFYCW72QMygHZ1sWUyuhc2kHsUn9fxnUwmcdf52K25XAdScKcyy4sgxFESFCdpwY5jy8sWR",
-      "entry_sol": 0.38,
-      "exit_sol": 0.381127,
-      "pnl_sol": 0.001127,
-      "pnl_pct": 0.3,
-      "reason": "chase (rebalance): price ran above range",
-      "result": "gain"
-    },
-    {
-      "pair": "mihao-SOL",
-      "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
-      "position": "FTv2RGUCSRR1yunVFAecnaG7dsCkrpxDMhfWuz1B2yug",
-      "strategy": "bid-ask",
-      "range": [
-        -217,
-        -153
-      ],
-      "opened": "2026-11-12T01:23+07:00",
-      "open_tx": "3bGuCTDJpFynWUb3THRoGJ5WToduhCMUZHpaTnZq3w1P8uqSrfe7XvhpkQcPRMxy6J2G4hJW9n9gCgz66LrGHSJ",
-      "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
-      "deposited_sol": 0.39,
-      "closed": "2026-11-12T02:07:39+07:00",
-      "close_tx": "4kaTpjYFgsnw5PHcR7FnNKmEbkTGjDDTv78SMJ8nvfRUhdZHkNzb8A282bXCKpagGhYZD6XnAF3H75JoR1cynr8d",
-      "swap_tx": "4S5oZYQo1Y5mcA51Wn9GbvY7pqrbqyoqhAGYGC5NLTQXKqEf3rqm3aQ6zw1Y5ANKGfBLe1aTychtzGdoEnvWL3mU",
-      "pnl_sol": 0.00135,
-      "close_reason": "[take_profit_upper] bounced back to top of range (active bin -155, upper -153) at 0.36%; value 0.3914 SOL"
-    },
-    {
-      "pair": "PUSSY-SOL",
-      "pool": "HcyYBrZVFDDVBLtLxL5C1HDJND1p86BoNA6m7MjBKE3p",
-      "position": "G3EyM74ytibBBkZWrsjHa6EaPaNXCeBLyVJD6T8iqqKs",
-      "strategy": "bid-ask",
-      "range": [
-        -528,
-        -464
-      ],
-      "opened": "2026-11-12T05:16+07:00",
-      "open_tx": "2TA3u1CpqU2PHC1eksMWEhKBU3ZJAPL2S1BRXbfDHmxVLPz9VrSb63YSHxUjQPGyWhkzw5Nafpq2u59nkA4gD6LR",
-      "mint_x": "FZxHLUGiGchY5uvvoeqh1EKiXTrGdN67WUBhUc1fLoat",
-      "deposited_sol": 0.38,
-      "closed": "2026-11-12T05:19+07:00",
-      "close_tx": "mrcQwsnFACxn7Yxaja1ZkUq1Fgrd57YrnugvfTTm7SU7SRuyJCmug6BdtiX2JYqRjm7whWNLNXXk1gbETq4k3kP",
-      "swap_tx": "3RaEN874zjZKqdteh3LZoKrabjLerNMsdRcBPBiTpgYWNksW3gMYrYx3hFodj3Qwsc6R7cHEnjh7VVdYbLPP6Ty6",
-      "pnl_sol": 0.001192,
-      "close_reason": "bounce rollover take-profit"
-    },
-    {
-      "pair": "Max-SOL",
-      "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
-      "position": "AiMoqFy3AuuJFj3DR1cnj9nHt1yKJKUUnVPfeQJPfvbw",
-      "strategy": "bid-ask",
-      "range": [
-        -391,
-        -327
-      ],
-      "opened": "2026-11-12T07:28+07:00",
-      "open_tx": "5ysQMAoaewhnzWb7j3kbXBScTo9LwUcPCuViNaFuRxK3bzNvbSGPAq4JYbBLbHnAV2SNH5B1Z3j1pykYCTjmQmw1",
-      "mint_x": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
-      "deposited_sol": 0.36,
-      "closed": "2026-11-12T07:53+07:00",
-      "close_tx": "4kQB78fRsrc1LjmrTWaLDb4SvFkiBf8P7UmnFkWUpErxUP9NdbM2vDuFya7SVW9xJ9DWP7Ha5VVN5XeVTZnHMqzR",
-      "swap_tx": "67jq2dR8ubwgqVYrkrgj2mUzU6D1s6AY5wPwBjMTkp6NELk4puvFi8vfmPZJPgwFaXX4CBKYx2MviqsxKHkVa9mh",
-      "pnl_sol": 0.000809,
-      "close_reason": "above range 3 checks; Max rolling over (m5 -8.6%, 1h vol down from ~725k to 221k), close and stay in SOL"
-    },
-    {
-      "pair": "HUNG-SOL",
-      "pool": "cyif7J8nYYYRDuc2ocyagB6s7Wygaho8RNB22E6QyiA",
-      "position": "3sfoqEkmdy34TFXV7XQX1YTBHp7QVyJmJXgTmeHqNJ2r",
-      "strategy": "bid-ask",
-      "range": [
-        -280,
-        -216
-      ],
-      "opened": "2026-11-12T22:07+07:00",
-      "open_tx": "2G3tuASwJjDjVunubt3akfuLVnpCDgdJ5XtyZptgtTGD39TB8VnN9shNik84WhQaAThwQSjXzHFzpetcNcB3ySKD",
-      "mint_x": "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump",
-      "deposited_sol": 0.36,
-      "closed": "2026-11-12T23:21:01+07:00",
-      "close_tx": "4wyiL8LRVZaTUNGtmhvhSP2yQfbNXvhDfhZvD9BW1q69nzMbvPcKijX8cja5PmW3nqru5BXTJE3LDEpvfGa6XsaX",
-      "swap_tx": "4uKCtAeqJSTE35AX5PatqW1L7GpnajETeEa7kv5xWpkfoZVfsVXg2Vt8MtmxbgPmveTVGFWVAqkJ478cztVE73QF",
-      "pnl_sol": -0.03442,
-      "close_reason": "[liquidity_drop] pool liquidity $61973 down 30.3% vs entry $88965"
-    },
-    {
-      "pair": "STANK-SOL",
-      "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
-      "position": "HUfrRmmLiqQihvjF4RURogWy6QRXnNV7B8kefXwrpS3k",
-      "strategy": "bid-ask",
-      "range": [
-        -408,
-        -344
-      ],
-      "opened": "2026-11-13T00:21+07:00",
-      "open_tx": "2p33PULnN9xuWByKWh7N7BfutnAKJuMp6dgsi5himMncdMFi5ubaCRxryr9E1pz5tRD8Qd1BLXJgtYCyjYjm2cnA",
-      "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
-      "deposited_sol": 0.35,
-      "closed": "2026-11-13T02:04+07:00",
-      "close_tx": "2kGQMgztYozRcFFcQzbyDUSLTMKjMGewRTyDmYUfc1ToiJYecYPw7nf6q6EF9EzHjSHs6fH5UbwxFyn1CmMCuL7o",
-      "swap_tx": "2utkrfbhfBMTn6QhVASLV56uW4FFRZg1y8jiFs2md2wCzSJ32L3hLD8Vi1D9ojm4nAPg4K2Cy9qg7tcY37p5U5ma",
-      "pnl_sol": 0.001782,
-      "close_reason": "bounce rollover take-profit"
-    },
-    {
-      "pair": "Max-SOL",
-      "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
-      "position": "8ZWV3JKcCjmESqQqDDqXb2qbXXcAP8q5VX4qfVVW2ja",
-      "strategy": "bid-ask",
-      "range": [
-        -531,
-        -467
-      ],
-      "opened": "2026-11-13T09:27+07:00",
-      "open_tx": "4d3coxTVFCgq3Ls7SyguLFmXEU9ay3EeDE4yP4A513JawvKmJxM3MZmLUS5j9jFPHz3FewzwEHdZUkD4LEbSrEXv",
-      "mint_x": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
-      "deposited_sol": 0.33,
-      "closed": "2026-11-13T10:02+07:00",
-      "close_tx": "5mB1JoaDbxAtHUj5wQMkTPNVxP1mbYgHQ54rooicP3KfL3ch7eNF4eRn5nnV7H4JUjGGgdidk6Wit3WsFLfP1YNF",
-      "swap_tx": "4ydfmCdNcpk6JXigaMp4CJzTxQYdGAiWsdYbZg6sLz2auGygQbdCjALNRVXKwy1uzz8V8JX64ZPxj7n1uvunNJHh",
-      "pnl_sol": 0.000075,
-      "close_reason": "chase: above range 3 checks"
-    },
-    {
-      "pair": "Max-SOL",
-      "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
-      "position": "3FyQ2yNiBCSK3QsLXj4QEkAQ65SvqzRfPuem2LXKrRPr",
-      "strategy": "bid-ask",
-      "range": [
-        -515,
-        -451
-      ],
-      "opened": "2026-11-13T11:03+08:00",
-      "open_tx": "47Z4LboLqej77MAijXfUJThBZJ4fMWfi242Q13RevybQRUZCk3K235AWAspPtB8B7KHFaDn2EyqZ7NKk6purk7xu",
-      "mint_x": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
-      "deposited_sol": 0.35,
-      "closed": "2026-11-13T11:20+07:00",
-      "close_tx": "3y6PTf6YvkNfFk1JAdYUgopxESrCQo1717f9r7HJoCXHCcjqf5PGcjgqp3b3d7dBdgqmjG5vB38Wi4apUQAkX9WP",
-      "swap_tx": "2Ztv2vnhGupgcT4KziDSEHJ8ap19afeXLHkG7HNBqt8pppeXdtRhsv8JP67Xd8nURRsV4LXWB7UpFaN4a9PQUv3z",
-      "pnl_sol": 0.001863,
-      "close_reason": "bounce rollover take-profit"
-    },
-    {
-      "position": "6tKLfaNLpge5W5iQqyeUQ6BzvEMtsGGsncPpD1XX3ppu",
-      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
-      "pair": "FOOD-SOL",
-      "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
-      "strategy": "bid-ask",
-      "range": [
-        -530,
-        -466
-      ],
-      "opened": "2026-11-13T12:17+07:00",
-      "open_tx": "2TrmpgASY52b4w6jUYCfYxhfjZaYKB8TEq8UK1DTX3SXMK38Pnq1Dp1VU51GB3NsnscKa5TbjqpueptpKM8ebTdr",
-      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
-      "deposited_sol": 0.24,
-      "closed": "2026-11-13T12:33+07:00",
-      "close_tx": "5RVEHGe3FuPxMorV9cwv7yCZyJFvjwyUgUPkrNcqMuYauUXWeT7bC2kiFnEHd1W1zuo5A1MeDXtA9yR6Njz8mrPv",
-      "swap_tx": "5RE9UNGb9dSi7zyCJXGAyEtVyWUcVgjs3d4gw6bbAtBw8CxP8xnvokFac2V4sC2DBthUNgZAhZiDUxMnZYR8aHGA",
-      "pnl_sol": 0.004537,
-      "close_reason": "bounce rollover take-profit"
-    },
-    {
-      "pair": "FOOD-SOL",
-      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
-      "position": "BecJ92o2vWavQkeCSjTLDo659bA739e8cFt14gD3NB5v",
-      "strategy": "bid-ask",
-      "range": [
-        -568,
-        -504
-      ],
-      "opened": "2026-11-13T13:52+08:00",
-      "open_tx": "5kSz8Sh7cPxVEaPFmYLmMaF9RiZQVS1YaRz2tataDwZN7fDsDWcAyT1Qsk3xZYnzgR5iJeHZBi7NKRYzib4aqkGb",
-      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
-      "deposited_sol": 0.35,
-      "closed": "2026-11-13T13:14+07:00",
-      "close_tx": "5WxUozMmLDZMzMRcQNAwzg8kVuNqvVAXt8tqEMtwDvAZsWNnatD4uW2dGQgSkKWG3ZZ5ftgCmo9Lejgwv4iSypFC",
-      "swap_tx": "5JH5jQGQRaujLSWkhpXzzem9omc3UabKvVhdGSdvTgX6duuzE6Z2FVVcBbfvb1hCE3yDVinRim23hSanYJZAzJG4",
-      "pnl_sol": 0.002047,
-      "close_reason": "bounce rollover take-profit"
-    },
-    {
-      "pair": "FOOD-SOL",
-      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
-      "position": "96WmRw3pRUBUfEQcbZvzgR5UBk7py5Nr3csVvhqNotqz",
-      "strategy": "bid-ask",
-      "range": [
-        -601,
-        -537
-      ],
-      "opened": "2026-11-13T14:35+08:00",
-      "open_tx": "3XDLYjgHNK3rrfros6xXVRv7VBHh2ifVJhhZXpvdpjjDfv4L2e1cbEjnthMTdJnU2VGQpHzYaVisNsUsVrC4NzVJ",
-      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
-      "deposited_sol": 0.37,
-      "closed": "2026-11-13T13:43:30+07:00",
-      "close_tx": "KUJjoJ3rKYUybcERj1QcdZd1E9EuXX8PMEDAEzz3Ux7hHgPrNfSzkUenzURzyBWrv3G6FPFp1MbGPMfpx6xZbZw",
-      "swap_tx": "4QNG6frxqTYDeneTjyQJWtY4kv1WeVRby2vBmmgTtqEiRsZpH3dMww2QHrHqiavoANYEnVewsgix8ihYic2o4iY1",
-      "pnl_sol": -0.000994,
-      "close_reason": "[deteriorating] liquidity down 12.9% vs entry and price -42.37% over 1h"
-    },
-    {
-      "pair": "FOOD-SOL",
-      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
-      "position": "3HA9yZGZwTdTbLzHBXveAtBBNxSEPDay9DkjfmzS6xfm",
-      "strategy": "bid-ask",
-      "range": [
-        -606,
-        -542
-      ],
-      "opened": "2026-11-13T15:21+08:00",
-      "open_tx": "2odiLvcyETBxhXe6kooJvNb7JPEJasyFY3is5HS8GpjFbtt8nfrK1MENgFakiFSJfzw9Dq2iZheTVWr3BQgHkVUb",
-      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
-      "deposited_sol": 0.36,
-      "closed": "2026-11-13T14:47+07:00",
-      "close_tx": "rsqwo8Jbyz82jP63WxGzkPZuGVx86t2ByzAVrfCtMfbxDR3vmu6JGh6ogQEKLtNy6WRTcfgXbfGGPdherDms3c3",
-      "swap_tx": "obtb8vadhJoRwRkL73AGWnFmGb1HbQSTpnaWe8x1B7HesskLfC5QLUGRo3Yg5tjrQvM6X56aNNZ78hcAu11FMRR",
-      "pnl_sol": 0.001587,
-      "close_reason": "bounce rollover take-profit"
-    },
-    {
-      "pair": "FOOD-SOL",
-      "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
-      "position": "5Ecss6GqUx959bY6VVYQu5FMKAJk718rNTFXxBj8ssQa",
-      "strategy": "bid-ask",
-      "range": [
-        -619,
-        -555
-      ],
-      "opened": "2026-11-13T16:13+08:00",
-      "open_tx": "3S1DKRVNYi4NS3MH7BFnehZ38fs9Dq8yDEeaA32wQtRdXoa1rTQ3HdoMh3XPMWu3xqTrdTGhHjBZjPaPXSxzreqV",
-      "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
-      "deposited_sol": 0.36,
-      "closed": "2026-11-13T15:47:36+07:00",
-      "close_tx": "wrKtdnhfNedT9ZdAeaKFTtaitFGj21SvJCmojHAyt1zCxeZiR42yDKVRu5hioUatEr165BtJU63FNssH3btYn9Q",
-      "swap_tx": "ggEY1uEGFgUVLuFcgDaL5KdcLwNoQ8EAr9oUVNVxSSNRgmosDVUS6y5Ht1LkLGpYkqZ6i5VNFJPjVppeMWi4o9H",
-      "pnl_sol": -0.005049,
-      "close_reason": "[deteriorating] liquidity down 14.3% vs entry and price -23.14% over 1h"
-    }
-  ],
-  "status": "active"
+ "wallet": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+ "start_sol": 0.5,
+ "start_date": "2026-11-10T20:33+07:00",
+ "initial_balance_sol": 0.5,
+ "refreshSeconds": 60,
+ "positions": [
+  {
+   "pair": "FOOD-SOL",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "position": "FGsZ6bFJUqvUy3VpGK1U8Gv9AzbG55Mt5Nw8gQAfrC8L",
+   "strategy": "bid-ask",
+   "range": [
+    -642,
+    -578
+   ],
+   "opened": "2026-11-13T17:31+08:00",
+   "open_tx": "251S4zCMBztCHgBwKK6faqFZKfHc44FoHAwvPpq16KvBkHp4CwvXPqF5PPA7tPdPjswb8eoUFAQCUcxqhtnN6yUS",
+   "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "deposited_sol": 0.355
+  }
+ ],
+ "closed_positions": [
+  {
+   "pair": "X-SOL",
+   "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+   "position": "CFSgQVm711oeDGAiv5NAHYAdPADRYTMpJ9aPnXVw5J9w",
+   "strategy": "bid-ask",
+   "opened": "2026-11-10T20:34+07:00",
+   "closed": "2026-11-10T20:39+07:00",
+   "open_tx": "3Wr87KSgbKrJNvmb1e8v3TYLUASZfb8z4oT7QDh1rY8mcUdLy7UgJTK3ZUyivq6RcnXZHb1P8L9euYFCMYTTHHp5",
+   "close_tx": "2uS3c7H9ApmijqTQqH8KJXZ8KBSqepVGG7cqjPgwbC3ETZmVsbTsqSQtikELmWa4kLBZNeMAxRuEx61Dc7nzaV6W",
+   "entry_sol": 0.42,
+   "exit_sol": 0.420237,
+   "pnl_sol": 0.000237,
+   "pnl_pct": 0.06,
+   "reason": "reposition (Chow): price ran above range",
+   "result": "gain"
+  },
+  {
+   "pair": "X-SOL",
+   "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+   "position": "8BTG1yb1kP2ZYjsVgzAusFyENMLTh4sUN6Bo1fdNMiy9",
+   "strategy": "bid-ask",
+   "opened": "2026-11-10T20:39+07:00",
+   "closed": "2026-11-10T20:43+07:00",
+   "open_tx": "49nmwoNsqoxHNcYnLoFzeDtEA6bBUbMqg4FhFVJzhLKSX3JAFHmR8r6pe5tkquGTiMASPHtH4GpB8S3PEA4Tys9u",
+   "close_tx": "5irfyanXP3T8VGHs9jgomrEvvqNGC5KK3g5JFWCUaX4mVk9iNt8zyJ95fpWjxDczv67VzqTDXmdYs9wedXimF52r",
+   "entry_sol": 0.4202,
+   "exit_sol": 0.423829,
+   "pnl_sol": 0.003629,
+   "pnl_pct": 0.86,
+   "reason": "reposition (Chow): price ran above range; exit includes 202.9 X fees (~0.0022 SOL) held in wallet",
+   "result": "gain"
+  },
+  {
+   "pair": "X-SOL",
+   "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+   "position": "FjpY9Q8BWByacDMmGomfVidMZNbQtochTpXpAaDA7egu",
+   "strategy": "bid-ask",
+   "range": [
+    -631,
+    -567
+   ],
+   "opened": "2026-11-10T20:43+07:00",
+   "open_tx": "5HEwvL5as4Y6ZCSyTNkQtsYCpzagHLoKaZvni5nFETunU3jWhXwuJWmKWKXGq4yFBVN7rAFgLsH7rkiVHBmqxpXG",
+   "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
+   "deposited_sol": 0.42,
+   "closed": "2026-11-10T20:53:38+07:00",
+   "close_tx": "42iQxQghsQqiCALvndbgWiM7XxNfbQ1ge6XxqduRJgDFJ5CUYQPvtxCQB6ZCpWMovWzVhtsUVxE756f4j4q26STA",
+   "swap_tx": "2XHjCEzJeQKTzPt8fC3oFGHUCaaZcpTTyhcmYcFdv6VRWbSPeMCxv4RGbrH8QsMMXyodcsbsMU2Dx4n36M7GZgdx",
+   "pnl_sol": 0.005535,
+   "close_reason": "[take_profit] value 0.4247 SOL >= Chow target 0.4242 SOL and price not rising"
+  },
+  {
+   "pair": "X-SOL",
+   "pool": "38hkfLZhhtjhn9t49LhCkconQ297ad5fnoZ3Mj7w5wEk",
+   "position": "DHsmypLCpgn79QWq7Dxhg7W8QZHsBvNo69sk2v1k3VKZ",
+   "strategy": "bid-ask",
+   "range": [
+    -718,
+    -654
+   ],
+   "range_price_sol": [
+    3.27596e-06,
+    5.45522e-06
+   ],
+   "opened": "2026-11-10T21:47:17+07:00",
+   "open_tx": "2hfUcJx5wNvUnTfe5FihFTSBgEaB9xk1NVFPba38rzYLNMEeiMJnhvY742BUMnU1MB6tZDea7y7v1r7m3jafHdc5",
+   "mint_x": "9VZerdNL1x6EjetDqRnh5bYcdmk1y8sLAGs1ybzGpump",
+   "deposited_sol": 0.425,
+   "entry_value_sol": 0.425,
+   "closed": "2026-11-10T22:24:08+07:00",
+   "close_tx": "5ggxDQwuAtcfWkSqriPXTU1vkSjFLMSCU4ZkUBb6ej6YJML45LB44Vj5P5agwJskfUst8sWJLnx3mRruX6i65dvb",
+   "swap_tx": "4FxrDDDSx5nJYVPVW4JZrNfVJHZsdyuYV17paCgewqTJqJS9dMJEu38r1fDp2DXPTne6GK5pH3FSaq85jkpbW1hn",
+   "pnl_sol": -0.030808,
+   "close_reason": "[stop_value] value 0.3903 SOL <= override stop 0.4165 SOL"
+  },
+  {
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "BcKLSXpcjJ1A4Zo1y2B1Bw9ksQkxDZVoLWwWsHWtDzAc",
+   "strategy": "bid-ask",
+   "range": [
+    -354,
+    -290
+   ],
+   "opened": "2026-11-10T23:13+07:00",
+   "open_tx": "QHTL8t9M5zwhnNbefNYjDRuYZbgvStcq6maSatnhJoCkWwpdTyX454BGMaKNA6JemZztNzoGwdDb6s1oXuaJvpz",
+   "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T00:06:20+07:00",
+   "close_tx": "4T2J427cwncKfDvvChKvRSSvcFets2k3fvvRt6Keqany8thEtPv87oABWh2Ke4mQYayBVumFQxmLq68tHVWaneW4",
+   "swap_tx": "3rHA99z7AwKDu1RM1bukyBpUSkZjp1xLFpgcwafVDNDC47adN7mh4FB2qmEMFkAbzeN2aziDcNXLfHfCUrHiE97p",
+   "pnl_sol": 0.000424,
+   "entry_value_sol": 0.37,
+   "close_reason": "price above range for 3 consecutive checks"
+  },
+  {
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "8ruEoPFP8tWwDnnZ58uotSa45sCHSQiVNa75caxVys95",
+   "strategy": "bid-ask",
+   "range": [
+    -357,
+    -293
+   ],
+   "opened": "2026-11-11T00:20+07:00",
+   "open_tx": "2TvGiQv9ibJ2UyCd31MtT7nBREw9xMnYcGoKaGDdcvQSzzToVnQoUkHUGU2L4HiiS79a8DH1vCZeoR2nFDoccWVt",
+   "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T01:41:00+07:00",
+   "close_tx": "58krAetLb5shYviSRT6vgexC9bnYtfvvtZsacwUPRCvaaAH2itELSEBZW5axpsFhitZFpARU7s53GzH8U4TG9oq6",
+   "swap_tx": "4xxBcXg9L1ba5w51V74PUsSqGFBh5pqULAagdCYb79oDVxLVqVe8XssEXyWaKHnJFNhJMwkVL3vanM2A1H7Wxkpf",
+   "pnl_sol": 0.000188,
+   "entry_value_sol": 0.369996,
+   "close_reason": "price above range for 3 checks, volume fading (no chase)"
+  },
+  {
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "2KfAp8BkptTbe6ZzshsjVEfj4PuzTVk3cbt8W73dmx2u",
+   "strategy": "bid-ask",
+   "range": [
+    -347,
+    -283
+   ],
+   "opened": "2026-11-11T02:15+07:00",
+   "open_tx": "2eB351y8nNzcYNU3cxfZhBXHp1PsVUhZmwGYzFWzi5mpmACKSAwoystF7yKf921anGEkNcrCo5vvt1b5yEGwSshA",
+   "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T03:42:00+07:00",
+   "close_tx": "2mAeZYXjp5svnjTCvF2PNEFeAbpPRGjLd8BgWiJc2VHUwgaHXNvKZvHoCbpEPzMa66MDWggm1gu8x54NGuYK6sho",
+   "pnl_sol": 9.1e-05,
+   "entry_value_sol": 0.37,
+   "close_reason": "price above range for 3 checks, volume fading (no chase)"
+  },
+  {
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "2e91JP897rfWkYnxsZbmtnVDF8FCHgT3p2Dbh7sBzRM3",
+   "strategy": "bid-ask",
+   "range": [
+    -338,
+    -274
+   ],
+   "opened": "2026-11-11T04:13+07:00",
+   "open_tx": "4LaJn4rR2XfGtkxWkzdda7tU7gwUPDPRmCJB2kecoToLpSV5upYd1pXGu3WY2Vpx5vbZYZpNJM8Np9xxEBqeU2ZW",
+   "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T05:09:00+07:00",
+   "close_tx": "65St9wHkc7xeG8Y77rMJmQRhgPiomj88qKkbAPHXZB4zKwB9pZ6RL5ma6y12jMgDvvnydUCZoNc6TDDFeSAsKfds",
+   "pnl_sol": 3.5e-05,
+   "entry_value_sol": 0.37,
+   "close_reason": "chase: above range x3, healthy volume; reopened below new price"
+  },
+  {
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "3y8HfoybvEQqNVQEU4JFjr4CCr5PDep9BRLoqoMdj14y",
+   "strategy": "bid-ask",
+   "range": [
+    -331,
+    -267
+   ],
+   "opened": "2026-11-11T05:09+07:00",
+   "open_tx": "5nsSeoxBx6UqQWdspLDQqeQu6k69gBqrNq9CdZVDzzdNkCEudoDYErCaWRfPX4ZNtJp2147gLesABnrNznE5JjV1",
+   "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T05:51:56+07:00",
+   "close_tx": "5XFN3bd22BtVsazLQyKgAReqVRJmqHvbJAzP3E9jPqe8yY76HatSpa9mdcnA7bWGgxNqsmwCx7ngQzqUQzh7YK3T",
+   "swap_tx": "2UiebhUycnAZP2oZdpDGUgqyttnzK5p2p7PoLxDroxT9HKXhcGLmAiKiUrWCFCQUjoisQcP1KmjZVJQJqeXLMsav",
+   "pnl_sol": 0.004386,
+   "close_reason": "[take_profit] value 0.3747 SOL (1.27%) >= target 0.3737 and price not rising (5m volume fading)"
+  },
+  {
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "CHoasJjuuqkDFpPzhCCxcbNgk2rrggpr9RHESJaZa231",
+   "strategy": "bid-ask",
+   "range": [
+    -340,
+    -276
+   ],
+   "opened": "2026-11-11T06:12+07:00",
+   "open_tx": "TqPcyDvi8VLEKV2s6ML5qzz8oC5kWPMqoq7LLPE5EAJgVKvGRRTeQh4tEHwVDNawx79if7U3DnygFoJ5kU7oCZC",
+   "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T07:18:45+07:00",
+   "close_tx": "3q6cNB4FdLcqsUhb65gpsYsLYidz6RhK8YxKMoLi5HNrACePHF2Pay6YU7aVu3xQfqXE5ppnjatDrPgssvZMumrT",
+   "swap_tx": "54u6csQQ7pmHyFLQm4Dbt1B791i1yCi2gisryz8WdPSbnt8BfZaKsCY5YP3Tc6vPseLZjnPh7R8B7EqwX9fRgH2z",
+   "pnl_sol": 0.002416,
+   "close_reason": "[take_profit] value 0.3739 SOL (1.06%) >= target 0.3737, 5m volume fading"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
+   "position": "5mu9ePLJ1sf4kEETPtk5Tj8Wj2k2qarZvD42ouKe9vJd",
+   "strategy": "bid-ask",
+   "range": [
+    -310,
+    -246
+   ],
+   "opened": "2026-11-11T07:41+07:00",
+   "open_tx": "HmWUTUcEudfoD8eG33sPhWe8Wy7pSpYaccyFJ8ugpwQv4KtvDeSFFReU59V4GorwwVPchK1CvEW6JdK4RXm1Hpi",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.35,
+   "closed": "2026-11-11T08:20+07:00",
+   "close_tx": "2qooNf3nd9QTSQKARpMhXQgXj932u7HzThqaNdMEjcm1YHp7r8VXRKfvmn4UA9VECZmbThgSubuVxsxbu5wntJvR",
+   "pnl_sol": -0.00105,
+   "close_reason": "above range; pool weakening (liquidity -12%, volume collapsing), closed instead of chasing"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "9BjGhHqnQrAsa9tQzsp1FxnnN5GFHP8NXt8sV9FBJhnh",
+   "strategy": "bid-ask",
+   "range": [
+    -1042,
+    -978
+   ],
+   "opened": "2026-11-11T08:28+07:00",
+   "open_tx": "aHki4Vk1Fu7gQhQYxPvNaVZzQycHm5CtFAaGbpDTbNNeGTsRqKS18GgqKw1P1zCLneYc9E91iBu1ykKWiXwu532",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T08:46+07:00",
+   "close_tx": "Zsdxmr6ZvQMzmuiK7KFYDMJGWsL3tDNKYaUQDnK2vA4ThRdA17xa8QUDRgBhwhjWX5vUoCBkg3k1xBLvWPN7J4v",
+   "pnl_sol": 3e-05,
+   "close_reason": "chase: above range with healthy volume; reopened lower range below new price"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "F2pZVNi4FFwVRgDTz81ZwYoMSH3peNTnN79QRMSHeET",
+   "strategy": "bid-ask",
+   "range": [
+    -889,
+    -825
+   ],
+   "opened": "2026-11-11T08:46+07:00",
+   "open_tx": "4Pm8oA8SVh2BVBGaasKBA9oUbFewC7mvM3GFfyAyDDRwaf7uhCxVwLq1A3u1BdsYJhctWFSURZxLLKNSAvVLrNE9",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-11T09:03:28+07:00",
+   "close_tx": "2PpDEPhbeoiLUR8Mzynxbj2aC3LyK8iQjX9UTvRfh3Ji2qYCgukCABfDjm3xJ8TJA2XtAHE4HAQCbii6PuGJSsjb",
+   "swap_tx": null,
+   "pnl_sol": 0.008626,
+   "close_reason": "[take_profit_upper] bounced back to top of range (active bin -800, upper -825) at 2.33%; value 0.3786 SOL"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
+   "position": "3oQtTcR63B7uGZLFAZKH9Tqd7p4q8arMVLUqtZTsfHB6",
+   "strategy": "bid-ask",
+   "range": [
+    -710,
+    -646
+   ],
+   "opened": "2026-11-11T09:05+07:00",
+   "open_tx": "4NGYCWwUtXSa7bU957SbK4cbiTsP1qVi4ZZWZ6mYpHWxukWhQhpTWqp9xv6ZMN4UHPqjner13zUgyHFqbTfaTnFm",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.38,
+   "closed": "2026-11-11T09:25+07:00",
+   "close_tx": "52YpjHGFCevSnsWkiASDPW1ewQy3ohHGJPwHADFx3Fga1JYRp9sbtZNkotUorH36zodooD5nFHbsaU1QCVpUroi7",
+   "pnl_sol": 0.0001,
+   "close_reason": "chase: above range with healthy volume; reopened below new price"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
+   "position": "HXyWp5Akhb2Qrp12T8AXQE41ib7zhcxadvkCJdrNcggd",
+   "strategy": "bid-ask",
+   "range": [
+    -674,
+    -610
+   ],
+   "opened": "2026-11-11T09:25+07:00",
+   "open_tx": "3PRTbGMvEjha5hZ6CmFyxP1hsk3LiKgL2fBABeppYaHcDWkyfQ4437qBRnonHahvNA4oB7rkk9nswZEkwLtp2pjo",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.38,
+   "closed": "2026-11-11T09:48:35+07:00",
+   "close_tx": "2yBMw82MLzncZCAP8fdwRuxdHkRfoiaXo1nS7Bc6cATG8noLBgLeLd4Z6R1VWG49MVpXiPTiY5X6mYRBpr1Nvck5",
+   "swap_tx": "GfR4bytYtJ3x2SSPesFruHHqpNvnFZPhXZQbTVqTPumsBvnbykJtMXajZmNSFjjvUY9sGs67p9QGoUDA5ZBbmsQ",
+   "pnl_sol": 0.003705,
+   "close_reason": "[take_profit] value 0.3840 SOL (1.06%) >= target 0.3838 and price not rising (5m volume fading)"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "EvpgrtGaMybYEgQx9pQ3o5Ggc6BxyYMRwYiDprwZXDxQ",
+   "strategy": "bid-ask",
+   "range": [
+    -875,
+    -811
+   ],
+   "opened": "2026-11-11T09:51+07:00",
+   "open_tx": "5RCvc1EftDrSWwK1rAs3UaT6AbPEafCi1LfimVX2LArHpkXMxNrz6oiGKbyJV5kLpc4vZbntTYvmzLKfyhLZuSLu",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.38,
+   "closed": "2026-11-11T10:21:11+07:00",
+   "close_tx": "2Lp4mXgC3k3Zes72CVtQPGcHECcnAyG4WJkYgf6Ku1Zy7XY7LXFtf2Qf375HUPDDFvLR53LUN7QjdawavbJZKSAF",
+   "swap_tx": "39zAPvtjS2i7445sdwBuqidmNdHs3QeK1oBxTG4zPC1iLL4AC5m28Wf9741PyJ2gWDDEYRD622qSzJ1B6Rhqv8dY",
+   "pnl_sol": -0.01864,
+   "close_reason": "[liquidity_drop] pool liquidity $89321 down 30.1% vs entry $127868"
+  },
+  {
+   "pair": "FLOAT-SOL",
+   "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
+   "position": "2Duc2CBu5CFKqLhgccPAMi15EePnydvyG2hMTHFgtr6z",
+   "strategy": "bid-ask",
+   "range": [
+    -1014,
+    -950
+   ],
+   "opened": "2026-11-11T10:39+07:00",
+   "open_tx": "2GCQGzDHJ1XaFMGAB6QvzqFs4UGofuFcWKRM6cdJs4KA9MhdZuDTjKLxrmVpAjpMfJudceZR7FZdZUq2ouug3qzP",
+   "mint_x": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "deposited_sol": 0.36,
+   "closed": "2026-11-11T11:25:00+07:00",
+   "close_tx": "4iUWL4ixhuXV5oTugeQGUwW4bGrNmmB44cqmQDhGuq8N8QP1ptn6xH31UTt4TYPUajStPzz5ND3Jw9KR22ts22cC",
+   "swap_tx": null,
+   "pnl_sol": 0.00124,
+   "close_reason": "chase (above range, healthy volume)"
+  },
+  {
+   "pair": "FLOAT-SOL",
+   "pool": "4ju8phDxUU4WSJP1wWPLZ8R2KRCqwP3VZFXAqhT9cfVy",
+   "position": "28rrjSjCWwJrqMBjVDSDxPX8Hf33WwhpWEXDGu7VcJJL",
+   "strategy": "bid-ask",
+   "range": [
+    -997,
+    -933
+   ],
+   "opened": "2026-11-11T11:26+07:00",
+   "open_tx": "4ivg15UGoxT4bJccXnx6pgd3LjQ45xMPtRkqGo95GLnzEbeV5gJsXWGXLe7ppZzVg68xAAaxsAceGCinC8u12k5d",
+   "mint_x": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "deposited_sol": 0.385,
+   "closed": "2026-11-11T14:31:16+07:00",
+   "close_tx": "53NCesEHUdbPZkgGeSUKaWDpMtpQzTX8asCDBQzQ6YYFha3wMLGY3tVGaMqxL3HeP9nFiw2QdHrkFwdyyTJjhYfK",
+   "swap_tx": null,
+   "pnl_sol": 0.000633,
+   "close_reason": "manual close by Chow"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "986k9Mu55w7KxFEpe3Dj1KDzpyfc6GXoKi6P8ZQbqHh1",
+   "strategy": "bid-ask",
+   "range": [
+    -690,
+    -626
+   ],
+   "opened": "2026-11-11T22:06+07:00",
+   "open_tx": "MNDHpjfFp7u3VhFjH7CtMk7Pa3LPQLZsS3DHGUy4UcaN4dY9D9B8Pncdo35vFCUNK2GoMAcQJxTHF92wF7Ekhxp",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.375,
+   "closed": "2026-11-11T22:17+07:00",
+   "close_tx": "4vbWoGU1RfyfSS53LE7KypXuR583k82vAoPx16H5aFKVC1RTVYenPZ5sL1epTxExCHaBUwtqew9tBbhez1i182HC",
+   "swap_tx": null,
+   "pnl_sol": 0.000218,
+   "close_reason": "chase rebalance (above range)"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "92iqiEu5XADScMugFLSjaQUqS1uAKWeCsstNuJo35Cbs",
+   "position": "Gj5B9NsQeT1WMssmEmbTVzde9LLdKNjVgqz8A5KJ5xSw",
+   "strategy": "bid-ask",
+   "range": [
+    -666,
+    -602
+   ],
+   "opened": "2026-11-11T22:18+07:00",
+   "open_tx": "3Hw59eJMYKRZpLV24i4xFuUhpSe9dz5Vmt5HiuoEBz8UwiKwNVVAwkWY6JkyJiHyPvmuJs6RdkKszXSQAFSXhnks",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.38,
+   "closed": "2026-11-11T22:41+07:00",
+   "close_tx": "4j9KfoFUrkVK1citdfrMASH6sfLgUNAjPQYKJu2B6q2TAXn6jJAtRBByh3tZ9vLzAxnGRuEDybEx5bCe7o2rXZK",
+   "swap_tx": "4rGtPrPB1ypSkiowvkECyfv64nth9PRKsNxD6oT77kgUJAfuia9Lh645Ctk8ZV28DdWv7YzLmYooPyMKRdY2fqc1",
+   "pnl_sol": 0.000162,
+   "close_reason": "manual close by Chow (take profit)"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
+   "position": "AoLVcaZ1BwwPwM9MRhfnSf4dHm2ZFX95HBijfQyerRCR",
+   "strategy": "bid-ask",
+   "range": [
+    -221,
+    -157
+   ],
+   "opened": "2026-11-11T23:49+07:00",
+   "open_tx": "1FekZREVzHnt5FpxiX7Kny4JfbmfcKsRH5BHWbfvEZQvY6s3GJKrYUoT6r88YkYHqH3K2dUgZjwbMjemWYGdhhd",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "closed": "2026-11-12T01:23+07:00",
+   "close_tx": "5U1Li6gqkXwcr8FRyZFYCW72QMygHZ1sWUyuhc2kHsUn9fxnUwmcdf52K25XAdScKcyy4sgxFESFCdpwY5jy8sWR",
+   "entry_sol": 0.38,
+   "exit_sol": 0.381127,
+   "pnl_sol": 0.001127,
+   "pnl_pct": 0.3,
+   "reason": "chase (rebalance): price ran above range",
+   "result": "gain"
+  },
+  {
+   "pair": "mihao-SOL",
+   "pool": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
+   "position": "FTv2RGUCSRR1yunVFAecnaG7dsCkrpxDMhfWuz1B2yug",
+   "strategy": "bid-ask",
+   "range": [
+    -217,
+    -153
+   ],
+   "opened": "2026-11-12T01:23+07:00",
+   "open_tx": "3bGuCTDJpFynWUb3THRoGJ5WToduhCMUZHpaTnZq3w1P8uqSrfe7XvhpkQcPRMxy6J2G4hJW9n9gCgz66LrGHSJ",
+   "mint_x": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "deposited_sol": 0.39,
+   "closed": "2026-11-12T02:07:39+07:00",
+   "close_tx": "4kaTpjYFgsnw5PHcR7FnNKmEbkTGjDDTv78SMJ8nvfRUhdZHkNzb8A282bXCKpagGhYZD6XnAF3H75JoR1cynr8d",
+   "swap_tx": "4S5oZYQo1Y5mcA51Wn9GbvY7pqrbqyoqhAGYGC5NLTQXKqEf3rqm3aQ6zw1Y5ANKGfBLe1aTychtzGdoEnvWL3mU",
+   "pnl_sol": 0.00135,
+   "close_reason": "[take_profit_upper] bounced back to top of range (active bin -155, upper -153) at 0.36%; value 0.3914 SOL"
+  },
+  {
+   "pair": "PUSSY-SOL",
+   "pool": "HcyYBrZVFDDVBLtLxL5C1HDJND1p86BoNA6m7MjBKE3p",
+   "position": "G3EyM74ytibBBkZWrsjHa6EaPaNXCeBLyVJD6T8iqqKs",
+   "strategy": "bid-ask",
+   "range": [
+    -528,
+    -464
+   ],
+   "opened": "2026-11-12T05:16+07:00",
+   "open_tx": "2TA3u1CpqU2PHC1eksMWEhKBU3ZJAPL2S1BRXbfDHmxVLPz9VrSb63YSHxUjQPGyWhkzw5Nafpq2u59nkA4gD6LR",
+   "mint_x": "FZxHLUGiGchY5uvvoeqh1EKiXTrGdN67WUBhUc1fLoat",
+   "deposited_sol": 0.38,
+   "closed": "2026-11-12T05:19+07:00",
+   "close_tx": "mrcQwsnFACxn7Yxaja1ZkUq1Fgrd57YrnugvfTTm7SU7SRuyJCmug6BdtiX2JYqRjm7whWNLNXXk1gbETq4k3kP",
+   "swap_tx": "3RaEN874zjZKqdteh3LZoKrabjLerNMsdRcBPBiTpgYWNksW3gMYrYx3hFodj3Qwsc6R7cHEnjh7VVdYbLPP6Ty6",
+   "pnl_sol": 0.001192,
+   "close_reason": "bounce rollover take-profit"
+  },
+  {
+   "pair": "Max-SOL",
+   "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
+   "position": "AiMoqFy3AuuJFj3DR1cnj9nHt1yKJKUUnVPfeQJPfvbw",
+   "strategy": "bid-ask",
+   "range": [
+    -391,
+    -327
+   ],
+   "opened": "2026-11-12T07:28+07:00",
+   "open_tx": "5ysQMAoaewhnzWb7j3kbXBScTo9LwUcPCuViNaFuRxK3bzNvbSGPAq4JYbBLbHnAV2SNH5B1Z3j1pykYCTjmQmw1",
+   "mint_x": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
+   "deposited_sol": 0.36,
+   "closed": "2026-11-12T07:53+07:00",
+   "close_tx": "4kQB78fRsrc1LjmrTWaLDb4SvFkiBf8P7UmnFkWUpErxUP9NdbM2vDuFya7SVW9xJ9DWP7Ha5VVN5XeVTZnHMqzR",
+   "swap_tx": "67jq2dR8ubwgqVYrkrgj2mUzU6D1s6AY5wPwBjMTkp6NELk4puvFi8vfmPZJPgwFaXX4CBKYx2MviqsxKHkVa9mh",
+   "pnl_sol": 0.000809,
+   "close_reason": "above range 3 checks; Max rolling over (m5 -8.6%, 1h vol down from ~725k to 221k), close and stay in SOL"
+  },
+  {
+   "pair": "HUNG-SOL",
+   "pool": "cyif7J8nYYYRDuc2ocyagB6s7Wygaho8RNB22E6QyiA",
+   "position": "3sfoqEkmdy34TFXV7XQX1YTBHp7QVyJmJXgTmeHqNJ2r",
+   "strategy": "bid-ask",
+   "range": [
+    -280,
+    -216
+   ],
+   "opened": "2026-11-12T22:07+07:00",
+   "open_tx": "2G3tuASwJjDjVunubt3akfuLVnpCDgdJ5XtyZptgtTGD39TB8VnN9shNik84WhQaAThwQSjXzHFzpetcNcB3ySKD",
+   "mint_x": "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump",
+   "deposited_sol": 0.36,
+   "closed": "2026-11-12T23:21:01+07:00",
+   "close_tx": "4wyiL8LRVZaTUNGtmhvhSP2yQfbNXvhDfhZvD9BW1q69nzMbvPcKijX8cja5PmW3nqru5BXTJE3LDEpvfGa6XsaX",
+   "swap_tx": "4uKCtAeqJSTE35AX5PatqW1L7GpnajETeEa7kv5xWpkfoZVfsVXg2Vt8MtmxbgPmveTVGFWVAqkJ478cztVE73QF",
+   "pnl_sol": -0.03442,
+   "close_reason": "[liquidity_drop] pool liquidity $61973 down 30.3% vs entry $88965"
+  },
+  {
+   "pair": "STANK-SOL",
+   "pool": "91iHWaWXneUyoNDJhSno7ezxQg1VW5P6PdarNGyFfPCz",
+   "position": "HUfrRmmLiqQihvjF4RURogWy6QRXnNV7B8kefXwrpS3k",
+   "strategy": "bid-ask",
+   "range": [
+    -408,
+    -344
+   ],
+   "opened": "2026-11-13T00:21+07:00",
+   "open_tx": "2p33PULnN9xuWByKWh7N7BfutnAKJuMp6dgsi5himMncdMFi5ubaCRxryr9E1pz5tRD8Qd1BLXJgtYCyjYjm2cnA",
+   "mint_x": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "deposited_sol": 0.35,
+   "closed": "2026-11-13T02:04+07:00",
+   "close_tx": "2kGQMgztYozRcFFcQzbyDUSLTMKjMGewRTyDmYUfc1ToiJYecYPw7nf6q6EF9EzHjSHs6fH5UbwxFyn1CmMCuL7o",
+   "swap_tx": "2utkrfbhfBMTn6QhVASLV56uW4FFRZg1y8jiFs2md2wCzSJ32L3hLD8Vi1D9ojm4nAPg4K2Cy9qg7tcY37p5U5ma",
+   "pnl_sol": 0.001782,
+   "close_reason": "bounce rollover take-profit"
+  },
+  {
+   "pair": "Max-SOL",
+   "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
+   "position": "8ZWV3JKcCjmESqQqDDqXb2qbXXcAP8q5VX4qfVVW2ja",
+   "strategy": "bid-ask",
+   "range": [
+    -531,
+    -467
+   ],
+   "opened": "2026-11-13T09:27+07:00",
+   "open_tx": "4d3coxTVFCgq3Ls7SyguLFmXEU9ay3EeDE4yP4A513JawvKmJxM3MZmLUS5j9jFPHz3FewzwEHdZUkD4LEbSrEXv",
+   "mint_x": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
+   "deposited_sol": 0.33,
+   "closed": "2026-11-13T10:02+07:00",
+   "close_tx": "5mB1JoaDbxAtHUj5wQMkTPNVxP1mbYgHQ54rooicP3KfL3ch7eNF4eRn5nnV7H4JUjGGgdidk6Wit3WsFLfP1YNF",
+   "swap_tx": "4ydfmCdNcpk6JXigaMp4CJzTxQYdGAiWsdYbZg6sLz2auGygQbdCjALNRVXKwy1uzz8V8JX64ZPxj7n1uvunNJHh",
+   "pnl_sol": 7.5e-05,
+   "close_reason": "chase: above range 3 checks"
+  },
+  {
+   "pair": "Max-SOL",
+   "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
+   "position": "3FyQ2yNiBCSK3QsLXj4QEkAQ65SvqzRfPuem2LXKrRPr",
+   "strategy": "bid-ask",
+   "range": [
+    -515,
+    -451
+   ],
+   "opened": "2026-11-13T11:03+08:00",
+   "open_tx": "47Z4LboLqej77MAijXfUJThBZJ4fMWfi242Q13RevybQRUZCk3K235AWAspPtB8B7KHFaDn2EyqZ7NKk6purk7xu",
+   "mint_x": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
+   "deposited_sol": 0.35,
+   "closed": "2026-11-13T11:20+07:00",
+   "close_tx": "3y6PTf6YvkNfFk1JAdYUgopxESrCQo1717f9r7HJoCXHCcjqf5PGcjgqp3b3d7dBdgqmjG5vB38Wi4apUQAkX9WP",
+   "swap_tx": "2Ztv2vnhGupgcT4KziDSEHJ8ap19afeXLHkG7HNBqt8pppeXdtRhsv8JP67Xd8nURRsV4LXWB7UpFaN4a9PQUv3z",
+   "pnl_sol": 0.001863,
+   "close_reason": "bounce rollover take-profit"
+  },
+  {
+   "position": "6tKLfaNLpge5W5iQqyeUQ6BzvEMtsGGsncPpD1XX3ppu",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "pair": "FOOD-SOL",
+   "owner": "993kTG9tSx6hCLdHnXf6MSzrXEfEojdHUx36cKXwnGeK",
+   "strategy": "bid-ask",
+   "range": [
+    -530,
+    -466
+   ],
+   "opened": "2026-11-13T12:17+07:00",
+   "open_tx": "2TrmpgASY52b4w6jUYCfYxhfjZaYKB8TEq8UK1DTX3SXMK38Pnq1Dp1VU51GB3NsnscKa5TbjqpueptpKM8ebTdr",
+   "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "deposited_sol": 0.24,
+   "closed": "2026-11-13T12:33+07:00",
+   "close_tx": "5RVEHGe3FuPxMorV9cwv7yCZyJFvjwyUgUPkrNcqMuYauUXWeT7bC2kiFnEHd1W1zuo5A1MeDXtA9yR6Njz8mrPv",
+   "swap_tx": "5RE9UNGb9dSi7zyCJXGAyEtVyWUcVgjs3d4gw6bbAtBw8CxP8xnvokFac2V4sC2DBthUNgZAhZiDUxMnZYR8aHGA",
+   "pnl_sol": 0.004537,
+   "close_reason": "bounce rollover take-profit"
+  },
+  {
+   "pair": "FOOD-SOL",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "position": "BecJ92o2vWavQkeCSjTLDo659bA739e8cFt14gD3NB5v",
+   "strategy": "bid-ask",
+   "range": [
+    -568,
+    -504
+   ],
+   "opened": "2026-11-13T13:52+08:00",
+   "open_tx": "5kSz8Sh7cPxVEaPFmYLmMaF9RiZQVS1YaRz2tataDwZN7fDsDWcAyT1Qsk3xZYnzgR5iJeHZBi7NKRYzib4aqkGb",
+   "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "deposited_sol": 0.35,
+   "closed": "2026-11-13T13:14+07:00",
+   "close_tx": "5WxUozMmLDZMzMRcQNAwzg8kVuNqvVAXt8tqEMtwDvAZsWNnatD4uW2dGQgSkKWG3ZZ5ftgCmo9Lejgwv4iSypFC",
+   "swap_tx": "5JH5jQGQRaujLSWkhpXzzem9omc3UabKvVhdGSdvTgX6duuzE6Z2FVVcBbfvb1hCE3yDVinRim23hSanYJZAzJG4",
+   "pnl_sol": 0.002047,
+   "close_reason": "bounce rollover take-profit"
+  },
+  {
+   "pair": "FOOD-SOL",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "position": "96WmRw3pRUBUfEQcbZvzgR5UBk7py5Nr3csVvhqNotqz",
+   "strategy": "bid-ask",
+   "range": [
+    -601,
+    -537
+   ],
+   "opened": "2026-11-13T14:35+08:00",
+   "open_tx": "3XDLYjgHNK3rrfros6xXVRv7VBHh2ifVJhhZXpvdpjjDfv4L2e1cbEjnthMTdJnU2VGQpHzYaVisNsUsVrC4NzVJ",
+   "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "deposited_sol": 0.37,
+   "closed": "2026-11-13T13:43:30+07:00",
+   "close_tx": "KUJjoJ3rKYUybcERj1QcdZd1E9EuXX8PMEDAEzz3Ux7hHgPrNfSzkUenzURzyBWrv3G6FPFp1MbGPMfpx6xZbZw",
+   "swap_tx": "4QNG6frxqTYDeneTjyQJWtY4kv1WeVRby2vBmmgTtqEiRsZpH3dMww2QHrHqiavoANYEnVewsgix8ihYic2o4iY1",
+   "pnl_sol": -0.000994,
+   "close_reason": "[deteriorating] liquidity down 12.9% vs entry and price -42.37% over 1h"
+  },
+  {
+   "pair": "FOOD-SOL",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "position": "3HA9yZGZwTdTbLzHBXveAtBBNxSEPDay9DkjfmzS6xfm",
+   "strategy": "bid-ask",
+   "range": [
+    -606,
+    -542
+   ],
+   "opened": "2026-11-13T15:21+08:00",
+   "open_tx": "2odiLvcyETBxhXe6kooJvNb7JPEJasyFY3is5HS8GpjFbtt8nfrK1MENgFakiFSJfzw9Dq2iZheTVWr3BQgHkVUb",
+   "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "deposited_sol": 0.36,
+   "closed": "2026-11-13T14:47+07:00",
+   "close_tx": "rsqwo8Jbyz82jP63WxGzkPZuGVx86t2ByzAVrfCtMfbxDR3vmu6JGh6ogQEKLtNy6WRTcfgXbfGGPdherDms3c3",
+   "swap_tx": "obtb8vadhJoRwRkL73AGWnFmGb1HbQSTpnaWe8x1B7HesskLfC5QLUGRo3Yg5tjrQvM6X56aNNZ78hcAu11FMRR",
+   "pnl_sol": 0.001587,
+   "close_reason": "bounce rollover take-profit"
+  },
+  {
+   "pair": "FOOD-SOL",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "position": "5Ecss6GqUx959bY6VVYQu5FMKAJk718rNTFXxBj8ssQa",
+   "strategy": "bid-ask",
+   "range": [
+    -619,
+    -555
+   ],
+   "opened": "2026-11-13T16:13+08:00",
+   "open_tx": "3S1DKRVNYi4NS3MH7BFnehZ38fs9Dq8yDEeaA32wQtRdXoa1rTQ3HdoMh3XPMWu3xqTrdTGhHjBZjPaPXSxzreqV",
+   "mint_x": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "deposited_sol": 0.36,
+   "closed": "2026-11-13T15:47:36+07:00",
+   "close_tx": "wrKtdnhfNedT9ZdAeaKFTtaitFGj21SvJCmojHAyt1zCxeZiR42yDKVRu5hioUatEr165BtJU63FNssH3btYn9Q",
+   "swap_tx": "ggEY1uEGFgUVLuFcgDaL5KdcLwNoQ8EAr9oUVNVxSSNRgmosDVUS6y5Ht1LkLGpYkqZ6i5VNFJPjVppeMWi4o9H",
+   "pnl_sol": -0.005049,
+   "close_reason": "[deteriorating] liquidity down 14.3% vs entry and price -23.14% over 1h"
+  }
+ ],
+ "status": "active"
 }
