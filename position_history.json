@@ -1,19 +1,36 @@
 {
- "updated": "2026-11-13T10:28:19.413Z",
+ "updated": "2026-11-13T10:56:58.994Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [
   {
    "status": "open",
+   "pair": "Sakura-SOL",
+   "pool": "DutNdXzYJ1bWZk8EnSyi5oCD5fApwnShUaECZgAVwmDR",
+   "position": "2sq2knoLfEDvCbjbK6ijGW3euPqjapBF1khS7kpXGuZu",
+   "opened": "2026-11-13T10:57:00.000Z",
+   "entry_sol": 0.29,
+   "open_tx": "93N2dvjbJRh61b47VoDrf8uAP5m2Cfs96RuLYGvuJYqqra2CFXWmxsNCYbZWti7gYmzX8x49DgyC5ADJzAAU8Nh"
+  }
+ ],
+ "closed": [
+  {
+   "status": "closed",
    "pair": "FOOD-SOL",
    "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
    "position": "3tkcPhjRtNtF2JF4ZiWEVGoFaR1jip9F6tt5D4R6porM",
    "opened": "2026-11-13T10:28:00.000Z",
+   "closed": "2026-11-13T10:42:00.000Z",
    "entry_sol": 0.345,
-   "open_tx": "5r543ipqycvrPdZ6YcBrgU2atqCU5ta73YjjPjBRXCgFmCc4rwyGtcqtsjQbcNF9HJ3h8TNL7wJkMMMA3JrCZhDR"
-  }
- ],
- "closed": [
+   "exit_sol": 0.344175,
+   "pnl_sol": -0.000825,
+   "pnl_pct": -0.24,
+   "pnl_basis": "logged",
+   "reason": "watcher hard exit: [deteriorating] liquidity down 20.1% vs entry and price -25.49% over 1h",
+   "open_tx": "5r543ipqycvrPdZ6YcBrgU2atqCU5ta73YjjPjBRXCgFmCc4rwyGtcqtsjQbcNF9HJ3h8TNL7wJkMMMA3JrCZhDR",
+   "close_tx": "5ooq99xKjnoNjiwNdz1mjx1hqmd4pcXVxyPFXGnivEorYyuKxQFyJp4xLLkQUh9GDRpyYsYTnsf1cHh6bNjTF6qY",
+   "swap_tx": "257DQuFg88PiZa21afm5phCGPgxYKG8KfvqqgFcuEpK6iyPA3CyorMmmazEmgiufYq27dasmyBq1pKx2AzoqagJC"
+  },
   {
    "status": "closed",
    "pair": "FOOD-SOL",
@@ -593,5 +610,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.04298
+ "realized_total_sol": -0.043805
 }
