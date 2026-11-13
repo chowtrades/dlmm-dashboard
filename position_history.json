@@ -1,8 +1,18 @@
 {
- "updated": "2026-11-13T13:26:01.551Z",
+ "updated": "2026-11-13T13:29:44.518Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "Max-SOL",
+   "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
+   "position": "CBmyDvYmtBoCQK9747zN5nzYmLYCudv6pAw7crkQNhpS",
+   "opened": "2026-11-13T13:31:00.000Z",
+   "entry_sol": 0.345,
+   "open_tx": "285e3vGVYkKX8jPEentPZYaL7jSFKvrnMP58LoEivpdsxyzWbhmtU4STGVmxJxbgoivnpdwiUCTXn9BZYAvixZRD"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
