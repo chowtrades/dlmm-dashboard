@@ -1,8 +1,18 @@
 {
- "updated": "2026-11-13T05:33:55.144Z",
+ "updated": "2026-11-13T05:52:12.332Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "FOOD-SOL",
+   "pool": "3gH2fgs9XuQiEEnLd7bHp6XqoeHHZgajUeaHAPu1BGQK",
+   "position": "BecJ92o2vWavQkeCSjTLDo659bA739e8cFt14gD3NB5v",
+   "opened": "2026-11-13T05:52:00.000Z",
+   "entry_sol": 0.35,
+   "open_tx": "5kSz8Sh7cPxVEaPFmYLmMaF9RiZQVS1YaRz2tataDwZN7fDsDWcAyT1Qsk3xZYnzgR5iJeHZBi7NKRYzib4aqkGb"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
