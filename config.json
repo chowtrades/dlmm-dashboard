@@ -4,7 +4,22 @@
   "start_date": "2026-11-10T20:33+07:00",
   "initial_balance_sol": 0.5,
   "refreshSeconds": 60,
-  "positions": [],
+  "positions": [
+    {
+      "pair": "Max-SOL",
+      "pool": "5nwdWtMHvrcUPJpoXSYWcPQv9wkoNzhCME5XJ4KmktzJ",
+      "position": "3FyQ2yNiBCSK3QsLXj4QEkAQ65SvqzRfPuem2LXKrRPr",
+      "strategy": "bid-ask",
+      "range": [
+        -515,
+        -451
+      ],
+      "opened": "2026-11-13T11:03+08:00",
+      "open_tx": "47Z4LboLqej77MAijXfUJThBZJ4fMWfi242Q13RevybQRUZCk3K235AWAspPtB8B7KHFaDn2EyqZ7NKk6purk7xu",
+      "mint_x": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
+      "deposited_sol": 0.35
+    }
+  ],
   "closed_positions": [
     {
       "pair": "X-SOL",
