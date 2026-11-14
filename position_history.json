@@ -1,19 +1,26 @@
 {
- "updated": "2026-11-14T12:41:45.600Z",
+ "updated": "2026-11-14T14:10:44.343Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [
+ "open": [],
+ "closed": [
   {
-   "status": "open",
+   "status": "closed",
    "pair": "GTA$-SOL",
    "pool": "CbP3vGtPMfkfumgXiseQroFUzH1F5P6giHs9auVf5ADL",
    "position": "AdoxGBo3eVQp13cnLRYBPraM1aCmJG54KkfFV1x8pREU",
    "opened": "2026-11-14T12:40:00.000Z",
+   "closed": "2026-11-14T14:10:00.000Z",
    "entry_sol": 0.355,
-   "open_tx": "SCTHph5YnVbptLBDmNdSXToevwkL9AJNmrAt8h8K7gkXmqLkxK1JfK9XYZ8aiZK3ssg9Pf6urmUvh2eMMe6rgLj"
-  }
- ],
- "closed": [
+   "exit_sol": 0.405764,
+   "pnl_sol": 0.050764,
+   "pnl_pct": 14.3,
+   "pnl_basis": "logged",
+   "reason": "liquidity -30% exit (GTA$ liq 35.3k->23.2k, price fell back into range)",
+   "open_tx": "SCTHph5YnVbptLBDmNdSXToevwkL9AJNmrAt8h8K7gkXmqLkxK1JfK9XYZ8aiZK3ssg9Pf6urmUvh2eMMe6rgLj",
+   "close_tx": "hbmdGmouBVtny8dHMM2U9C9g7QEgzgHN5rfpqjFgfCmXcyM86beiigyj7QCZV11MnmEkDPUXcajF78fVxKAMKye",
+   "swap_tx": "4W2cwMcq8EovhmsuTSndPexs3UrWXVWkDoa3SM6bXyDdcc244tDtdv8ZKraKp4mJFN7wCt14hFze2m5h5J4njcaU"
+  },
   {
    "status": "closed",
    "pair": "FOOD-SOL",
@@ -678,5 +685,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.040209
+ "realized_total_sol": 0.010555
 }
