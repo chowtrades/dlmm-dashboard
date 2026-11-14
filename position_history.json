@@ -1,8 +1,22 @@
 {
+<<<<<<< HEAD
  "updated": "2026-11-14T18:43:48.919Z",
+=======
+ "updated": "2026-11-14T18:48:33.401Z",
+>>>>>>> 626bc13 (data: open Other-SOL (0.343 SOL, bins -586..-522))
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "Other-SOL",
+   "pool": "FoKvD7Bvs5dEvZZ8dGJbbjvSwZXgmAi4pVHjckWnABcm",
+   "position": "CBtbTu2ncMJ5pAi3LVB83MGTCW4Vi5hjuc31rUhsQWvj",
+   "opened": "2026-11-14T18:47:00.000Z",
+   "entry_sol": 0.343,
+   "open_tx": "3tZvbAqAb3Xf6Dq6pmsUaUPAVQW6eSef5s877EcG5ZitntpjrAqDtqDteDn358H5UV5Kc5mo4EY5DELTEe3TCaqh"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
