@@ -1,8 +1,18 @@
 {
- "updated": "2026-11-14T14:10:44.343Z",
+ "updated": "2026-11-14T18:11:22.696Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
- "open": [],
+ "open": [
+  {
+   "status": "open",
+   "pair": "Other-SOL",
+   "pool": "FoKvD7Bvs5dEvZZ8dGJbbjvSwZXgmAi4pVHjckWnABcm",
+   "position": "6PsHKAAbzWgPcovP7ABfA1V5ptspVJDSCD1ca44Bk3wj",
+   "opened": "2026-11-14T18:09:00.000Z",
+   "entry_sol": 0.2,
+   "open_tx": "12NTfifDvj8DEP7cW4bZGhvCLoKbijhc1EMwqmzXNFbnSn17bn9HB4GfZ4e2ejjs75zhGtuWPBvkuWAp8rHyMjS"
+  }
+ ],
  "closed": [
   {
    "status": "closed",
