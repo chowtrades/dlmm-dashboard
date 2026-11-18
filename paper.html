@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ChowBot · Paper trading (simulated)</title>
+<meta name="description" content="ChowBot paper trading: the young-pool scalp strategy simulated with a virtual 0.5 SOL. No real funds.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="paper.css?v=1">
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<header class="top">
+  <a class="brand" href="./">
+    <img class="logo" src="assets/logo-icon.png" alt="" aria-hidden="true" width="44" height="44">
+    <span class="brand-text">
+      <img class="wordmark" src="assets/logo-wordmark.png" alt="ChowBot" height="40">
+      <span class="brand-tag">Paper trading · young-pool scalp strategy</span>
+    </span>
+  </a>
+  <div class="top-actions">
+    <span id="live" class="live"><i></i><span id="liveText">Loading…</span></span>
+    <a class="btn" href="./">← Live dashboard</a>
+  </div>
+</header>
+<main>
+  <div class="paper-banner">PAPER TRADING · SIMULATED, NO REAL FUNDS. Virtual 0.5 SOL start; prices and fees are modelled from public pool data.</div>
+
+  <section class="card hero">
+    <div class="hero-main">
+      <div class="eyebrow">Virtual equity</div>
+      <div class="big num" id="equity">—</div>
+      <div id="pnl" class="num"></div>
+    </div>
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><div><h2>Open paper position</h2><div class="sub">One position at a time, SOL-only bid-ask over 64 bins</div></div></div>
+    <div id="open" class="muted">—</div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><div><h2>Equity curve</h2><div class="sub">Virtual SOL (balance + open position mark value)</div></div></div>
+    <div id="chart" class="p-chart"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><div><h2>Paper trades</h2><div class="sub">Newest first, with exit reason</div></div></div>
+    <div class="p-table-wrap"><table class="p-table" id="trades"><thead><tr><th>Closed</th><th>Pair</th><th>Size</th><th>PnL</th><th>Held</th><th>Exit reason</th></tr></thead><tbody></tbody></table></div>
+    <div id="noTrades" class="muted small"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><div><h2>Scanner</h2><div class="sub">Latest scan for Metlex-style young pools</div></div></div>
+    <div id="scan" class="muted small">—</div>
+  </section>
+
+  <footer class="foot">
+    <p class="muted small">Last updated <span id="updated">—</span> · page refreshes every 60s. Simulation only: entries use the young-scalp rules (incl. dev blacklist); exits: print-died, 45-min max hold, −7% stop, +2.5% take profit, TVL halving, above range. Fee income and swap costs are estimates. Not financial advice.</p>
+  </footer>
+</main>
+<script src="paper.js?v=1"></script>
+</body>
+</html>
