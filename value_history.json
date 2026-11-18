@@ -4,55 +4,6 @@
  "awaiting_funding": false,
  "points": [
   {
-   "ts": "2026-11-11T19:08:32.000Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T19:35:25.826Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T20:06:01.169Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T20:32:33.691Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T20:56:05.942Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T21:20:35.220Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T21:42:58.131Z",
-   "value_sol": 0.482355,
-   "sol": 0.482355,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
    "ts": "2026-11-11T22:17:04.052Z",
    "value_sol": 0.480817,
    "sol": 0.058957,
@@ -702,7 +653,14 @@
    "sol": 0,
    "positions_sol": 0,
    "positions": 0
+  },
+  {
+   "ts": "2026-11-18T22:55:58.556Z",
+   "value_sol": 0,
+   "sol": 0,
+   "positions_sol": 0,
+   "positions": 0
   }
  ],
- "updated": "2026-11-18T19:51:45.932Z"
+ "updated": "2026-11-18T22:55:58.556Z"
 }
