@@ -42,44 +42,55 @@
   {
    "t": "2026-11-18T15:10:18.651Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-18T19:50:16.510Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-18T15:16:18.434Z",
-  "young": 3,
+  "at": "2026-11-18T19:50:16.510Z",
+  "young": 4,
   "near": [
    {
-    "pair": "FREEDOM-SOL",
+    "pair": "Founder-SOL",
     "pass": false,
     "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $0",
-     "holders 57"
+     "fee rate 33.0%/h"
     ]
    },
    {
-    "pair": "KODA-SOL",
+    "pair": "pippin-SOL",
     "pass": false,
     "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $103",
-     "holders 184"
+     "tvl $779",
+     "fee rate 0.1%/h",
+     "fees30m $0",
+     "base fee 0.8%"
     ]
    },
    {
-    "pair": "AI-SOL",
+    "pair": "gta.fun-SOL",
     "pass": false,
     "fails": [
      "tvl $0",
      "fee rate n/a%/h",
-     "fees30m $0",
-     "holders 88"
+     "fees30m $43",
+     "holders 506"
+    ]
+   },
+   {
+    "pair": "gta.fun-SOL",
+    "pass": false,
+    "fails": [
+     "tvl $0",
+     "fee rate n/a%/h",
+     "fees30m $1",
+     "holders 138"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-18T15:25:27.459Z",
- "published": "2026-11-18T15:25:27.534Z"
+ "engine_heartbeat": "2026-11-18T19:50:44.098Z",
+ "published": "2026-11-18T19:50:45.964Z"
 }
