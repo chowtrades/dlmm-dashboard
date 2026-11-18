@@ -4,83 +4,6 @@
  "awaiting_funding": false,
  "points": [
   {
-   "ts": "2026-11-11T15:04:25.417Z",
-   "value_sol": 0.475271,
-   "sol": 0.475271,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T15:19:27.437Z",
-   "value_sol": 0.475351,
-   "sol": 0.053451,
-   "positions_sol": 0.4219,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T15:34:29.864Z",
-   "value_sol": 0.476649,
-   "sol": 0.053451,
-   "positions_sol": 0.423198,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T15:52:08.799Z",
-   "value_sol": 0.475513,
-   "sol": 0.475513,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T16:08:15.380Z",
-   "value_sol": 0.481412,
-   "sol": 0.481412,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T16:31:17.764Z",
-   "value_sol": 0.481412,
-   "sol": 0.481412,
-   "positions_sol": 0,
-   "positions": 0
-  },
-  {
-   "ts": "2026-11-11T17:05:54.004Z",
-   "value_sol": 0.480018,
-   "sol": 0.057988,
-   "positions_sol": 0.42203,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T17:26:45.578Z",
-   "value_sol": 0.480445,
-   "sol": 0.057988,
-   "positions_sol": 0.422457,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T17:50:03.668Z",
-   "value_sol": 0.480924,
-   "sol": 0.057988,
-   "positions_sol": 0.422936,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T18:20:38.394Z",
-   "value_sol": 0.4811,
-   "sol": 0.057988,
-   "positions_sol": 0.423112,
-   "positions": 1
-  },
-  {
-   "ts": "2026-11-11T18:43:40.117Z",
-   "value_sol": 0.480833,
-   "sol": 0.049105,
-   "positions_sol": 0.431727,
-   "positions": 1
-  },
-  {
    "ts": "2026-11-11T19:08:32.000Z",
    "value_sol": 0.482355,
    "sol": 0.482355,
@@ -772,7 +695,14 @@
    "sol": 0,
    "positions_sol": 0,
    "positions": 0
+  },
+  {
+   "ts": "2026-11-18T19:51:45.932Z",
+   "value_sol": 0,
+   "sol": 0,
+   "positions_sol": 0,
+   "positions": 0
   }
  ],
- "updated": "2026-11-18T15:12:27.539Z"
+ "updated": "2026-11-18T19:51:45.932Z"
 }
