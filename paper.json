@@ -45,7 +45,7 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-18T15:14:48.756Z",
+  "at": "2026-11-18T15:16:18.434Z",
   "young": 3,
   "near": [
    {
@@ -59,27 +59,27 @@
     ]
    },
    {
-    "pair": "AI-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $0",
-     "holders 85"
-    ]
-   },
-   {
     "pair": "KODA-SOL",
     "pass": false,
     "fails": [
      "tvl $0",
      "fee rate n/a%/h",
      "fees30m $103",
-     "holders 183"
+     "holders 184"
+    ]
+   },
+   {
+    "pair": "AI-SOL",
+    "pass": false,
+    "fails": [
+     "tvl $0",
+     "fee rate n/a%/h",
+     "fees30m $0",
+     "holders 88"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-18T15:15:45.919Z",
- "published": "2026-11-18T15:15:48.850Z"
+ "engine_heartbeat": "2026-11-18T15:25:27.459Z",
+ "published": "2026-11-18T15:25:27.534Z"
 }
