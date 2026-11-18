@@ -46,51 +46,17 @@
   {
    "t": "2026-11-18T19:50:16.510Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-18T22:33:58.447Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-18T19:51:47.161Z",
-  "young": 4,
-  "near": [
-   {
-    "pair": "Founder-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $2549"
-    ]
-   },
-   {
-    "pair": "pippin-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $778",
-     "fee rate 0.1%/h",
-     "fees30m $0",
-     "base fee 0.8%"
-    ]
-   },
-   {
-    "pair": "gta.fun-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $1",
-     "holders 494"
-    ]
-   },
-   {
-    "pair": "gta.fun-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $1",
-     "holders 135"
-    ]
-   }
-  ]
+  "at": "2026-11-18T22:38:28.701Z",
+  "young": 0,
+  "near": []
  },
- "engine_heartbeat": "2026-11-18T19:52:28.244Z",
- "published": "2026-11-18T22:33:45.988Z"
+ "engine_heartbeat": "2026-11-18T22:38:28.701Z",
+ "published": "2026-11-18T22:38:47.237Z"
 }
