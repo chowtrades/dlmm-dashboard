@@ -1,0 +1,73 @@
+{
+ "label": "Paper trading (simulated, no real funds)",
+ "tier": "young-pool scalp",
+ "start_balance_sol": 0.5,
+ "started": "2026-11-18T00:18:25.100Z",
+ "balance_sol": 0.5,
+ "equity_sol": 0.5,
+ "stats": {
+  "trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "win_rate_pct": null,
+  "avg_pct": null,
+  "median_pct": null,
+  "best_pct": null,
+  "worst_pct": null,
+  "total_pnl_sol": 0
+ },
+ "open": null,
+ "trades": [],
+ "equity": [
+  {
+   "t": "2026-11-18T00:18:25.101Z",
+   "v": 0.5
+  },
+  {
+   "t": "2026-11-18T00:18:27.114Z",
+   "v": 0.5
+  },
+  {
+   "t": "2026-11-18T12:47:17.969Z",
+   "v": 0.5
+  }
+ ],
+ "last_scan": {
+  "at": "2026-11-18T12:47:21.640Z",
+  "young": 3,
+  "near": [
+   {
+    "pair": "BUCKZ-SOL",
+    "pass": false,
+    "fails": [
+     "fee rate 32.6%/h",
+     "pump h1 284%",
+     "dumping m5 -30.05%",
+     "dev check missing (deployer unknown)"
+    ]
+   },
+   {
+    "pair": "DacityCoin-SOL",
+    "pass": false,
+    "fails": [
+     "tvl $3",
+     "fee rate n/a%/h",
+     "fees30m $12",
+     "dumping m5 -19.37%"
+    ]
+   },
+   {
+    "pair": "HOGE-SOL",
+    "pass": false,
+    "fails": [
+     "fee rate 7.6%/h",
+     "fees30m $295",
+     "base fee 0.8%",
+     "mc $1676811"
+    ]
+   }
+  ]
+ },
+ "engine_heartbeat": "2026-11-18T12:47:21.641Z",
+ "published": "2026-11-18T12:47:47.253Z"
+}
