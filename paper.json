@@ -45,7 +45,7 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-18T15:10:18.649Z",
+  "at": "2026-11-18T15:14:48.756Z",
   "young": 3,
   "near": [
    {
@@ -55,7 +55,7 @@
      "tvl $0",
      "fee rate n/a%/h",
      "fees30m $0",
-     "holders 58"
+     "holders 57"
     ]
    },
    {
@@ -65,21 +65,21 @@
      "tvl $0",
      "fee rate n/a%/h",
      "fees30m $0",
-     "holders 90"
+     "holders 85"
     ]
    },
    {
     "pair": "KODA-SOL",
     "pass": false,
     "fails": [
-     "tvl $21",
+     "tvl $0",
      "fee rate n/a%/h",
      "fees30m $103",
-     "holders 268"
+     "holders 183"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-18T15:10:45.876Z",
- "published": "2026-11-18T15:10:47.251Z"
+ "engine_heartbeat": "2026-11-18T15:15:45.919Z",
+ "published": "2026-11-18T15:15:48.850Z"
 }
