@@ -37,16 +37,16 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-18T12:53:06.135Z",
+  "at": "2026-11-18T12:56:07.926Z",
   "young": 4,
   "near": [
    {
     "pair": "BUCKZ-SOL",
     "pass": false,
     "fails": [
-     "mc $93574",
-     "pump h1 89.46%",
-     "dumping m5 -21.18%",
+     "tvl $1106",
+     "mc $56024",
+     "dumping m5 -48.34%",
      "dev check missing (deployer unknown)"
     ]
    },
@@ -54,9 +54,9 @@
     "pair": "DacityCoin-SOL",
     "pass": false,
     "fails": [
-     "tvl $2646",
-     "fee rate 1.0%/h",
-     "fees30m $13",
+     "tvl $2642",
+     "fee rate 0.8%/h",
+     "fees30m $11",
      "dev check missing (deployer unknown)"
     ]
    },
@@ -64,24 +64,24 @@
     "pair": "VI-SOL",
     "pass": false,
     "fails": [
-     "tvl $540",
-     "fee rate 1.0%/h",
-     "fees30m $3",
-     "holders 334"
+     "tvl $1218",
+     "fee rate 2.2%/h",
+     "fees30m $13",
+     "holders 355"
     ]
    },
    {
     "pair": "HOGE-SOL",
     "pass": false,
     "fails": [
-     "fee rate 14.9%/h",
-     "fees30m $360",
+     "fee rate 17.5%/h",
+     "fees30m $375",
      "base fee 0.8%",
-     "mc $1427847"
+     "mc $1390133"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-18T12:53:33.886Z",
- "published": "2026-11-18T12:53:35.350Z"
+ "engine_heartbeat": "2026-11-18T12:57:33.198Z",
+ "published": "2026-11-18T12:57:33.204Z"
 }
