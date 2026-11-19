@@ -69,36 +69,36 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-19T16:05:14.472Z",
+  "at": "2026-11-19T16:06:44.786Z",
   "young": 3,
   "near": [
    {
     "pair": "KFC-SOL",
     "pass": false,
     "fails": [
-     "tvl $170",
-     "pump h1 492%"
+     "tvl $176",
+     "pump h1 462%"
     ]
    },
    {
     "pair": "AI-SOL",
     "pass": false,
     "fails": [
-     "tvl $2053",
-     "pump h1 210%"
+     "pump h1 171%",
+     "dumping m5 -17.4%"
     ]
    },
    {
     "pair": "KFC-SOL",
     "pass": false,
     "fails": [
-     "tvl $544",
+     "tvl $563",
      "fees30m $177",
-     "pump h1 492%"
+     "pump h1 462%"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-19T16:05:42.901Z",
- "published": "2026-11-19T16:05:46.932Z"
+ "engine_heartbeat": "2026-11-19T16:17:08.461Z",
+ "published": "2026-11-19T16:17:08.550Z"
 }
