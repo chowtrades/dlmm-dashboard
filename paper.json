@@ -58,43 +58,47 @@
   {
    "t": "2026-11-19T01:55:33.217Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-19T03:21:12.985Z",
+   "v": 0.5
+  },
+  {
+   "t": "2026-11-19T16:05:14.472Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-19T01:57:03.473Z",
+  "at": "2026-11-19T16:05:14.472Z",
   "young": 3,
   "near": [
    {
-    "pair": "FNDR-SOL",
+    "pair": "KFC-SOL",
     "pass": false,
     "fails": [
-     "age 4m",
-     "fee rate 10.0%/h",
-     "pump h1 1091%"
+     "tvl $170",
+     "pump h1 492%"
     ]
    },
    {
-    "pair": "MAGA-SOL",
+    "pair": "AI-SOL",
     "pass": false,
     "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $181",
-     "holders 416"
+     "tvl $2053",
+     "pump h1 210%"
     ]
    },
    {
-    "pair": "MAGA-SOL",
+    "pair": "KFC-SOL",
     "pass": false,
     "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $12",
-     "holders 416"
+     "tvl $544",
+     "fees30m $177",
+     "pump h1 492%"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-19T01:58:01.326Z",
- "published": "2026-11-19T03:20:46.411Z"
+ "engine_heartbeat": "2026-11-19T16:05:42.901Z",
+ "published": "2026-11-19T16:05:46.932Z"
 }
