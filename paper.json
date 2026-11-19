@@ -61,17 +61,16 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-19T01:55:33.217Z",
+  "at": "2026-11-19T01:57:03.473Z",
   "young": 3,
   "near": [
    {
     "pair": "FNDR-SOL",
     "pass": false,
     "fails": [
-     "age 3m",
-     "fee rate 3.5%/h",
-     "fees30m $278",
-     "pump h1 1238%"
+     "age 4m",
+     "fee rate 10.0%/h",
+     "pump h1 1091%"
     ]
    },
    {
@@ -81,7 +80,7 @@
      "tvl $0",
      "fee rate n/a%/h",
      "fees30m $181",
-     "holders 452"
+     "holders 416"
     ]
    },
    {
@@ -91,11 +90,11 @@
      "tvl $0",
      "fee rate n/a%/h",
      "fees30m $12",
-     "holders 456"
+     "holders 416"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-19T01:56:01.232Z",
- "published": "2026-11-19T01:56:03.627Z"
+ "engine_heartbeat": "2026-11-19T01:58:01.326Z",
+ "published": "2026-11-19T03:20:46.411Z"
 }
