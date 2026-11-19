@@ -53,21 +53,21 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-18T22:55:39.278Z",
+  "at": "2026-11-18T22:57:08.741Z",
   "young": 1,
   "near": [
    {
     "pair": "PAPA-SOL",
     "pass": false,
     "fails": [
-     "age 7m",
-     "tvl $1700",
-     "fees30m $323",
-     "pump h1 345%"
+     "age 9m",
+     "tvl $2089",
+     "fees30m $381",
+     "pump h1 527%"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-18T22:55:39.279Z",
- "published": "2026-11-18T22:56:06.393Z"
+ "engine_heartbeat": "2026-11-19T00:47:30.852Z",
+ "published": "2026-11-19T00:47:32.008Z"
 }
