@@ -66,39 +66,58 @@
   {
    "t": "2026-11-19T16:05:14.472Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-20T02:05:21.219Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-19T16:06:44.786Z",
-  "young": 3,
+  "at": "2026-11-20T02:05:21.219Z",
+  "young": 4,
   "near": [
    {
-    "pair": "KFC-SOL",
+    "pair": "RUGGED-SOL",
     "pass": false,
     "fails": [
-     "tvl $176",
-     "pump h1 462%"
+     "tvl $1987",
+     "fee rate 30.6%/h",
+     "fees30m $304",
+     "pump h1 756%"
     ]
    },
    {
-    "pair": "AI-SOL",
+    "pair": "RUGGED-SOL",
     "pass": false,
     "fails": [
-     "pump h1 171%",
-     "dumping m5 -17.4%"
+     "tvl $2682",
+     "fee rate 25.2%/h",
+     "fees30m $338",
+     "pump h1 756%"
     ]
    },
    {
-    "pair": "KFC-SOL",
+    "pair": "QUATS-SOL",
     "pass": false,
     "fails": [
-     "tvl $563",
-     "fees30m $177",
-     "pump h1 462%"
+     "tvl $0",
+     "fee rate n/a%/h",
+     "fees30m $1",
+     "holders 762"
+    ]
+   },
+   {
+    "pair": "RCTY-SOL",
+    "pass": false,
+    "fails": [
+     "tvl $337",
+     "fee rate 29.4%/h",
+     "fees30m $50",
+     "holders 353"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-19T16:17:08.461Z",
- "published": "2026-11-19T16:17:08.550Z"
+ "engine_heartbeat": "2026-11-20T02:05:49.893Z",
+ "published": "2026-11-20T02:05:51.427Z"
 }
