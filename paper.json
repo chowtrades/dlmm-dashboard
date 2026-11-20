@@ -70,54 +70,56 @@
   {
    "t": "2026-11-20T02:05:21.219Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-20T19:47:58.198Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-20T02:05:21.219Z",
+  "at": "2026-11-20T19:47:58.197Z",
   "young": 4,
   "near": [
    {
-    "pair": "RUGGED-SOL",
+    "pair": "PATRICK-SOL",
     "pass": false,
     "fails": [
-     "tvl $1987",
-     "fee rate 30.6%/h",
-     "fees30m $304",
-     "pump h1 756%"
+     "fee rate 6.8%/h",
+     "pump h1 368%"
     ]
    },
    {
-    "pair": "RUGGED-SOL",
+    "pair": "NVDAx-SOL",
     "pass": false,
     "fails": [
-     "tvl $2682",
-     "fee rate 25.2%/h",
-     "fees30m $338",
-     "pump h1 756%"
-    ]
-   },
-   {
-    "pair": "QUATS-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
+     "fee rate 0.0%/h",
      "fees30m $1",
-     "holders 762"
+     "bin step 10",
+     "base fee 0.03%"
     ]
    },
    {
-    "pair": "RCTY-SOL",
+    "pair": "Singularity-SOL",
     "pass": false,
     "fails": [
-     "tvl $337",
-     "fee rate 29.4%/h",
-     "fees30m $50",
-     "holders 353"
+     "tvl $266",
+     "fee rate 0.0%/h",
+     "fees30m $0",
+     "holders 603"
+    ]
+   },
+   {
+    "pair": "SPONGEBOB-SOL",
+    "pass": false,
+    "fails": [
+     "age 3m",
+     "tvl $2",
+     "fee rate n/a%/h",
+     "fees30m $1"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-20T02:05:49.893Z",
- "published": "2026-11-20T02:05:51.427Z"
+ "engine_heartbeat": "2026-11-20T19:48:25.089Z",
+ "published": "2026-11-20T19:48:25.145Z"
 }
