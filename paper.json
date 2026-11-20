@@ -74,52 +74,47 @@
   {
    "t": "2026-11-20T19:47:58.198Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-20T22:52:23.685Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-20T19:47:58.197Z",
-  "young": 4,
+  "at": "2026-11-20T22:52:23.684Z",
+  "young": 3,
   "near": [
    {
-    "pair": "PATRICK-SOL",
+    "pair": "Trader-SOL",
     "pass": false,
     "fails": [
-     "fee rate 6.8%/h",
-     "pump h1 368%"
+     "fee rate 0.8%/h",
+     "fees30m $15",
+     "pump h1 90.19%"
     ]
    },
    {
-    "pair": "NVDAx-SOL",
+    "pair": "ETCHY-SOL",
     "pass": false,
     "fails": [
-     "fee rate 0.0%/h",
-     "fees30m $1",
-     "bin step 10",
-     "base fee 0.03%"
-    ]
-   },
-   {
-    "pair": "Singularity-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $266",
-     "fee rate 0.0%/h",
-     "fees30m $0",
-     "holders 603"
-    ]
-   },
-   {
-    "pair": "SPONGEBOB-SOL",
-    "pass": false,
-    "fails": [
-     "age 3m",
-     "tvl $2",
+     "tvl $25",
      "fee rate n/a%/h",
-     "fees30m $1"
+     "fees30m $2",
+     "base fee 0.8%"
+    ]
+   },
+   {
+    "pair": "BATHROOM-SOL",
+    "pass": false,
+    "fails": [
+     "age 6m",
+     "tvl $273",
+     "fee rate 7.2%/h",
+     "fees30m $10"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-20T19:48:25.089Z",
- "published": "2026-11-20T19:48:25.145Z"
+ "engine_heartbeat": "2026-11-20T22:52:51.654Z",
+ "published": "2026-11-20T22:52:52.900Z"
 }
