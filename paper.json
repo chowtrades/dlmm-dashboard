@@ -78,43 +78,47 @@
   {
    "t": "2026-11-20T22:52:23.685Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-21T01:56:27.500Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-20T22:52:23.684Z",
+  "at": "2026-11-21T01:56:30.598Z",
   "young": 3,
   "near": [
    {
-    "pair": "Trader-SOL",
+    "pair": "Gestalt-SOL",
     "pass": false,
     "fails": [
-     "fee rate 0.8%/h",
-     "fees30m $15",
-     "pump h1 90.19%"
+     "tvl $227",
+     "fees30m $59",
+     "mc $85026"
     ]
    },
    {
-    "pair": "ETCHY-SOL",
+    "pair": "ONE-SOL",
     "pass": false,
     "fails": [
-     "tvl $25",
+     "tvl $0",
      "fee rate n/a%/h",
-     "fees30m $2",
-     "base fee 0.8%"
+     "fees30m $6",
+     "holders 394"
     ]
    },
    {
-    "pair": "BATHROOM-SOL",
+    "pair": "Altruists-SOL",
     "pass": false,
     "fails": [
-     "age 6m",
-     "tvl $273",
-     "fee rate 7.2%/h",
-     "fees30m $10"
+     "age 9m",
+     "tvl $0",
+     "fee rate n/a%/h",
+     "fees30m $1"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-20T22:52:51.654Z",
- "published": "2026-11-20T22:52:52.900Z"
+ "engine_heartbeat": "2026-11-21T01:56:59.522Z",
+ "published": "2026-11-21T01:57:03.381Z"
 }
