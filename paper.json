@@ -82,43 +82,28 @@
   {
    "t": "2026-11-21T01:56:27.500Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-21T13:00:31.441Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-21T01:56:30.598Z",
-  "young": 3,
+  "at": "2026-11-21T13:00:31.440Z",
+  "young": 1,
   "near": [
    {
-    "pair": "Gestalt-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $227",
-     "fees30m $59",
-     "mc $85026"
-    ]
-   },
-   {
-    "pair": "ONE-SOL",
+    "pair": "Lazarus-SOL",
     "pass": false,
     "fails": [
      "tvl $0",
      "fee rate n/a%/h",
-     "fees30m $6",
-     "holders 394"
-    ]
-   },
-   {
-    "pair": "Altruists-SOL",
-    "pass": false,
-    "fails": [
-     "age 9m",
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $1"
+     "fees30m $0",
+     "holders 429"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-21T01:56:59.522Z",
- "published": "2026-11-21T01:57:03.381Z"
+ "engine_heartbeat": "2026-11-21T13:00:31.441Z",
+ "published": "2026-11-21T13:00:34.098Z"
 }
