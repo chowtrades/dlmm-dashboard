@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T18:54:21.833Z",
+ "updated": "2026-11-24T20:09:14.832Z",
  "start_sol": 0.5,
  "awaiting_funding": false,
  "open": [],
@@ -20,23 +20,6 @@
    "open_tx": "3tZvbAqAb3Xf6Dq6pmsUaUPAVQW6eSef5s877EcG5ZitntpjrAqDtqDteDn358H5UV5Kc5mo4EY5DELTEe3TCaqh",
    "close_tx": "4z4cSNP2yGhHuLwEzbhFaHqSasm3pooy2seB2TgAKPKSrU7LY4jeRJ3v62WLPis3zQ1JLodvrLXvTGzdeWiQKXUG",
    "swap_tx": "L8B1W5yZhMx3n2cWffu8Up3Hm5LGnZNVamPncEKELdvGiedwrFDEwXFqbrMbujnsGT23T3FYoB337wCd94yspQ1"
-  },
-  {
-   "status": "closed",
-   "pair": "Other-SOL",
-   "pool": "FoKvD7Bvs5dEvZZ8dGJbbjvSwZXgmAi4pVHjckWnABcm",
-   "position": "2KcF438Hv7BoUk3N9zcPBemtktQxyWnjQyyis5pQqZZ7",
-   "opened": "2026-11-14T18:33:00.000Z",
-   "closed": "2026-11-14T18:41:00.000Z",
-   "entry_sol": 0.4,
-   "exit_sol": 0.330239,
-   "pnl_sol": -0.069761,
-   "pnl_pct": -17.44,
-   "pnl_basis": "logged",
-   "reason": "watcher hard exit: [value_drop] value 0.3408 SOL down 14.8% vs entry 0.4",
-   "open_tx": "nbWHAitmMWQQhKAwKxAYo9KeiS7uUt4jngthfQRjuZuV9AK6ZtDSSaH6oobUzqECEjzYA1fCNEWRWGu8qvYaDCU",
-   "close_tx": "62yfN6LYtGw3mJzFGR3AT2gKDM91nxCAJATNQvRV2mGTQ5uByvRtsaaXqd2xxiuwpWkkQQzBQMAYfnV3TRegL31q",
-   "swap_tx": "3EesBS33VgmmV3UghkYApRR5VxqoB8Kezt4H6d4tiWk1mE77C7TThNFkzLSjoXmS5y8xUSgtSmbE2DKreHrLJ6wY"
   },
   {
    "status": "closed",
@@ -326,23 +309,6 @@
    "open_tx": "2p33PULnN9xuWByKWh7N7BfutnAKJuMp6dgsi5himMncdMFi5ubaCRxryr9E1pz5tRD8Qd1BLXJgtYCyjYjm2cnA",
    "close_tx": "2kGQMgztYozRcFFcQzbyDUSLTMKjMGewRTyDmYUfc1ToiJYecYPw7nf6q6EF9EzHjSHs6fH5UbwxFyn1CmMCuL7o",
    "swap_tx": "2utkrfbhfBMTn6QhVASLV56uW4FFRZg1y8jiFs2md2wCzSJ32L3hLD8Vi1D9ojm4nAPg4K2Cy9qg7tcY37p5U5ma"
-  },
-  {
-   "status": "closed",
-   "pair": "HUNG-SOL",
-   "pool": "cyif7J8nYYYRDuc2ocyagB6s7Wygaho8RNB22E6QyiA",
-   "position": "3sfoqEkmdy34TFXV7XQX1YTBHp7QVyJmJXgTmeHqNJ2r",
-   "opened": "2026-11-12T15:07:00.000Z",
-   "closed": "2026-11-12T16:21:00.000Z",
-   "entry_sol": 0.36,
-   "exit_sol": 0.32558,
-   "pnl_sol": -0.03442,
-   "pnl_pct": -9.56,
-   "pnl_basis": "logged",
-   "reason": "watcher hard exit: [liquidity_drop] pool liquidity $61973 down 30.3% vs entry $88965",
-   "open_tx": "2G3tuASwJjDjVunubt3akfuLVnpCDgdJ5XtyZptgtTGD39TB8VnN9shNik84WhQaAThwQSjXzHFzpetcNcB3ySKD",
-   "close_tx": "4wyiL8LRVZaTUNGtmhvhSP2yQfbNXvhDfhZvD9BW1q69nzMbvPcKijX8cja5PmW3nqru5BXTJE3LDEpvfGa6XsaX",
-   "swap_tx": "4uKCtAeqJSTE35AX5PatqW1L7GpnajETeEa7kv5xWpkfoZVfsVXg2Vt8MtmxbgPmveTVGFWVAqkJ478cztVE73QF"
   },
   {
    "status": "closed",
@@ -753,5 +719,5 @@
    "swap_tx": null
   }
  ],
- "realized_total_sol": -0.053698
+ "realized_total_sol": 0.050483
 }
