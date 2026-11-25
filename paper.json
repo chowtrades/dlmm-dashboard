@@ -89,8 +89,8 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-21T13:00:31.440Z",
-  "young": 1,
+  "at": "2026-11-21T13:02:01.257Z",
+  "young": 2,
   "near": [
    {
     "pair": "Lazarus-SOL",
@@ -99,11 +99,21 @@
      "tvl $0",
      "fee rate n/a%/h",
      "fees30m $0",
-     "holders 429"
+     "holders 406"
+    ]
+   },
+   {
+    "pair": "Emily-SOL",
+    "pass": false,
+    "fails": [
+     "age 2m",
+     "tvl $100",
+     "fee rate 0.0%/h",
+     "fees30m $0"
     ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-21T13:00:31.441Z",
- "published": "2026-11-21T13:00:34.098Z"
+ "engine_heartbeat": "2026-11-25T14:06:07.632Z",
+ "published": "2026-11-25T14:06:07.637Z"
 }
