@@ -3,8 +3,8 @@
  "tier": "young-pool scalp",
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
- "balance_sol": 0.5,
- "equity_sol": 0.5,
+ "balance_sol": 0.38,
+ "equity_sol": 0.501014,
  "stats": {
   "trades": 0,
   "wins": 0,
@@ -16,7 +16,26 @@
   "worst_pct": null,
   "total_pnl_sol": 0
  },
- "open": null,
+ "open": {
+  "pair": "Pompom-SOL",
+  "pool": "5UTPFtaKKMSeCKJ1ZpTpTWYz4FPvbpj5rXnFsbR1kMiJ",
+  "mint": "5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump",
+  "opened": "2026-11-25T14:06:18.812Z",
+  "size_sol": 0.12,
+  "entry_price_sol": 0.000003917371894044,
+  "value_sol": 0.121014,
+  "pnl_pct": 0.85,
+  "fees_sol": 0.001103,
+  "held_min": 4.8,
+  "in_range": true,
+  "active_bin_rel": -9,
+  "bin_step": 100,
+  "fee_rate_h": 9.3,
+  "peak_fee_rate_h": 12.8,
+  "entry_fee_rate_h": 11.8,
+  "tvl_usd": 19302,
+  "entry_tvl_usd": 21328
+ },
  "trades": [],
  "equity": [
   {
@@ -86,34 +105,38 @@
   {
    "t": "2026-11-21T13:00:31.441Z",
    "v": 0.5
+  },
+  {
+   "t": "2026-11-25T14:06:18.813Z",
+   "v": 0.5
   }
  ],
  "last_scan": {
-  "at": "2026-11-21T13:02:01.257Z",
-  "young": 2,
+  "at": "2026-11-25T14:10:46.317Z",
+  "young": 11,
   "near": [
    {
-    "pair": "Lazarus-SOL",
-    "pass": false,
-    "fails": [
-     "tvl $0",
-     "fee rate n/a%/h",
-     "fees30m $0",
-     "holders 406"
-    ]
+    "pair": "Pompom-SOL",
+    "pass": true,
+    "fails": []
    },
    {
-    "pair": "Emily-SOL",
-    "pass": false,
-    "fails": [
-     "age 2m",
-     "tvl $100",
-     "fee rate 0.0%/h",
-     "fees30m $0"
-    ]
+    "pair": "PERRO-SOL",
+    "pass": true,
+    "fails": []
+   },
+   {
+    "pair": "PERRO-SOL",
+    "pass": true,
+    "fails": []
+   },
+   {
+    "pair": "BASKET-SOL",
+    "pass": true,
+    "fails": []
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T14:06:07.632Z",
- "published": "2026-11-25T14:06:07.637Z"
+ "engine_heartbeat": "2026-11-25T14:11:07.721Z",
+ "published": "2026-11-25T14:11:09.415Z"
 }
