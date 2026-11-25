@@ -4,7 +4,7 @@
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
  "balance_sol": 0.394969,
- "equity_sol": 0.514643,
+ "equity_sol": 0.514992,
  "stats": {
   "trades": 3,
   "wins": 2,
@@ -23,17 +23,17 @@
   "opened": "2026-11-25T18:13:50.377Z",
   "size_sol": 0.12,
   "entry_price_sol": 0.000006397681898558,
-  "value_sol": 0.119674,
-  "pnl_pct": -0.27,
-  "fees_sol": 0.000026,
-  "held_min": 0.5,
+  "value_sol": 0.120023,
+  "pnl_pct": 0.02,
+  "fees_sol": 0.000095,
+  "held_min": 2,
   "in_range": true,
-  "active_bin_rel": -16,
+  "active_bin_rel": -9,
   "bin_step": 80,
   "fee_rate_h": 2.4,
   "peak_fee_rate_h": 4.3,
   "entry_fee_rate_h": 4.3,
-  "tvl_usd": 457,
+  "tvl_usd": 466,
   "entry_tvl_usd": 854
  },
  "trades": [
@@ -190,14 +190,9 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T18:13:58.460Z",
+  "at": "2026-11-25T18:15:25.643Z",
   "young": 14,
   "near": [
-   {
-    "pair": "CI-SOL",
-    "pass": true,
-    "fails": []
-   },
    {
     "pair": "BASKET-SOL",
     "pass": true,
@@ -212,9 +207,16 @@
     "pair": "BASKET-SOL",
     "pass": true,
     "fails": []
+   },
+   {
+    "pair": "CI-SOL",
+    "pass": false,
+    "fails": [
+     "dumping m5 -27.35%"
+    ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T18:14:22.834Z",
- "published": "2026-11-25T18:14:36.323Z"
+ "engine_heartbeat": "2026-11-25T18:15:52.713Z",
+ "published": "2026-11-25T18:19:47.328Z"
 }
