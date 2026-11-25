@@ -26,14 +26,14 @@
   "value_sol": 0.120384,
   "pnl_pct": 0.32,
   "fees_sol": 0.000384,
-  "held_min": 9.9,
+  "held_min": 14.9,
   "in_range": false,
-  "active_bin_rel": 2,
+  "active_bin_rel": 1,
   "bin_step": 250,
-  "fee_rate_h": 4.8,
+  "fee_rate_h": 4.4,
   "peak_fee_rate_h": 6.6,
   "entry_fee_rate_h": 6.6,
-  "tvl_usd": 1601,
+  "tvl_usd": 1595,
   "entry_tvl_usd": 1611
  },
  "trades": [
@@ -160,12 +160,21 @@
   {
    "t": "2026-11-25T14:32:20.530Z",
    "v": 0.515469
+  },
+  {
+   "t": "2026-11-25T14:37:24.535Z",
+   "v": 0.515469
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T14:36:05.821Z",
+  "at": "2026-11-25T14:41:54.537Z",
   "young": 9,
   "near": [
+   {
+    "pair": "4CHAN-SOL",
+    "pass": true,
+    "fails": []
+   },
    {
     "pair": "JaoJiu-SOL",
     "pass": true,
@@ -177,17 +186,12 @@
     "fails": []
    },
    {
-    "pair": "4CHAN-SOL",
-    "pass": true,
-    "fails": []
-   },
-   {
     "pair": "BASKET-SOL",
     "pass": true,
     "fails": []
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T14:36:50.552Z",
- "published": "2026-11-25T14:36:53.001Z"
+ "engine_heartbeat": "2026-11-25T14:41:54.538Z",
+ "published": "2026-11-25T14:41:54.607Z"
 }
