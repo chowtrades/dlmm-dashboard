@@ -229,8 +229,9 @@ function renderHero(cur, rent, freeSol, hist, ph, solUsd) {
   const tot = cur - init;
   const pts = historyPoints(hist);
   const startMs = Date.parse(config.start_date || '') || pts[0]?.t || Date.now();
-  const days = Math.max(1, (Date.now() - startMs) / 864e5);
-  const avg = tot / days, avgPct = (tot / init) * 100 / days;
+  const days = new Set(closed.map((r) => r.closed).filter((t) => t && isFinite(Date.parse(t))).map((t) => ictYmd(t))).size;
+  const avg = days ? real / days : null;
+  const avgPct = avg != null ? (avg / init) * 100 : null;
   // today (ICT calendar day): now vs the last snapshot before ICT midnight (or the first one today)
   const midnight = Date.parse(ictYmd(Date.now()) + 'T00:00:00+07:00');
   const before = pts.filter((p) => p.t <= midnight);
@@ -253,7 +254,7 @@ function renderHero(cur, rent, freeSol, hist, ph, solUsd) {
   $('#kpis').innerHTML = [
     kpi("Today's PnL", today != null ? pct((today / tRef.v) * 100) : '—', cls(today), today != null ? `${sgn(today)} SOL · ${todayN} close${todayN === 1 ? '' : 's'}` : 'no data yet'),
     kpi('24h PnL', d24 != null ? pct((d24 / ref.v) * 100) : '—', cls(d24), d24 != null ? `${sgn(d24)} SOL${old.length ? '' : ` · ${dur(Date.now() - ref.t)} of data`}` : 'no data yet'),
-    kpi('Avg / day', pct(avgPct), cls(avg), `${sgn(avg)} SOL · ${days.toFixed(1)} days`),
+    kpi('Avg / day', days ? pct(avgPct) : '—', cls(avg), days ? `${sgn(avg)} SOL · ${days} trading day${days === 1 ? '' : 's'}` : 'no closes'),
     kpi('Win rate', wr != null ? wr.toFixed(0) + '%' : '—', '', `${wins}W · ${losses}L`, closed.length ? `<div class="wl"><i style="width:${wr.toFixed(1)}%"></i></div>` : ''),
     kpi('Trades', String(closed.length + nOpen), '', `${closed.length} closed · ${nOpen} open`),
     kpi('Realized PnL', sgn(real), cls(real), `${pct((real / init) * 100)} of start${u(real) ? ' · ' + u(real) : ''}`),
@@ -510,7 +511,7 @@ async function refresh() {
     window.__dash = { ok: true, positions: positions.length, sol: free, updated: Date.now() };
   } catch (e) {
     console.warn(e);
-    status.textContent = 'Error: ' + (e.message || e) + ' (try a different RPC in Settings)';
+    status.textContent = 'Error: ' + (e.message || e);
     status.className = 'status err';
     $('#live').className = 'live err';
     $('#liveText').textContent = 'Reconnecting…';
@@ -533,25 +534,6 @@ async function init() {
   try { config = await getJSON('config.json?t=' + Date.now()); } catch (e) { console.warn('config.json missing', e); }
   config.positions = config.positions || [];
   wallet = params.get('wallet') || config.wallet || '';
-  $('#wallet').value = wallet;
-  const s = settings();
-  $('#rpc').value = localStorage.getItem(LS_RPC) || '';
-  $('#rpc').placeholder = s.rpc;
-  $('#disc').value = localStorage.getItem(LS_DISC) || '';
-  $('#disc').placeholder = config.discoveryRpc || s.disc;
-  $('#walletForm').addEventListener('submit', (ev) => {
-    ev.preventDefault();
-    wallet = $('#wallet').value.trim();
-    const u = new URL(location.href); u.searchParams.set('wallet', wallet); history.replaceState(null, '', u);
-    refresh(); schedule();
-  });
-  $('#saveRpc').addEventListener('click', () => {
-    const r = $('#rpc').value.trim(), d = $('#disc').value.trim();
-    r ? localStorage.setItem(LS_RPC, r) : localStorage.removeItem(LS_RPC);
-    d ? localStorage.setItem(LS_DISC, d) : localStorage.removeItem(LS_DISC);
-    refresh(); schedule();
-  });
-  $('#resetRpc').addEventListener('click', () => { localStorage.removeItem(LS_RPC); localStorage.removeItem(LS_DISC); $('#rpc').value = ''; $('#disc').value = ''; refresh(); schedule(); });
   $('#refreshNow').addEventListener('click', () => { refresh(); schedule(); });
   $('#rangeTabs').addEventListener('click', (ev) => {
     const b = ev.target.closest('button[data-range]'); if (!b) return;

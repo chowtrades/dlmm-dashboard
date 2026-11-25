@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <div class="glow" aria-hidden="true"></div>
@@ -86,21 +86,10 @@
 
   <footer class="foot">
     <div class="foot-row"><span id="status" class="status">Loading…</span><span class="dot">·</span><span id="countdown"></span></div>
-    <details class="settings">
-      <summary>Settings</summary>
-      <form id="walletForm" class="row">
-        <input id="wallet" spellcheck="false" autocomplete="off" placeholder="Wallet address" aria-label="Wallet address">
-        <button type="submit" class="btn">Load</button>
-      </form>
-      <p class="muted">Custom RPC (saved in this browser only). Leave empty for public defaults. A custom RPC is used for all calls, including position discovery.</p>
-      <label>RPC URL <input id="rpc" spellcheck="false" autocomplete="off"></label>
-      <label>Discovery RPC (getProgramAccounts, used only when no custom RPC) <input id="disc" spellcheck="false" autocomplete="off"></label>
-      <div class="row"><button type="button" id="saveRpc" class="btn">Save</button><button type="button" id="resetRpc" class="btn">Reset to defaults</button></div>
-    </details>
     <p class="muted small">Read-only and fully on-chain: no keys, no signing, no backend. Data from Solana RPC, Meteora and Jupiter. Values in SOL; PnL measured against the starting balance. Not financial advice.</p>
   </footer>
 </main>
 <div id="toast" class="toast" role="status"></div>
-<script src="dist/app.js?v=5"></script>
+<script src="dist/app.js?v=6"></script>
 </body>
 </html>

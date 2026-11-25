@@ -13,9 +13,8 @@
 
 Runs entirely in the browser: no backend, no keys, no signing. Open `index.html` through any static host.
 
-- `?wallet=<address>` or the input box picks the wallet (default comes from `config.json`).
+- `?wallet=<address>` picks the wallet (default comes from `config.json`).
 - `config.json` stores deposits for PnL (position, pool, deposited_sol, opened time) and default RPCs.
-- Settings → custom RPC URL (saved in localStorage). A custom RPC is used for every call.
 - Auto-refreshes every 60 s (`refreshSeconds` in config.json).
 
 ## Data sources
