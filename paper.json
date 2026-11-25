@@ -3,40 +3,55 @@
  "tier": "young-pool scalp",
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
- "balance_sol": 0.395085,
- "equity_sol": 0.515469,
+ "balance_sol": 0.394969,
+ "equity_sol": 0.514643,
  "stats": {
-  "trades": 2,
+  "trades": 3,
   "wins": 2,
-  "losses": 0,
-  "win_rate_pct": 100,
-  "avg_pct": 6.29,
-  "median_pct": 6.29,
+  "losses": 1,
+  "win_rate_pct": 66.7,
+  "avg_pct": 4.16,
+  "median_pct": 1.99,
   "best_pct": 10.58,
-  "worst_pct": 1.99,
-  "total_pnl_sol": 0.015085
+  "worst_pct": -0.1,
+  "total_pnl_sol": 0.014969
  },
  "open": {
-  "pair": "JaoJiu-SOL",
-  "pool": "4YT3kiPbYnQ3rGfdceP1VoyzJKZzXfw856NeECAtPWRo",
-  "mint": "2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy",
-  "opened": "2026-11-25T14:26:54.135Z",
+  "pair": "4CHAN-SOL",
+  "pool": "65YerMPUtzXA9JzRoeUB5znbuE45S2wrLkcvv2uX7VbK",
+  "mint": "DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump",
+  "opened": "2026-11-25T18:13:50.377Z",
   "size_sol": 0.12,
-  "entry_price_sol": 0.00000151224933417,
-  "value_sol": 0.120384,
-  "pnl_pct": 0.32,
-  "fees_sol": 0.000384,
-  "held_min": 16.4,
-  "in_range": false,
-  "active_bin_rel": 2,
-  "bin_step": 250,
-  "fee_rate_h": 4.4,
-  "peak_fee_rate_h": 6.6,
-  "entry_fee_rate_h": 6.6,
-  "tvl_usd": 1601,
-  "entry_tvl_usd": 1611
+  "entry_price_sol": 0.000006397681898558,
+  "value_sol": 0.119674,
+  "pnl_pct": -0.27,
+  "fees_sol": 0.000026,
+  "held_min": 0.5,
+  "in_range": true,
+  "active_bin_rel": -16,
+  "bin_step": 80,
+  "fee_rate_h": 2.4,
+  "peak_fee_rate_h": 4.3,
+  "entry_fee_rate_h": 4.3,
+  "tvl_usd": 457,
+  "entry_tvl_usd": 854
  },
  "trades": [
+  {
+   "pair": "JaoJiu-SOL",
+   "pool": "4YT3kiPbYnQ3rGfdceP1VoyzJKZzXfw856NeECAtPWRo",
+   "mint": "2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy",
+   "opened": "2026-11-25T14:26:54.135Z",
+   "closed": "2026-11-25T14:50:30.214Z",
+   "held_min": 23.6,
+   "size_sol": 0.12,
+   "value_sol": 0.119884,
+   "pnl_sol": -0.000116,
+   "pnl_pct": -0.1,
+   "fees_sol": 0.000384,
+   "exit_cost_sol": 0.0005,
+   "reason": "[young_above_range] [young_above_range] active bin 10 > upper 0+2; fees stopped, no chase in young tier"
+  },
   {
    "pair": "MEME-SOL",
    "pool": "6yYphonyJdYDxPD84kNxFKGGH3ob2KwuKijYgSH6vDuP",
@@ -168,24 +183,28 @@
   {
    "t": "2026-11-25T14:42:50.589Z",
    "v": 0.515469
+  },
+  {
+   "t": "2026-11-25T18:13:50.377Z",
+   "v": 0.514969
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T14:43:24.759Z",
-  "young": 8,
+  "at": "2026-11-25T18:13:58.460Z",
+  "young": 14,
   "near": [
    {
-    "pair": "4CHAN-SOL",
-    "pass": true,
-    "fails": []
-   },
-   {
-    "pair": "JaoJiu-SOL",
+    "pair": "CI-SOL",
     "pass": true,
     "fails": []
    },
    {
     "pair": "BASKET-SOL",
+    "pass": true,
+    "fails": []
+   },
+   {
+    "pair": "Pompom-SOL",
     "pass": true,
     "fails": []
    },
@@ -196,6 +215,6 @@
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T14:43:24.760Z",
- "published": "2026-11-25T14:50:29.866Z"
+ "engine_heartbeat": "2026-11-25T18:14:22.834Z",
+ "published": "2026-11-25T18:14:36.323Z"
 }
