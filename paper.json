@@ -3,40 +3,56 @@
  "tier": "young-pool scalp",
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
- "balance_sol": 0.38,
- "equity_sol": 0.502993,
+ "balance_sol": 0.38239,
+ "equity_sol": 0.504896,
  "stats": {
-  "trades": 0,
-  "wins": 0,
+  "trades": 1,
+  "wins": 1,
   "losses": 0,
-  "win_rate_pct": null,
-  "avg_pct": null,
-  "median_pct": null,
-  "best_pct": null,
-  "worst_pct": null,
-  "total_pnl_sol": 0
+  "win_rate_pct": 100,
+  "avg_pct": 1.99,
+  "median_pct": 1.99,
+  "best_pct": 1.99,
+  "worst_pct": 1.99,
+  "total_pnl_sol": 0.00239
  },
  "open": {
-  "pair": "Pompom-SOL",
-  "pool": "5UTPFtaKKMSeCKJ1ZpTpTWYz4FPvbpj5rXnFsbR1kMiJ",
-  "mint": "5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump",
-  "opened": "2026-11-25T14:06:18.812Z",
+  "pair": "MEME-SOL",
+  "pool": "6yYphonyJdYDxPD84kNxFKGGH3ob2KwuKijYgSH6vDuP",
+  "mint": "4nSRQK6B9x3BdssQyVf8ZEgkDdpTJdqYn8xPvFdQmeme",
+  "opened": "2026-11-25T14:22:45.075Z",
   "size_sol": 0.12,
-  "entry_price_sol": 0.000003917371894044,
-  "value_sol": 0.122993,
-  "pnl_pct": 2.49,
-  "fees_sol": 0.003698,
-  "held_min": 14.8,
+  "entry_price_sol": 0.000001096122162623,
+  "value_sol": 0.122506,
+  "pnl_pct": 2.09,
+  "fees_sol": 0.002537,
+  "held_min": 0.9,
   "in_range": true,
-  "active_bin_rel": -19,
+  "active_bin_rel": -6,
   "bin_step": 100,
-  "fee_rate_h": 11.7,
-  "peak_fee_rate_h": 15.2,
-  "entry_fee_rate_h": 11.8,
-  "tvl_usd": 15242,
-  "entry_tvl_usd": 21328
+  "fee_rate_h": 145,
+  "peak_fee_rate_h": 145,
+  "entry_fee_rate_h": 122,
+  "tvl_usd": 581,
+  "entry_tvl_usd": 691
  },
- "trades": [],
+ "trades": [
+  {
+   "pair": "Pompom-SOL",
+   "pool": "5UTPFtaKKMSeCKJ1ZpTpTWYz4FPvbpj5rXnFsbR1kMiJ",
+   "mint": "5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump",
+   "opened": "2026-11-25T14:06:18.812Z",
+   "closed": "2026-11-25T14:22:08.028Z",
+   "held_min": 15.8,
+   "size_sol": 0.12,
+   "value_sol": 0.12239,
+   "pnl_sol": 0.00239,
+   "pnl_pct": 1.99,
+   "fees_sol": 0.003944,
+   "exit_cost_sol": 0.00062,
+   "reason": "[take_profit_young] [take_profit_young] value 0.1230 SOL (+2.51%) >= +2.5%"
+  }
+ ],
  "equity": [
   {
    "t": "2026-11-18T00:18:25.101Z",
@@ -117,14 +133,18 @@
   {
    "t": "2026-11-25T14:16:42.382Z",
    "v": 0.497806
+  },
+  {
+   "t": "2026-11-25T14:22:08.029Z",
+   "v": 0.50239
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T14:21:11.719Z",
+  "at": "2026-11-25T14:22:45.074Z",
   "young": 11,
   "near": [
    {
-    "pair": "Pompom-SOL",
+    "pair": "MEME-SOL",
     "pass": true,
     "fails": []
    },
@@ -134,17 +154,17 @@
     "fails": []
    },
    {
-    "pair": "BASKET-SOL",
+    "pair": "PERRO-SOL",
     "pass": true,
     "fails": []
    },
    {
-    "pair": "PERRO-SOL",
+    "pair": "BASKET-SOL",
     "pass": true,
     "fails": []
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T14:21:11.720Z",
- "published": "2026-11-25T14:21:12.747Z"
+ "engine_heartbeat": "2026-11-25T14:23:38.058Z",
+ "published": "2026-11-25T14:26:50.123Z"
 }
