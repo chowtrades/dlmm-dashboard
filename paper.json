@@ -26,14 +26,14 @@
   "value_sol": 0.120384,
   "pnl_pct": 0.32,
   "fees_sol": 0.000384,
-  "held_min": 14.9,
+  "held_min": 16.4,
   "in_range": false,
-  "active_bin_rel": 1,
+  "active_bin_rel": 2,
   "bin_step": 250,
   "fee_rate_h": 4.4,
   "peak_fee_rate_h": 6.6,
   "entry_fee_rate_h": 6.6,
-  "tvl_usd": 1595,
+  "tvl_usd": 1601,
   "entry_tvl_usd": 1611
  },
  "trades": [
@@ -164,11 +164,15 @@
   {
    "t": "2026-11-25T14:37:24.535Z",
    "v": 0.515469
+  },
+  {
+   "t": "2026-11-25T14:42:50.589Z",
+   "v": 0.515469
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T14:41:54.537Z",
-  "young": 9,
+  "at": "2026-11-25T14:43:24.759Z",
+  "young": 8,
   "near": [
    {
     "pair": "4CHAN-SOL",
@@ -192,6 +196,6 @@
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T14:41:54.538Z",
- "published": "2026-11-25T14:41:54.607Z"
+ "engine_heartbeat": "2026-11-25T14:43:24.760Z",
+ "published": "2026-11-25T14:50:29.866Z"
 }
