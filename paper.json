@@ -4,7 +4,7 @@
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
  "balance_sol": 0.394969,
- "equity_sol": 0.514992,
+ "equity_sol": 0.512261,
  "stats": {
   "trades": 3,
   "wins": 2,
@@ -23,17 +23,17 @@
   "opened": "2026-11-25T18:13:50.377Z",
   "size_sol": 0.12,
   "entry_price_sol": 0.000006397681898558,
-  "value_sol": 0.120023,
-  "pnl_pct": 0.02,
-  "fees_sol": 0.000095,
-  "held_min": 2,
+  "value_sol": 0.117292,
+  "pnl_pct": -2.26,
+  "fees_sol": 0.000265,
+  "held_min": 27.3,
   "in_range": true,
-  "active_bin_rel": -9,
+  "active_bin_rel": -34,
   "bin_step": 80,
-  "fee_rate_h": 2.4,
+  "fee_rate_h": 1.5,
   "peak_fee_rate_h": 4.3,
   "entry_fee_rate_h": 4.3,
-  "tvl_usd": 466,
+  "tvl_usd": 433,
   "entry_tvl_usd": 854
  },
  "trades": [
@@ -187,14 +187,18 @@
   {
    "t": "2026-11-25T18:13:50.377Z",
    "v": 0.514969
+  },
+  {
+   "t": "2026-11-25T18:40:34.032Z",
+   "v": 0.514964
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T18:15:25.643Z",
-  "young": 14,
+  "at": "2026-11-25T18:40:43.693Z",
+  "young": 11,
   "near": [
    {
-    "pair": "BASKET-SOL",
+    "pair": "CI-SOL",
     "pass": true,
     "fails": []
    },
@@ -209,14 +213,12 @@
     "fails": []
    },
    {
-    "pair": "CI-SOL",
-    "pass": false,
-    "fails": [
-     "dumping m5 -27.35%"
-    ]
+    "pair": "BIAO-SOL",
+    "pass": true,
+    "fails": []
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T18:15:52.713Z",
- "published": "2026-11-25T18:19:47.328Z"
+ "engine_heartbeat": "2026-11-25T18:41:06.314Z",
+ "published": "2026-11-25T18:41:17.352Z"
 }
