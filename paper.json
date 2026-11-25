@@ -4,7 +4,7 @@
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
  "balance_sol": 0.38,
- "equity_sol": 0.500793,
+ "equity_sol": 0.502993,
  "stats": {
   "trades": 0,
   "wins": 0,
@@ -23,17 +23,17 @@
   "opened": "2026-11-25T14:06:18.812Z",
   "size_sol": 0.12,
   "entry_price_sol": 0.000003917371894044,
-  "value_sol": 0.120793,
-  "pnl_pct": 0.66,
-  "fees_sol": 0.002321,
-  "held_min": 9.8,
+  "value_sol": 0.122993,
+  "pnl_pct": 2.49,
+  "fees_sol": 0.003698,
+  "held_min": 14.8,
   "in_range": true,
-  "active_bin_rel": -25,
+  "active_bin_rel": -19,
   "bin_step": 100,
-  "fee_rate_h": 11.5,
-  "peak_fee_rate_h": 13.7,
+  "fee_rate_h": 11.7,
+  "peak_fee_rate_h": 15.2,
   "entry_fee_rate_h": 11.8,
-  "tvl_usd": 14968,
+  "tvl_usd": 15242,
   "entry_tvl_usd": 21328
  },
  "trades": [],
@@ -113,10 +113,14 @@
   {
    "t": "2026-11-25T14:11:37.714Z",
    "v": 0.501107
+  },
+  {
+   "t": "2026-11-25T14:16:42.382Z",
+   "v": 0.497806
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T14:15:12.874Z",
+  "at": "2026-11-25T14:21:11.719Z",
   "young": 11,
   "near": [
    {
@@ -130,7 +134,7 @@
     "fails": []
    },
    {
-    "pair": "PERRO-SOL",
+    "pair": "BASKET-SOL",
     "pass": true,
     "fails": []
    },
@@ -141,6 +145,6 @@
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T14:16:07.756Z",
- "published": "2026-11-25T14:16:11.305Z"
+ "engine_heartbeat": "2026-11-25T14:21:11.720Z",
+ "published": "2026-11-25T14:21:12.747Z"
 }
