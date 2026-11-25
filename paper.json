@@ -3,40 +3,55 @@
  "tier": "young-pool scalp",
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
- "balance_sol": 0.38239,
- "equity_sol": 0.504896,
+ "balance_sol": 0.395085,
+ "equity_sol": 0.515469,
  "stats": {
-  "trades": 1,
-  "wins": 1,
+  "trades": 2,
+  "wins": 2,
   "losses": 0,
   "win_rate_pct": 100,
-  "avg_pct": 1.99,
-  "median_pct": 1.99,
-  "best_pct": 1.99,
+  "avg_pct": 6.29,
+  "median_pct": 6.29,
+  "best_pct": 10.58,
   "worst_pct": 1.99,
-  "total_pnl_sol": 0.00239
+  "total_pnl_sol": 0.015085
  },
  "open": {
-  "pair": "MEME-SOL",
-  "pool": "6yYphonyJdYDxPD84kNxFKGGH3ob2KwuKijYgSH6vDuP",
-  "mint": "4nSRQK6B9x3BdssQyVf8ZEgkDdpTJdqYn8xPvFdQmeme",
-  "opened": "2026-11-25T14:22:45.075Z",
+  "pair": "JaoJiu-SOL",
+  "pool": "4YT3kiPbYnQ3rGfdceP1VoyzJKZzXfw856NeECAtPWRo",
+  "mint": "2UyrvgCRXiEwiKRVk96gs6B4myrBHZAfcLyMVLE8vSCy",
+  "opened": "2026-11-25T14:26:54.135Z",
   "size_sol": 0.12,
-  "entry_price_sol": 0.000001096122162623,
-  "value_sol": 0.122506,
-  "pnl_pct": 2.09,
-  "fees_sol": 0.002537,
-  "held_min": 0.9,
-  "in_range": true,
-  "active_bin_rel": -6,
-  "bin_step": 100,
-  "fee_rate_h": 145,
-  "peak_fee_rate_h": 145,
-  "entry_fee_rate_h": 122,
-  "tvl_usd": 581,
-  "entry_tvl_usd": 691
+  "entry_price_sol": 0.00000151224933417,
+  "value_sol": 0.120384,
+  "pnl_pct": 0.32,
+  "fees_sol": 0.000384,
+  "held_min": 4.9,
+  "in_range": false,
+  "active_bin_rel": 3,
+  "bin_step": 250,
+  "fee_rate_h": 5.8,
+  "peak_fee_rate_h": 6.6,
+  "entry_fee_rate_h": 6.6,
+  "tvl_usd": 1636,
+  "entry_tvl_usd": 1611
  },
  "trades": [
+  {
+   "pair": "MEME-SOL",
+   "pool": "6yYphonyJdYDxPD84kNxFKGGH3ob2KwuKijYgSH6vDuP",
+   "mint": "4nSRQK6B9x3BdssQyVf8ZEgkDdpTJdqYn8xPvFdQmeme",
+   "opened": "2026-11-25T14:22:45.075Z",
+   "closed": "2026-11-25T14:26:50.238Z",
+   "held_min": 4.1,
+   "size_sol": 0.12,
+   "value_sol": 0.132695,
+   "pnl_sol": 0.012695,
+   "pnl_pct": 10.58,
+   "fees_sol": 0.01324,
+   "exit_cost_sol": 0.000515,
+   "reason": "[take_profit_young] [take_profit_young] value 0.1332 SOL (+11.01%) >= +2.5%; [young_tvl_drop] pool TVL $315 <= 50% of entry $691"
+  },
   {
    "pair": "Pompom-SOL",
    "pool": "5UTPFtaKKMSeCKJ1ZpTpTWYz4FPvbpj5rXnFsbR1kMiJ",
@@ -137,24 +152,28 @@
   {
    "t": "2026-11-25T14:22:08.029Z",
    "v": 0.50239
+  },
+  {
+   "t": "2026-11-25T14:27:20.477Z",
+   "v": 0.515142
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T14:22:45.074Z",
-  "young": 11,
+  "at": "2026-11-25T14:31:25.354Z",
+  "young": 9,
   "near": [
-   {
-    "pair": "MEME-SOL",
-    "pass": true,
-    "fails": []
-   },
    {
     "pair": "JaoJiu-SOL",
     "pass": true,
     "fails": []
    },
    {
-    "pair": "PERRO-SOL",
+    "pair": "BASKET-SOL",
+    "pass": true,
+    "fails": []
+   },
+   {
+    "pair": "4CHAN-SOL",
     "pass": true,
     "fails": []
    },
@@ -165,6 +184,6 @@
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T14:23:38.058Z",
- "published": "2026-11-25T14:26:50.123Z"
+ "engine_heartbeat": "2026-11-25T14:31:50.533Z",
+ "published": "2026-11-25T14:31:51.669Z"
 }
