@@ -4,7 +4,7 @@
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
  "balance_sol": 0.288038,
- "equity_sol": 0.408079,
+ "equity_sol": 0.40829,
  "stats": {
   "trades": 5,
   "wins": 2,
@@ -23,17 +23,17 @@
   "opened": "2026-11-26T14:41:26.899Z",
   "size_sol": 0.12,
   "entry_price_sol": 0.000003546345672359,
-  "value_sol": 0.120041,
-  "pnl_pct": 0.03,
-  "fees_sol": 0.000041,
-  "held_min": 0.3,
+  "value_sol": 0.120252,
+  "pnl_pct": 0.21,
+  "fees_sol": 0.000255,
+  "held_min": 1.8,
   "in_range": true,
-  "active_bin_rel": -1,
+  "active_bin_rel": -2,
   "bin_step": 100,
-  "fee_rate_h": 6.5,
-  "peak_fee_rate_h": 6.5,
+  "fee_rate_h": 7.2,
+  "peak_fee_rate_h": 7.7,
   "entry_fee_rate_h": 6.1,
-  "tvl_usd": 14833,
+  "tvl_usd": 13541,
   "entry_tvl_usd": 15688
  },
  "trades": [
@@ -232,7 +232,7 @@
   }
  ],
  "last_scan": {
-  "at": "2026-11-26T14:41:26.899Z",
+  "at": "2026-11-26T14:42:48.673Z",
   "young": 7,
   "near": [
    {
@@ -247,10 +247,8 @@
    },
    {
     "pair": "PAIR-SOL",
-    "pass": false,
-    "fails": [
-     "fee rate 1.0%/h"
-    ]
+    "pass": true,
+    "fails": []
    },
    {
     "pair": "WINTER-SOL",
@@ -262,6 +260,6 @@
    }
   ]
  },
- "engine_heartbeat": "2026-11-26T14:41:45.994Z",
- "published": "2026-11-26T14:41:49.172Z"
+ "engine_heartbeat": "2026-11-26T14:47:54.682Z",
+ "published": "2026-11-26T14:47:54.717Z"
 }
