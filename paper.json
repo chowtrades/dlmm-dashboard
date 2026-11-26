@@ -3,40 +3,55 @@
  "tier": "young-pool scalp",
  "start_balance_sol": 0.5,
  "started": "2026-11-18T00:18:25.100Z",
- "balance_sol": 0.394969,
- "equity_sol": 0.512261,
+ "balance_sol": 0.347052,
+ "equity_sol": 0.467052,
  "stats": {
-  "trades": 3,
+  "trades": 4,
   "wins": 2,
-  "losses": 1,
-  "win_rate_pct": 66.7,
-  "avg_pct": 4.16,
-  "median_pct": 1.99,
+  "losses": 2,
+  "win_rate_pct": 50,
+  "avg_pct": -6.87,
+  "median_pct": 0.94,
   "best_pct": 10.58,
-  "worst_pct": -0.1,
-  "total_pnl_sol": 0.014969
+  "worst_pct": -39.93,
+  "total_pnl_sol": -0.032948
  },
  "open": {
-  "pair": "4CHAN-SOL",
-  "pool": "65YerMPUtzXA9JzRoeUB5znbuE45S2wrLkcvv2uX7VbK",
-  "mint": "DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump",
-  "opened": "2026-11-25T18:13:50.377Z",
+  "pair": "Zero-SOL",
+  "pool": "GiPqiNEZszvheMjVHNA3ukpDnd1CaNyP4rR9WYodpapx",
+  "mint": "DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump",
+  "opened": "2026-11-26T02:03:56.839Z",
   "size_sol": 0.12,
-  "entry_price_sol": 0.000006397681898558,
-  "value_sol": 0.117292,
-  "pnl_pct": -2.26,
-  "fees_sol": 0.000265,
-  "held_min": 27.3,
-  "in_range": true,
-  "active_bin_rel": -34,
-  "bin_step": 80,
-  "fee_rate_h": 1.5,
-  "peak_fee_rate_h": 4.3,
-  "entry_fee_rate_h": 4.3,
-  "tvl_usd": 433,
-  "entry_tvl_usd": 854
+  "entry_price_sol": 0.000008099441802634,
+  "value_sol": 0.12,
+  "pnl_pct": 0,
+  "fees_sol": 0,
+  "held_min": 0.5,
+  "in_range": false,
+  "active_bin_rel": 1,
+  "bin_step": 100,
+  "fee_rate_h": 6.4,
+  "peak_fee_rate_h": 6.4,
+  "entry_fee_rate_h": 6.4,
+  "tvl_usd": 21496,
+  "entry_tvl_usd": 21529
  },
  "trades": [
+  {
+   "pair": "4CHAN-SOL",
+   "pool": "65YerMPUtzXA9JzRoeUB5znbuE45S2wrLkcvv2uX7VbK",
+   "mint": "DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump",
+   "opened": "2026-11-25T18:13:50.377Z",
+   "closed": "2026-11-26T02:03:55.924Z",
+   "held_min": 470.1,
+   "size_sol": 0.12,
+   "value_sol": 0.072083,
+   "pnl_sol": -0.047917,
+   "pnl_pct": -39.93,
+   "fees_sol": 0.000337,
+   "exit_cost_sol": 0.001237,
+   "reason": "[young_stop] [young_stop] value 0.0733 SOL (-38.90%) <= -7%; [young_max_hold] held 470 min >= 45; [young_tvl_drop] pool TVL $22 <= 50% of entry $854"
+  },
   {
    "pair": "JaoJiu-SOL",
    "pool": "4YT3kiPbYnQ3rGfdceP1VoyzJKZzXfw856NeECAtPWRo",
@@ -191,34 +206,42 @@
   {
    "t": "2026-11-25T18:40:34.032Z",
    "v": 0.514964
+  },
+  {
+   "t": "2026-11-26T02:03:53.651Z",
+   "v": 0.513021
   }
  ],
  "last_scan": {
-  "at": "2026-11-25T18:40:43.693Z",
-  "young": 11,
+  "at": "2026-11-26T02:03:56.839Z",
+  "young": 7,
   "near": [
    {
-    "pair": "CI-SOL",
+    "pair": "Zero-SOL",
     "pass": true,
     "fails": []
    },
    {
-    "pair": "Pompom-SOL",
+    "pair": "Zero-SOL",
     "pass": true,
     "fails": []
    },
    {
-    "pair": "BASKET-SOL",
-    "pass": true,
-    "fails": []
+    "pair": "PVE-SOL",
+    "pass": false,
+    "fails": [
+     "dev blacklisted: deployer AV7PjXHL5JXZ1YoYRoN9Dsstg1x2UciBupMCXcJP8gUz blacklisted (high): deployed 48UW (Metlex call -57% in 50m); serial launcher: CreateV2 + 5-12 SOL dev buy "
+    ]
    },
    {
-    "pair": "BIAO-SOL",
-    "pass": true,
-    "fails": []
+    "pair": "Slingoor-SOL",
+    "pass": false,
+    "fails": [
+     "tvl $482"
+    ]
    }
   ]
  },
- "engine_heartbeat": "2026-11-25T18:41:06.314Z",
- "published": "2026-11-25T18:41:17.352Z"
+ "engine_heartbeat": "2026-11-26T02:04:25.940Z",
+ "published": "2026-11-26T02:04:27.554Z"
 }
